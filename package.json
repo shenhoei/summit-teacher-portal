@@ -1,0 +1,14 @@
+{
+  "name": "summit-teacher-portal",
+  "version": "1.0.0",
+  "description": "Summit Teacher Portal",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eike Consulting LLC",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
