@@ -44,7 +44,7 @@
             </svg>
             <span class="sr-only">Toggle sidebar</span>
           </button>
-          <a href="https://flowbite.com" class="inline-flex items-center justify-center h-9 mr-3 px-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+          <a href="https://flowbite.com" class="inline-flex items-center justify-center h-9 mr-3 px-2 text-xs font-medium text-primary-summitblue bg-primary-summitlight border border-summitlight rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-summitblue focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6C14 6.47339 13.6082 6.85714 13.125 6.85714H8.05622L2.98744 6.85714L6.74372 10.5368C7.08543 10.8715 7.08543 11.4142 6.74372 11.7489C6.40201 12.0837 5.84799 12.0837 5.50628 11.7489L0.256281 6.60609C-0.0854282 6.27136 -0.0854282 5.72864 0.256281 5.39391L5.50628 0.251051C5.84799 -0.0836838 6.40201 -0.0836838 6.74372 0.251051C7.08543 0.585786 7.08543 1.1285 6.74372 1.46324L2.98744 5.14286L13.125 5.14286C13.6082 5.14286 14 5.52661 14 6Z" fill="#4C6FFF"/>
               </svg>
@@ -113,39 +113,24 @@
     <!-- Sidebar -->
 
     <aside
-      class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+      class="fixed top-0 left-0 z-40 w-1/5 min-w-fit h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
       aria-label="Sidenav"
       id="drawer-navigation"
     >
-      <div class="overflow-y-auto py-5 px-0 h-full bg-white dark:bg-gray-800">
-        <form action="#" method="GET" class="md:hidden mb-2">
-          <label for="sidebar-search" class="sr-only">Search</label>
-          <div class="relative">
-            <div
-              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-            >
-              <svg
-                class="w-5 h-5 text-gray-500 dark:text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                ></path>
+      <div class="overflow-y-auto pb-5 px-0 h-full bg-white dark:bg-gray-800">
+        <!--Aside Title-->
+        <div class="flex flex-row bg-primary-summitblue text-white">
+          <div class="flex-grow text-left whitespace-nowrap pl-5 py-4"><span class="block text-3xl font-medium">Teacher Resources</span><span class="block font-light">Dynamic Science - 8th</span></div>
+          <div class="flex-row text-3xl bg-primary-summitdarkblue py-8 px-5 font-medium text-left whitespace-nowrap">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7071 7.29289C24.0976 7.68342 24.0976 8.31658 23.7071 8.70711L16.4142 16L23.7071 23.2929C24.0976 23.6834 24.0976 24.3166 23.7071 24.7071C23.3166 25.0976 22.6834 25.0976 22.2929 24.7071L14.2929 16.7071C13.9024 16.3166 13.9024 15.6834 14.2929 15.2929L22.2929 7.29289C22.6834 6.90237 23.3166 6.90237 23.7071 7.29289Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C8.44772 2 8 2.44772 8 3L8 29C8 29.5523 8.44772 30 9 30C9.55228 30 10 29.5523 10 29L10 3C10 2.44772 9.55228 2 9 2Z" />
               </svg>
-            </div>
-            <input
-              type="text"
-              name="search"
-              id="sidebar-search"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Search"
-            />
+              
           </div>
-        </form>
+
+        </div>
+        <!--menu items-->
         <ul class="space-y-2">
           <li>
             <a
@@ -691,7 +676,7 @@
       </div>
     </aside>
 
-    <main class="p-4 md:ml-64 h-auto pt-20">
+    <main class="p-4 w-4/5 ml-auto h-auto pt-20 bg-primary-summit-mainbgblue">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
         <div
           class="border-2 border-dashed border-gray-300 rounded-lg dark:border-gray-600 h-32 md:h-64"
