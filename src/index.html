@@ -45,22 +45,22 @@
             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a href="#"
-                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-primary-summitblue text-primary-summitblue"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue"
                 aria-current="page">Instructional Resources</a>
             </li>
             <li>
               <a href="#"
-                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue">Video
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue">Video
                 Resources</a>
             </li>
             <li>
               <a href="#"
-                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue">Supplemental
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue">Supplemental
                 Resources</a>
             </li>
             <li>
               <a href="#"
-                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue">Teacher's
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue">Teacher's
                 Guide</a>
             </li>
           </ul>
@@ -111,6 +111,11 @@
     <aside
       class="fixed top-0 left-0 z-40 w-[500px] min-w-fit h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
       aria-label="Sidenav" id="drawer-navigation">
+      <button class="w-[16px] absolute left-[499px] bg-primary-summitblue rounded-r-lg top-1/2 py-5">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.86009 8.75225L9.3415 13.5485C9.98808 14.1142 11 13.6551 11 12.7959V3.20344C11 2.34428 9.98808 1.8851 9.3415 2.45086L3.86009 7.2471C3.40476 7.64551 3.40476 8.35384 3.86009 8.75225Z" fill="white"/>
+          </svg>          
+      </button>
       <div class="overflow-y-auto pb-5 px-0 h-full bg-white dark:bg-gray-800">
         <!--Aside Title-->
         <div class="flex flex-row bg-primary-summitblue text-white">
@@ -165,7 +170,7 @@
                   <button href="#"
                     class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                     aria-controls="dropdown-cat1-inner1" data-collapse-toggle="dropdown-cat1-inner1">
-                    <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="24" height="24" fill="url(#pattern0)" />
@@ -193,8 +198,8 @@
                 <ul id="dropdown-cat1-inner1" class="hidden space-y-0">
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -204,8 +209,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -215,8 +220,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -226,8 +231,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -237,8 +242,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -252,7 +257,7 @@
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat1-inner2" data-collapse-toggle="dropdown-cat1-inner2">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                    
                   </div>
                   <div class="pl-2 flex-1">
@@ -270,8 +275,8 @@
               <ul id="dropdown-cat1-inner2" class="hidden space-y-0">
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -281,8 +286,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -292,8 +297,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -303,8 +308,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -314,8 +319,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -362,7 +367,7 @@
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                    
                   </div>
                   <div class="pl-2 flex-1">
@@ -380,8 +385,8 @@
               <ul id="dropdown-cat2-inner0" class="hidden space-y-0">
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -391,8 +396,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -402,8 +407,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -413,8 +418,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -424,8 +429,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -439,7 +444,7 @@
                   <button href="#"
                     class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                     aria-controls="dropdown-cat2-inner" data-collapse-toggle="dropdown-cat2-inner">
-                    <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="24" height="24" fill="url(#pattern1)" />
@@ -467,8 +472,8 @@
                 <ul id="dropdown-cat2-inner" class="hidden space-y-0">
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -478,8 +483,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -489,8 +494,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -500,8 +505,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -511,8 +516,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -526,7 +531,7 @@
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat2-inner3" data-collapse-toggle="dropdown-cat2-inner3">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                    
                   </div>
                   <div class="pl-2 flex-1">
@@ -544,8 +549,8 @@
               <ul id="dropdown-cat2-inner3" class="hidden space-y-0">
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -555,8 +560,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -566,8 +571,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -577,8 +582,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -588,8 +593,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -603,7 +608,7 @@
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat2-inner2" data-collapse-toggle="dropdown-cat2-inner2">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                    
                   </div>
                   <div class="pl-2 flex-1">
@@ -621,8 +626,8 @@
               <ul id="dropdown-cat2-inner2" class="hidden space-y-0">
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -632,8 +637,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -643,8 +648,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -654,8 +659,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -665,8 +670,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -713,7 +718,7 @@
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat3-inner0" data-collapse-toggle="dropdown-cat3-inner0">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="24" height="24" fill="url(#pattern7)" />
@@ -741,8 +746,8 @@
               <ul id="dropdown-cat3-inner0" class="hidden space-y-0">
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
                     
                   </div>
                   <div class="pl-2">
@@ -752,8 +757,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -763,8 +768,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -774,8 +779,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -785,8 +790,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -800,7 +805,7 @@
                   <button href="#"
                     class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                     aria-controls="dropdown-cat3-inner1" data-collapse-toggle="dropdown-cat3-inner1">
-                    <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="24" height="24" fill="url(#pattern3)" />
@@ -828,8 +833,8 @@
                 <ul id="dropdown-cat3-inner1" class="hidden space-y-0">
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -839,8 +844,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -850,8 +855,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -861,8 +866,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -872,8 +877,8 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                     </div>
                     <div class="pl-2">
@@ -887,7 +892,7 @@
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat3-inner2" data-collapse-toggle="dropdown-cat3-inner2">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                    
                   </div>
                   <div class="pl-2 flex-1">
@@ -905,8 +910,8 @@
               <ul id="dropdown-cat3-inner2" class="hidden space-y-0">
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -916,8 +921,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -927,8 +932,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -938,8 +943,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -949,8 +954,8 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
 
                   </div>
                   <div class="pl-2">
@@ -1010,7 +1015,7 @@
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat4-inner0" data-collapse-toggle="dropdown-cat4-inner0">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                     <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
@@ -1031,20 +1036,26 @@
               <ul id="dropdown-cat4-inner0" class="hidden space-y-0">
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
-                    Option Inner 1
+                    Move Option Inner 1
                   </div>
                 </a>
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 2
@@ -1053,9 +1064,12 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 3
@@ -1064,9 +1078,12 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 4
@@ -1075,9 +1092,12 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 5
@@ -1090,7 +1110,7 @@
                   <button href="#"
                     class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                     aria-controls="dropdown-cat4-inner1" data-collapse-toggle="dropdown-cat4-inner1">
-                    <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                    <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
@@ -1111,9 +1131,12 @@
                 <ul id="dropdown-cat4-inner1" class="hidden space-y-0">
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                        </svg>
                     </div>
                     <div class="pl-2">
                       Lesson Guide
@@ -1122,9 +1145,12 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-                      
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                        </svg>
                     </div>
                     <div class="pl-2">
                       Study Guide: Print
@@ -1133,9 +1159,12 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                        </svg>
                     </div>
                     <div class="pl-2">
                       Study Guide: Key
@@ -1144,9 +1173,12 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                        </svg>
                     </div>
                     <div class="pl-2">
                       E-Poster
@@ -1155,9 +1187,12 @@
                   </li>
                   <li>
                     <a href="#"
-                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                    class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                    <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                        </svg>
                     </div>
                     <div class="pl-2">
                       Interactive E-Poster
@@ -1170,7 +1205,7 @@
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat4-inner2" data-collapse-toggle="dropdown-cat4-inner2">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                     <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
@@ -1191,9 +1226,12 @@
               <ul id="dropdown-cat4-inner2" class="hidden space-y-0">
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 1
@@ -1202,9 +1240,12 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 2
@@ -1213,9 +1254,12 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 3
@@ -1224,9 +1268,12 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 4
@@ -1235,9 +1282,12 @@
                 </li>
                 <li>
                   <a href="#"
-                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
-                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2">
-
+                  class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                  <div class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[25px]">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z" fill="#7A7A7A"/>
+                      </svg>
                   </div>
                   <div class="pl-2">
                     Option Inner 5
