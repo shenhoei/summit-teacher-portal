@@ -5,6 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="../dist/output.css" rel="stylesheet" />
+  <style>
+    .custom-translate-x-full {
+      --tw-translate-x: -100% !important;
+    }
+    .removeMarginFromMain{
+      margin-left:unset !important;
+    }
+    .arrowRotate{
+      transform: rotate(177deg);
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-800">
@@ -106,10 +118,10 @@
     <!-- Sidebar -->
 
     <aside
-      class="fixed top-0 left-0 z-40 w-[500px] min-w-fit h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+      class="fixed top-0 left-0 z-40 w-[500px] min-w-fit h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700 asideBarToggle"
       id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
       <button type="button" class="w-[16px] absolute left-[499px] bg-primary-summitblue rounded-r-lg top-1/2 py-5"
-        data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation" aria-controls="drawer-navigation">
+        data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation" aria-controls="drawer-navigation" id="asideToggleBtn">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M3.86009 8.75225L9.3415 13.5485C9.98808 14.1142 11 13.6551 11 12.7959V3.20344C11 2.34428 9.98808 1.8851 9.3415 2.45086L3.86009 7.2471C3.40476 7.64551 3.40476 8.35384 3.86009 8.75225Z"
@@ -123,7 +135,7 @@
             <span class="block text-2xl font-medium">Teacher Resources</span><span class="block font-light">Dynamic
               Science - 8th</span>
           </div>
-          <button type="button"
+          <button type="button" id="asideToggleBtn2"
             class="flex-row text-3xl bg-primary-summitdarkblue py-8 px-5 font-medium text-left whitespace-nowrap"
             data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
             aria-controls="drawer-navigation">
@@ -1785,5 +1797,5 @@
   </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-
+<script src="js/custom.js"></script>
 </html>
