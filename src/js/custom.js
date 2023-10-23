@@ -6,6 +6,6 @@ $(document).ready(function() {
     });
 
     $("#modalclose3").click(function () {
-      $("#videoplayer3").get(0).stopvideo(); 
+      $("#videoplayer3").attr('src',$('#videoplayer3').attr('src')); 
       });
 });
