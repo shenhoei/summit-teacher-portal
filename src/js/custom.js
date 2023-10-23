@@ -4,4 +4,8 @@ $(document).ready(function() {
       $(".bg-primary-summit-mainbgblue").toggleClass("removeMarginFromMain");
       $("#asideToggleBtn svg").toggleClass("arrowRotate");
     });
+
+    $("#modalclose3").click(function () {
+      $("#videoplayer3").get(0).stopvideo(); 
+      });
 });

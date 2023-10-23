@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@summit components{
+    .custom-translate-x-full {
+        --tw-translate-x: -100% !important;
+      }
+      .removeMarginFromMain{
+        margin-left:unset !important;
+      }
+      .arrowRotate{
+        transform: rotate(177deg);
+      }
+}
