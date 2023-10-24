@@ -1849,8 +1849,8 @@
                         <span class="sr-only">Close modal</span>
                     </button>
                     <div class="p-6 text-center" x-show="modalOpen">
-                      <video class="w-full" autoplay muted controls x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080">
-                        <source src="vids/errr.mp4">
+                      <video class="w-full" id="mp4player" autoplay muted controls x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080">
+                        <source src="vids/errr.mp4" id="mp4demo">
                         Your browser does not support the video tag.
                       </video>
                     </div>
