@@ -38,7 +38,7 @@
                 d="M14 6C14 6.47339 13.6082 6.85714 13.125 6.85714H8.05622L2.98744 6.85714L6.74372 10.5368C7.08543 10.8715 7.08543 11.4142 6.74372 11.7489C6.40201 12.0837 5.84799 12.0837 5.50628 11.7489L0.256281 6.60609C-0.0854282 6.27136 -0.0854282 5.72864 0.256281 5.39391L5.50628 0.251051C5.84799 -0.0836838 6.40201 -0.0836838 6.74372 0.251051C7.08543 0.585786 7.08543 1.1285 6.74372 1.46324L2.98744 5.14286L13.125 5.14286C13.6082 5.14286 14 5.52661 14 6Z"
                 fill="#4C6FFF" />
             </svg>
-            <span class="self-center whitespace-nowrap dark:text-white pl-1">Exit</span>
+            <span class="self-center whitespace-nowrap dark:text-white pl-1">Home</span>
           </a>
         </div>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
@@ -61,8 +61,7 @@
             </li>
             <li>
               <a href="#"
-                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue">Teacher's
-                Guide</a>
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue">Course Navigation</a>
             </li>
           </ul>
         </div>
@@ -107,10 +106,10 @@
     <!-- Sidebar -->
 
     <aside
-      class="fixed top-0 left-0 z-40 w-[500px] min-w-fit h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700 asideBarToggle"
+      class="fixed top-0 left-0 z-40 w-[500px] min-w-fit h-screen xs:pt-24 xs:pb-14 sm:py-14  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700 asideBarToggle"
       id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
       <button type="button" class="w-[16px] absolute left-[499px] bg-primary-summitblue rounded-r-lg top-1/2 py-5"
-        data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation" aria-controls="drawer-navigation" id="asideToggleBtn">
+         id="asideToggleBtn">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M3.86009 8.75225L9.3415 13.5485C9.98808 14.1142 11 13.6551 11 12.7959V3.20344C11 2.34428 9.98808 1.8851 9.3415 2.45086L3.86009 7.2471C3.40476 7.64551 3.40476 8.35384 3.86009 8.75225Z"
@@ -119,15 +118,14 @@
       </button>
       <div class="overflow-y-auto pb-5 px-0 h-full bg-white dark:bg-gray-800">
         <!--Aside Title-->
-        <div class="flex flex-row bg-primary-summitblue text-white">
+        <div class="flex flex-row bg-primary-summit-aside-bar-blue text-white">
           <div class="flex-grow text-left whitespace-nowrap pl-5 py-4">
             <span class="block text-2xl font-medium">Teacher Resources</span><span class="block font-light">Dynamic
               Science - 8th</span>
+
           </div>
           <button type="button" id="asideToggleBtn2"
-            class="flex-row text-3xl bg-primary-summitdarkblue py-8 px-5 font-medium text-left whitespace-nowrap"
-            data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
-            aria-controls="drawer-navigation">
+            class="flex-row text-3xl bg-primary-summitdarkblue py-8 px-5 font-medium text-left whitespace-nowrap">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
               class="fill-white">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -283,7 +281,7 @@
                   </li>
                   <li>
                     <a href="#"
-                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue menu-active">
                       <div
                         class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
                       </div>
@@ -1341,7 +1339,7 @@
         </ul>
       </div>
       <div
-        class="absolute bottom-0 left-0 justify-left p-4 space-x-4 w-full lg:flex border-t border-x-primary-summit-border-lightgray">
+        class="absolute bottom-0 left-0 justify-left p-4 space-x-4 w-full lg:flex border-t border-x-primary-summit-border-lightgray bg-white">
         <svg width="205" height="36" viewBox="0 0 205 36" fill="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
           <rect width="205" height="36" fill="url(#summit-logo)" />
@@ -1358,7 +1356,7 @@
 
     <main class="p-4 md:ml-[500px] h-auto pt-20 bg-primary-summit-mainbgblue">
       <!--zoom button cluster-->
-      <div class="fixed right-16 bottom-16">
+      <div class="fixed right-16 bottom-16 z-20">
         <button type="button"
           class="w-10 h-10 bg-primary-summit-button-gray rounded-full flex items-center justify-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue mb-4">
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1770,12 +1768,12 @@
         </div>
       </div>
       <h4>Video player samples</h4>
-      <div class="grid grid-cols-2 gap-4 mb-4">
+      <div class="grid grid-cols-3 gap-4 mb-4">
         <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-[300px]">
-          <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+          <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 m-auto focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
             SAMPLE GENERAL USE MODAL
           </button>
-          <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
               <div class="relative w-full max-w-md max-h-full">
                   <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                       <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
@@ -1802,10 +1800,10 @@
           <a class="cursor-pointer flex h-[250px] overflow-hidden items-center justify-items-center" data-modal-target="popup-modal3" data-modal-toggle="popup-modal3">
             <img class="w-full h-auto" src="img/videothumbnail.png" />
           </a>
-          <div class="h-[50px] bg-white p-3">
-            <span>Youtube Video Title</span>
+          <div class="min-h-[50px] bg-white p-3">
+            <span>Youtube Video Title something are going to be long super extra long hello there</span>
           </div>
-          <div id="popup-modal3" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div id="popup-modal3" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
             <div class="relative w-[560px+100px] p-6"><!--please change 560 to match the youtube embed width-->
                 <div class="relative bg-black shadow dark:bg-gray-700">
                     <button type="button" id="modalclose3" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal3">
@@ -1822,6 +1820,15 @@
         </div><!--Popup Modal2-->
 
         </div><!--video player--->
+        <div class="flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-[300px]">
+          <div role="status" class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
+            <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"/>
+            <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z"/>
+          </svg>
+            <span class="sr-only">Loading...</span>
+          </div>
+      </div><!--video player placeholder-->
 
         <div class="flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-[300px]">
             <div role="status" class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
@@ -1836,10 +1843,10 @@
           <a class="cursor-pointer flex h-[250px] overflow-hidden items-center justify-items-center" data-modal-target="popup-modal2" data-modal-toggle="popup-modal2" >
             <img class="w-full h-auto" src="img/videothumbnail.png" />
           </a>
-          <div class="h-[50px] bg-white p-3">
-            <span>Video Title</span>
+          <div class="min-h-[50px] bg-white p-3">
+            <span>Youtube Video Title something are going to be long super extra long hello there</span>
           </div>
-          <div id="popup-modal2" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div id="popup-modal2" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
             <div class="relative w-full max-w-screen-lg max-h-full">
                 <div class="relative bg-black shadow dark:bg-gray-700">
                     <button type="button" id="modalclose2" class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal2">
@@ -1859,12 +1866,79 @@
         </div><!--Popup Modal2-->
 
         </div><!--video player--->
+        <div class="flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-[300px]">
+          <div role="status" class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
+            <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"/>
+            <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z"/>
+          </svg>
+            <span class="sr-only">Loading...</span>
+          </div>
+      </div><!--video player placeholder-->
       </div>
       <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-primary-summitblueh-96 mb-4"></div>
       <h4>Image Grid</h4>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center h-48 md:h-72"><img class="h-full w-auto" src="img/image1.png" /></div>
-        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center h-48 md:h-72"><img class="h-full w-auto" src="img/image2.jpg" /></div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center h-48 md:h-72">
+          <a class="cursor-pointer flex h-[250px] overflow-hidden items-center justify-items-center" data-modal-target="popup-modal4" data-modal-toggle="popup-modal4" >
+            <img class="h-full w-auto margin-auto" src="img/image1.png" />
+          </a>
+          <div id="popup-modal4" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative w-full max-w-screen-lg max-h-full">
+                <div class="relative bg-black shadow dark:bg-gray-700">
+                    <button type="button" id="modalclose2" class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal4">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center" x-show="modalOpen">
+                      <img class="h-full w-auto m-auto" src="img/image1.png" />
+                    </div>
+                </div>
+            </div>
+        </div><!--Popup Modal4-->
+        </div>
+        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center h-48 md:h-72">
+          <a class="cursor-pointer flex h-[250px] overflow-hidden items-center justify-items-center" data-modal-target="popup-modal5" data-modal-toggle="popup-modal5" >
+            <img class="h-full w-auto margin-auto" src="img/image2.jpg" />
+          </a>
+          <div id="popup-modal5" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative w-full max-w-screen-lg max-h-full">
+                <div class="relative bg-black shadow dark:bg-gray-700">
+                    <button type="button" id="modalclose2" class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal5">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center m-auto" x-show="modalOpen">
+                      <img class="h-full w-auto m-auto" src="img/image2.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div><!--Popup Modal5-->
+        </div>
+        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center h-48 md:h-72">
+          <a class="cursor-pointer flex h-[250px] overflow-hidden items-center justify-items-center" data-modal-target="popup-modal6" data-modal-toggle="popup-modal6" >
+            <img class="h-full w-auto margin-auto" src="img/image3.jpg" />
+          </a>
+          <div id="popup-modal6" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative w-full max-w-screen-lg max-h-full">
+                <div class="relative bg-black shadow dark:bg-gray-700">
+                    <button type="button" id="modalclose2" class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal6">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center m-auto" x-show="modalOpen">
+                      <img class="h-full w-auto m-auto" src="img/image3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div><!--Popup Modal6-->
+        </div>
       </div>
 
       <h1 class="m-10 text-xl font-bold text-gray-900">Full Sized Image for full-sized HTML</h1>
