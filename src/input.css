@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@summit components{
-    .custom-translate-x-full {
-        --tw-translate-x: -100% !important;
-      }
-      .removeMarginFromMain{
-        margin-left:unset !important;
-      }
-      .arrowRotate{
-        transform: rotate(177deg);
-      }
+.custom-translate-x-full {
+  --tw-translate-x: -100% !important;
+}
+
+.removeMarginFromMain {
+  margin-left: unset !important;
+}
+
+.arrowRotate {
+  transform: rotate(177deg);
+}
+
+.menu-active{
+  background-color:#EDF1FF;
+  color:#4C6FFF;
+}
+
+.menu-active div:first-child{
+  border-color:#4C6FFF;
 }
