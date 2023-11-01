@@ -76,7 +76,7 @@
                 d="M15.257 8.74224C15.5499 9.03514 16.0247 9.03514 16.3176 8.74224L22.4619 2.59795L22.4619 6.74961C22.4619 7.16383 22.7977 7.49961 23.2119 7.49961C23.6261 7.49961 23.9619 7.16383 23.9619 6.74961L23.9619 0.787293C23.9619 0.37308 23.6261 0.0372925 23.2119 0.0372925L17.2497 0.0372972C16.8354 0.0372972 16.4997 0.373084 16.4997 0.787297C16.4997 1.20151 16.8354 1.5373 17.2497 1.5373L21.4013 1.53729L15.257 7.68158C14.9641 7.97448 14.9641 8.44935 15.257 8.74224Z" />
             </svg>
 
-            <span class="sr-only">Search</span>
+            <span class="sr-only">Expand</span>
           </button>
           <!-- Pencil Icon -->
           <button type="button" class="p-2 mr-1 text-gray-500 hover:text-primary-summitblue">
@@ -86,10 +86,10 @@
                 d="M18.2197 0.21967C18.5126 -0.0732233 18.9874 -0.0732233 19.2803 0.21967L23.7803 4.71967C24.0732 5.01256 24.0732 5.48743 23.7803 5.78032L8.78034 20.7803C8.70852 20.8521 8.62286 20.9086 8.52856 20.9463L1.02856 23.9463C0.750002 24.0578 0.431838 23.9925 0.219692 23.7803C0.00754482 23.5682 -0.0577606 23.25 0.0536643 22.9714L3.05366 15.4714C3.09138 15.3771 3.14787 15.2915 3.21969 15.2197L18.2197 0.21967ZM16.8107 3.75L20.25 7.18933L22.1893 5.25L18.75 1.81066L16.8107 3.75ZM19.1893 8.24999L15.75 4.81066L6.00002 14.5606V15H6.75002C7.16423 15 7.50001 15.3358 7.50001 15.75V16.5H8.25001C8.66423 16.5 9.00001 16.8358 9.00001 17.25V18H9.43935L19.1893 8.24999ZM4.54749 16.0132L4.3892 16.1715L2.09631 21.9037L7.82854 19.6108L7.98683 19.4525C7.70244 19.3459 7.50001 19.0716 7.50001 18.75V18H6.75002C6.3358 18 6.00002 17.6642 6.00002 17.25V16.5H5.25002C4.92841 16.5 4.65408 16.2976 4.54749 16.0132Z" />
             </svg>
 
-            <span class="sr-only">Search</span>
+            <span class="sr-only">Edit</span>
           </button>
           <!-- Magnifying Icon -->
-          <button type="button" class="p-2 mr-1 text-gray-500 hover:text-primary-summitblue">
+          <button type="button" class="p-2 mr-1 text-gray-500 hover:text-primary-summitblue transition transform" id="SearchButton" data-collapse-toggle="navSearchBar">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -99,6 +99,47 @@
             </svg>
             <span class="sr-only">Search</span>
           </button>
+          <form class="hidden transition-all duration-200" id="navSearchBar">   
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="absolute right-5 top-2">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                <input type="search" id="default-search" data-dropdown-toggle="searchDropDown" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-100 rounded-lg bg-gray-50 focus:ring-primary-summit-highlightblue"  placeholder="Enter search here">
+               <button class="absolute right-2 bottom-3.5" data-modal-hide="navSearchBar">
+                <svg class="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+              </svg>
+
+               </button>
+            </div>
+        </form>
+          <div id="searchDropDown" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-54 dark:bg-gray-700 dark:divide-gray-600 max-h-[250px] overflow-auto">
+            <div class="py-1">
+              <h6 class="block px-4 py-2 pb-1 font-bold text-lg">Showing Results For: Search query</h6>
+              <p class="block px-4 py-2 pt-0">
+              <span>Showing 14 of 14 results</span>
+              </p>
+            </div>
+            <div class="py-1 max-w-[300px]">
+              <h6 class="block px-4 py-2 pb-1 font-bold text-primary-summitblue text-lg">Video resources</h6>
+              <p class="block px-4 py-2 pt-0">
+              <span>8.6A - Topic - Classification of Matter - Length - 18:50</span>
+              </p>
+              <p class="block px-4 py-2 pt-0">
+                <span>8.6A - Topic - Classification of Matter - Length - 18:50</span>
+                </p>
+                <p class="block px-4 py-2 pt-0">
+                  <span>8.6A - Topic - Classification of Matter - Length - 18:50</span>
+                  </p>
+                  <p class="block px-4 py-2 pt-0">
+                    <span>8.6A - Topic - Classification of Matter - Length - 18:50</span>
+                  </p>
+            </div>
+
+        </div>
         </div>
       </div>
     </nav>
@@ -159,7 +200,7 @@
                   fill="black" />
               </svg>
 
-              <span class="flex-1 ml-3 text-left whitespace-nowrap">Category 1 : Matter and Energy</span>
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 1 : Matter and Energy with extra long to see if it can fit alright </span>
               <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -186,10 +227,10 @@
                       </defs>
                     </svg>
                   </div>
-                  <div class="pl-2 flex-1">
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">8.6A
-                      : </span>Classification of Matter
+                      : </span>Classification of Matter extra long with peant butter kelly
                   </div>
                   <div class="pr-2">
                     <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
@@ -255,7 +296,7 @@
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                  <div class="pl-2 flex-1">
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">8.7A
                       : </span>Newton's Second Law of Motion
@@ -341,7 +382,7 @@
                   fill="black" />
               </svg>
 
-              <span class="flex-1 ml-3 text-left whitespace-nowrap">Category 2 : Force, Motion and Energy</span>
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 2 : Force, Motion and Energy</span>
               <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -357,7 +398,7 @@
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">9.5A
                       : </span>Newton's First Law of Motion
@@ -437,7 +478,7 @@
                       </defs>
                     </svg>
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">9.6A
                       : </span>Classification of Matter
@@ -506,7 +547,7 @@
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">9.8A
                       : </span>Another Category item
@@ -575,7 +616,7 @@
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">9.7A
                       : </span>Balanced and Unbalanced Net Forces
@@ -661,7 +702,7 @@
                   fill="black" />
               </svg>
 
-              <span class="flex-1 ml-3 text-left whitespace-nowrap">Category 3 : Earth and Space</span>
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 3 : Earth and Space</span>
               <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -688,7 +729,7 @@
                       </defs>
                     </svg>
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">10.5B
                       : </span>Sub category 1
@@ -768,7 +809,7 @@
                       </defs>
                     </svg>
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">10.6B
                       : </span>Sub category 2
@@ -837,7 +878,7 @@
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">10.3A
                       : </span>Sub category 3
@@ -922,7 +963,7 @@
                   fill="black" />
               </svg>
 
-              <span class="flex-1 ml-3 text-left whitespace-nowrap">No Dropdown menu item</span>
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[410px]">No Dropdown menu item</span>
             </button>
           </li>
         </ul>
@@ -964,7 +1005,7 @@
                         fill="#7A7A7A" />
                     </svg>
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">11.5B
                       : </span>Move Cat 1
@@ -1086,7 +1127,7 @@
                         fill="#7A7A7A" />
                     </svg>
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">10.6B
                       : </span>Move Cat 2
@@ -1208,7 +1249,7 @@
                         fill="#7A7A7A" />
                     </svg>
                   </div>
-                  <div class="pl-2 flex-1">
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">11.3A
                       : </span>Move cat 3
