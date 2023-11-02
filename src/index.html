@@ -99,9 +99,9 @@
             </svg>
             <span class="sr-only">Search</span>
           </button>
-          <form class="hidden transition-all duration-200" id="navSearchBar">   
+          <form>   
             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-            <div class="absolute right-5 top-2">
+            <div class="hidden absolute right-5 top-2" id="navSearchBar">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
@@ -116,26 +116,42 @@
                </button>
             </div>
         </form>
-          <div id="searchDropDown" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-54 dark:bg-gray-700 dark:divide-gray-600 max-h-[250px] overflow-auto">
+          <div id="searchDropDown" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 shadow w-54 dark:bg-gray-700 dark:divide-gray-600 max-h-[350px] overflow-auto">
             <div class="py-1">
-              <h6 class="block px-4 py-2 pb-1 font-bold text-lg">Showing Results For: Search query</h6>
+              <h6 class="block px-4 py-2 pb-1 font-bold text-lg">Showing Results For: <br /><span class="max-w-[300px] truncate block overflow-hidden">Sample Search Query with long truncated text </span></h6>
               <p class="block px-4 py-2 pt-0">
               <span>Showing 14 of 14 results</span>
               </p>
             </div>
-            <div class="py-1 max-w-[300px]">
+            <div class="py-1 max-w-[320px]">
               <h6 class="block px-4 py-2 pb-1 font-bold text-primary-summitblue text-lg">Video resources</h6>
-              <p class="block px-4 py-2 pt-0">
-              <span>8.6A - Topic - Classification of Matter - Length - 18:50</span>
+              <p class="block pt-0 text-xs">
+              <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
               </p>
-              <p class="block px-4 py-2 pt-0">
-                <span>8.6A - Topic - Classification of Matter - Length - 18:50</span>
+              <p class="block pt-0 text-xs">
+                <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
                 </p>
-                <p class="block px-4 py-2 pt-0">
-                  <span>8.6A - Topic - Classification of Matter - Length - 18:50</span>
+                <p class="block pt-0 text-xs">
+                  <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
                   </p>
-                  <p class="block px-4 py-2 pt-0">
-                    <span>8.6A - Topic - Classification of Matter - Length - 18:50</span>
+                  <p class="block pt-0 text-xs">
+                    <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
+                  </p>
+            </div>
+
+            <div class="py-1 max-w-[320px]">
+              <h6 class="block px-4 py-2 pb-1 font-bold text-primary-summitblue text-lg">Picture resources</h6>
+              <p class="block pt-0 text-xs">
+              <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
+              <p class="block pt-0 text-xs">
+                <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
+                  </p>
+                  <p class="block pt-0 text-xs">
+                    <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
                   </p>
             </div>
 
