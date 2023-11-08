@@ -195,7 +195,7 @@
         <ul class="space-y-2 mt-3">
           <li>
             <button type="button"
-              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue" data-tooltip-target="tooltip-1"
               aria-controls="dropdown-cat1" data-collapse-toggle="dropdown-cat1">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -216,6 +216,10 @@
               </svg>
 
               <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 1 : Matter and Energy with extra long to see if it can fit alright </span>
+              <div id="tooltip-1" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                Category 1 : Matter and Energy with extra long to see if it can fit alright 
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
               <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -223,11 +227,12 @@
                   clip-rule="evenodd"></path>
               </svg>
             </button>
+            
             <ul id="dropdown-cat1" class="hidden py-2 space-y-0">
               <li>
                 <button href="#"
                   class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
-                  aria-controls="dropdown-cat1-inner1" data-collapse-toggle="dropdown-cat1-inner1">
+                  data-tooltip-target="tooltip-2" aria-controls="dropdown-cat1-inner1" data-collapse-toggle="dropdown-cat1-inner1">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -247,6 +252,10 @@
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">8.6A
                       : </span>Classification of Matter extra long with peant butter kelly
                   </div>
+                  <div id="tooltip-2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    8.6A : Classification of Matter extra long with peant butter kelly
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
                   <div class="pr-2">
                     <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
@@ -258,13 +267,17 @@
                 </button>
                 <ul id="dropdown-cat1-inner1" class="hidden space-y-0">
                   <li>
-                    <a href="#"
+                    <a href="#" data-tooltip-target="tooltip-3"
                       class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex focus:text-primary-summitblue focus:bg-primary-summit-highlightblue">
                       <div
                         class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
                       </div>
                       <div class="pl-2 truncate max-w-[400px]">Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide</div>
                     </a>
+                    <div id="tooltip-3" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                      Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
                   </li>
                   <li>
                     <a href="#"
