@@ -22,3 +22,7 @@
 .menu-active div:first-child{
   border-color:#4C6FFF;
 }
+
+.max-h-90{
+  max-height:90vh
+}
