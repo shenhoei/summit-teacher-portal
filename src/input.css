@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
 .custom-translate-x-full {
   --tw-translate-x: -100% !important;
 }
@@ -25,4 +26,18 @@
 
 .max-h-90{
   max-height:90vh
+}
+
+.summit-menu{
+  width:105px;
+  margin-top:3px;
+}
+.summit-menu:hover svg path{
+ fill:#000;  
+}
+
+.summit-svg-summitblue svg path{
+  fill:#4C6FFF;
+}
+
 }
