@@ -26,6 +26,7 @@ module.exports = {
           "summit-maintext": "#858585",
           "summit-bordergray": "#d9d9d9",
           "summit-border-lightgray": "#e4e4e4",
+          "summit-border-mid-gray":"#cacaca",
           "summit-button-gray": "#7a7a7a",
           "summit-aside-bar-blue": "#2256dd",
           "summit-table-light-blue":"#E9EBF5",
