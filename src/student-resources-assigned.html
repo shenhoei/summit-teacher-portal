@@ -8,15 +8,14 @@
   <link href="output.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-800">
+<body class="bg-gray-50">
   <div class="antialiased bg-gray-50 dark:bg-gray-900">
-    <nav
-      class="bg-white border-b border-gray-200 px-4 py-0 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
       <div class="flex flex-wrap justify-between items-center">
         <div class="flex justify-start items-center">
           <button data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
             aria-controls="drawer-navigation"
-            class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+            class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100">
             <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
@@ -32,17 +31,21 @@
             <span class="sr-only">Toggle sidebar</span>
           </button>
           <a href="#"
-            class="inline-flex items-center justify-center h-9 mr-3 px-2 text-xs font-medium text-primary-summitblue bg-primary-summitlight rounded-full focus:outline-none hover:bg-gray-100 hover:text-primary-summitblue focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+            class="inline-flex items-center justify-center h-9 mr-3 px-2 text-xs font-medium text-primary-summitblue bg-primary-summitlight rounded-full focus:outline-none hover:bg-gray-100 hover:text-primary-summitblue focus:z-10 focus:ring-2 focus:ring-gray-300">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5139 1.57636C10.7823 1.30788 11.2177 1.30788 11.4861 1.57636L19.7361 9.82636C19.8651 9.9553 19.9375 10.1302 19.9375 10.3125V19.9375C19.9375 20.3172 19.6297 20.625 19.25 20.625H13.0625C12.6828 20.625 12.375 20.3172 12.375 19.9375V14.4375H9.625V19.9375C9.625 20.3172 9.3172 20.625 8.9375 20.625H2.75C2.3703 20.625 2.0625 20.3172 2.0625 19.9375V10.3125C2.0625 10.1302 2.13493 9.9553 2.26386 9.82636L10.5139 1.57636ZM3.4375 10.5973V19.25H8.25V13.75C8.25 13.3703 8.5578 13.0625 8.9375 13.0625H13.0625C13.4422 13.0625 13.75 13.3703 13.75 13.75V19.25H18.5625V10.5973L11 3.03477L3.4375 10.5973Z" fill="#2256DD"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.875 3.4375V8.25L15.125 5.5V3.4375C15.125 3.0578 15.4328 2.75 15.8125 2.75H17.1875C17.5672 2.75 17.875 3.0578 17.875 3.4375Z" fill="#2256DD"/>
-              </svg>
-              
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.5139 1.57636C10.7823 1.30788 11.2177 1.30788 11.4861 1.57636L19.7361 9.82636C19.8651 9.9553 19.9375 10.1302 19.9375 10.3125V19.9375C19.9375 20.3172 19.6297 20.625 19.25 20.625H13.0625C12.6828 20.625 12.375 20.3172 12.375 19.9375V14.4375H9.625V19.9375C9.625 20.3172 9.3172 20.625 8.9375 20.625H2.75C2.3703 20.625 2.0625 20.3172 2.0625 19.9375V10.3125C2.0625 10.1302 2.13493 9.9553 2.26386 9.82636L10.5139 1.57636ZM3.4375 10.5973V19.25H8.25V13.75C8.25 13.3703 8.5578 13.0625 8.9375 13.0625H13.0625C13.4422 13.0625 13.75 13.3703 13.75 13.75V19.25H18.5625V10.5973L11 3.03477L3.4375 10.5973Z"
+                fill="#2256DD" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.875 3.4375V8.25L15.125 5.5V3.4375C15.125 3.0578 15.4328 2.75 15.8125 2.75H17.1875C17.5672 2.75 17.875 3.0578 17.875 3.4375Z"
+                fill="#2256DD" />
+            </svg>
+
           </a>
         </div>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
             <li>
               <a href="#"
                 class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue"
@@ -60,7 +63,8 @@
             </li>
             <li>
               <a href="#"
-                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue">Course Navigation</a>
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-primary-summitblue focus:border-primary-summitblue focus:text-primary-summitblue">Course
+                Navigation</a>
             </li>
           </ul>
         </div>
@@ -88,7 +92,8 @@
             <span class="sr-only">Edit</span>
           </button>
           <!-- Magnifying Icon -->
-          <button type="button" class="p-2 mr-1 text-gray-500 hover:text-primary-summitblue transition transform" id="SearchButton" data-collapse-toggle="navSearchBar">
+          <button type="button" class="p-2 mr-1 text-gray-500 hover:text-primary-summitblue transition transform"
+            id="SearchButton" data-collapse-toggle="navSearchBar">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -98,62 +103,87 @@
             </svg>
             <span class="sr-only">Search</span>
           </button>
-          <form>   
-            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+          <form>
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
             <div class="hidden absolute right-5 top-2" id="navSearchBar">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                    </svg>
-                </div>
-                <input type="search" id="default-search" data-dropdown-toggle="searchDropDown" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-100 rounded-lg bg-gray-50 focus:ring-primary-summit-highlightblue"  placeholder="Enter search here">
-               <button class="absolute -right-3 bottom-3.5" data-modal-hide="navSearchBar">
-                <svg class="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-              </svg>
-               </button>
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                </svg>
+              </div>
+              <input type="search" id="default-search" data-dropdown-toggle="searchDropDown"
+                class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-100 rounded-lg bg-gray-50 focus:ring-primary-summit-highlightblue"
+                placeholder="Enter search here">
+              <button class="absolute -right-3 bottom-3.5" data-modal-hide="navSearchBar">
+                <svg class="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+              </button>
             </div>
-        </form>
-          <div id="searchDropDown" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 shadow w-54 dark:bg-gray-700 dark:divide-gray-600 max-h-[350px] overflow-auto">
+          </form>
+          <div id="searchDropDown"
+            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 shadow w-54 max-h-[350px] overflow-auto">
             <div class="py-1">
-              <h6 class="block px-4 py-2 pb-1 font-bold text-lg">Showing Results For: <br /><span class="max-w-[300px] truncate block overflow-hidden">Sample Search Query with long truncated text </span></h6>
+              <h6 class="block px-4 py-2 pb-1 font-bold text-lg">Showing Results For: <br /><span
+                  class="max-w-[300px] truncate block overflow-hidden">Sample Search Query with long truncated text
+                </span></h6>
               <p class="block px-4 py-2 pt-0">
-              <span>Showing 14 of 14 results</span>
+                <span>Showing 14 of 14 results</span>
               </p>
             </div>
             <div class="py-1 max-w-[320px]">
               <h6 class="block px-4 py-2 pb-1 font-bold text-primary-summitblue text-lg">Video resources</h6>
               <p class="block pt-0 text-xs">
-              <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
+                <a href="#"
+                  class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A
+                    - Topic - Classification of Matter - Length - 18:50</span></a>
               </p>
               <p class="block pt-0 text-xs">
-                <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
-                </p>
-                <p class="block pt-0 text-xs">
-                  <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
-                  </p>
-                  <p class="block pt-0 text-xs">
-                    <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
-                  </p>
+                <a href="#"
+                  class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A
+                    - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
+              <p class="block pt-0 text-xs">
+                <a href="#"
+                  class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A
+                    - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
+              <p class="block pt-0 text-xs">
+                <a href="#"
+                  class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6A
+                    - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
             </div>
 
             <div class="py-1 max-w-[320px]">
               <h6 class="block px-4 py-2 pb-1 font-bold text-primary-summitblue text-lg">Picture resources</h6>
               <p class="block pt-0 text-xs">
-              <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
+                <a href="#"
+                  class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B
+                    - Topic - Classification of Matter - Length - 18:50</span></a>
               </p>
               <p class="block pt-0 text-xs">
-                <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
-                </p>
-                <p class="block pt-0 text-xs">
-                  <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
-                  </p>
-                  <p class="block pt-0 text-xs">
-                    <a href="#" class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
-                  </p>
+                <a href="#"
+                  class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B
+                    - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
+              <p class="block pt-0 text-xs">
+                <a href="#"
+                  class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B
+                    - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
+              <p class="block pt-0 text-xs">
+                <a href="#"
+                  class="block px-4 hover:text-primary-summitblue hover:bg-primary-summit-highlightblue py-2"><span>8.6B
+                    - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
             </div>
 
-        </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -161,17 +191,17 @@
     <!-- Sidebar -->
 
     <aside
-      class="fixed top-0 left-0 z-40 w-[500px] max-w-[500px] min-w-fit h-screen xs:pt-24 xs:pb-14 sm:py-14  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700 asideBarToggle"
+      class="fixed top-0 left-0 z-40 w-[500px] max-w-[500px] min-w-fit h-screen xs:pt-24 xs:pb-14 sm:py-14  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0  asideBarToggle"
       id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
       <button type="button" class="w-[16px] absolute left-[499px] bg-primary-summitblue rounded-r-lg top-1/2 py-5"
-         id="asideToggleBtn">
+        id="asideToggleBtn">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M3.86009 8.75225L9.3415 13.5485C9.98808 14.1142 11 13.6551 11 12.7959V3.20344C11 2.34428 9.98808 1.8851 9.3415 2.45086L3.86009 7.2471C3.40476 7.64551 3.40476 8.35384 3.86009 8.75225Z"
             fill="white" />
         </svg>
       </button>
-      <div class="overflow-y-auto pb-5 px-0 h-full bg-white dark:bg-gray-800">
+      <div class="overflow-y-auto pb-5 px-0 h-full bg-white">
         <!--Aside Title-->
         <div class="flex flex-row bg-primary-summit-aside-bar-blue text-white">
           <div class="flex-grow text-left whitespace-nowrap pl-5 py-4">
@@ -194,8 +224,8 @@
         <ul class="space-y-2 mt-3">
           <li>
             <button type="button"
-              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue" data-tooltip-target="tooltip-1"
-              aria-controls="dropdown-cat1" data-collapse-toggle="dropdown-cat1">
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue"
+              data-tooltip-target="tooltip-1" aria-controls="dropdown-cat1" data-collapse-toggle="dropdown-cat1">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M4 0H12C13.1046 0 14 0.89543 14 2V14C14 15.1046 13.1046 16 12 16H4C2.89543 16 2 15.1046 2 14V2C2 0.89543 2.89543 0 4 0ZM4 1C3.44772 1 3 1.44772 3 2V14C3 14.5523 3.44772 15 4 15H12C12.5523 15 13 14.5523 13 14V2C13 1.44772 12.5523 1 12 1H4Z"
@@ -214,9 +244,11 @@
                   fill="black" />
               </svg>
 
-              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 1 : Matter and Energy with extra long to see if it can fit alright </span>
-              <div id="tooltip-1" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                Category 1 : Matter and Energy with extra long to see if it can fit alright 
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 1 : Matter and
+                Energy with extra long to see if it can fit alright </span>
+              <div id="tooltip-1" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+                Category 1 : Matter and Energy with extra long to see if it can fit alright
                 <div class="tooltip-arrow" data-popper-arrow></div>
               </div>
               <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
@@ -226,12 +258,13 @@
                   clip-rule="evenodd"></path>
               </svg>
             </button>
-            
+
             <ul id="dropdown-cat1" class="hidden py-2 space-y-0">
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
-                  data-tooltip-target="tooltip-2" aria-controls="dropdown-cat1-inner1" data-collapse-toggle="dropdown-cat1-inner1">
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
+                  data-tooltip-target="tooltip-2" aria-controls="dropdown-cat1-inner1"
+                  data-collapse-toggle="dropdown-cat1-inner1">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +284,8 @@
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">8.6A
                       : </span>Classification of Matter extra long with peant butter kelly
                   </div>
-                  <div id="tooltip-2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  <div id="tooltip-2" role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
                     8.6A : Classification of Matter extra long with peant butter kelly
                     <div class="tooltip-arrow" data-popper-arrow></div>
                   </div>
@@ -271,9 +305,11 @@
                       <div
                         class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue group-focus:border-primary-summitblue">
                       </div>
-                      <div class="pl-2 truncate max-w-[400px]">Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide</div>
+                      <div class="pl-2 truncate max-w-[400px]">Lesson Guide Lesson Guide Lesson Guide Lesson Guide
+                        Lesson Guide Lesson Guide Lesson Guide</div>
                     </a>
-                    <div id="tooltip-3" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    <div id="tooltip-3" role="tooltip"
+                      class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
                       Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide
                       <div class="tooltip-arrow" data-popper-arrow></div>
                     </div>
@@ -318,7 +354,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat1-inner2" data-collapse-toggle="dropdown-cat1-inner2">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
@@ -409,7 +445,8 @@
                   fill="black" />
               </svg>
 
-              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 2 : Force, Motion and Energy</span>
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 2 : Force, Motion
+                and Energy</span>
               <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -420,12 +457,12 @@
             <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">9.5A
                       : </span>Newton's First Law of Motion
@@ -489,7 +526,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat2-inner" data-collapse-toggle="dropdown-cat2-inner">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
@@ -505,7 +542,7 @@
                       </defs>
                     </svg>
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">9.6A
                       : </span>Classification of Matter
@@ -569,12 +606,12 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat2-inner3" data-collapse-toggle="dropdown-cat2-inner3">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">9.8A
                       : </span>Another Category item
@@ -638,12 +675,12 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat2-inner2" data-collapse-toggle="dropdown-cat2-inner2">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">9.7A
                       : </span>Balanced and Unbalanced Net Forces
@@ -729,7 +766,8 @@
                   fill="black" />
               </svg>
 
-              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 3 : Earth and Space</span>
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 3 : Earth and
+                Space</span>
               <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -740,9 +778,10 @@
             <ul id="dropdown-cat3" class="hidden py-2 space-y-0">
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat3-inner0" data-collapse-toggle="dropdown-cat3-inner0">
-                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink">
                       <rect width="24" height="24" fill="url(#pattern7)" />
@@ -755,7 +794,7 @@
                       </defs>
                     </svg>
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">10.5B
                       : </span>Sub category 1
@@ -819,7 +858,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat3-inner1" data-collapse-toggle="dropdown-cat3-inner1">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
@@ -835,7 +874,7 @@
                       </defs>
                     </svg>
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">10.6B
                       : </span>Sub category 2
@@ -899,12 +938,12 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat3-inner2" data-collapse-toggle="dropdown-cat3-inner2">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">10.3A
                       : </span>Sub category 3
@@ -993,7 +1032,7 @@
             </button>
           </li>
         </ul>
-        <ul class="pt-5 mt-5 space-y-2 border-t border-primary-summit-border-lightgray dark:border-gray-700">
+        <ul class="pt-5 mt-5 space-y-2 border-t border-primary-summit-border-lightgray">
           <li>
             <button type="button"
               class="flex items-center p-2 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue"
@@ -1018,7 +1057,7 @@
             <ul id="dropdown-cat4" class="hidden py-2 space-y-0">
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat4-inner0" data-collapse-toggle="dropdown-cat4-inner0">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
@@ -1031,7 +1070,7 @@
                         fill="#7A7A7A" />
                     </svg>
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">11.5B
                       : </span>Move Cat 1
@@ -1140,7 +1179,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat4-inner1" data-collapse-toggle="dropdown-cat4-inner1">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
@@ -1153,7 +1192,7 @@
                         fill="#7A7A7A" />
                     </svg>
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">10.6B
                       : </span>Move Cat 2
@@ -1262,7 +1301,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-primary-summit-maintext transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex"
                   aria-controls="dropdown-cat4-inner2" data-collapse-toggle="dropdown-cat4-inner2">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-primary-summitblue">
@@ -1275,7 +1314,7 @@
                         fill="#7A7A7A" />
                     </svg>
                   </div>
-                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
                     <span
                       class="text-black group-hover:text-primary-summitblue group-hover:bg-primary-summit-highlightblue">11.3A
                       : </span>Move cat 3
@@ -1388,9 +1427,11 @@
 
                       </div>
                       <button href="#"
-                  class="items-center pl-2 ml-2 py-2 w-full text-base text-left font-medium text-primary-summitblue transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex">
-                  <span class="w-2 h-2 p-3 leading-3 bg-primary-summitblue text-white rounded-full flex items-center justify-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue">&#43;</span><span class="flex ml-3">Add Custom Category</span>
-          </button>
+                        class="items-center pl-2 ml-2 py-2 w-full text-base text-left font-medium text-primary-summitblue transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
+                        <span
+                          class="w-2 h-2 p-3 leading-3 bg-primary-summitblue text-white rounded-full flex items-center justify-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue">&#43;</span><span
+                          class="flex ml-3">Add Custom Category</span>
+                      </button>
                     </a>
                   </li>
                 </ul>
@@ -1399,9 +1440,11 @@
           </li>
           <li>
             <button href="#"
-                  class="items-center pl-2 py-2 w-full text-base text-left font-medium text-primary-summitblue transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue dark:hover:bg-gray-700 flex">
-                  <span class="w-2 h-2 p-3 leading-3 bg-primary-summitblue text-white rounded-full flex items-center justify-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue">&#43;</span><span class="flex ml-3">Add Custom Category</span>
-          </button>
+              class="items-center pl-2 py-2 w-full text-base text-left font-medium text-primary-summitblue transition duration-75 group hover:text-primary-summitblue hover:bg-primary-summit-highlightblue flex">
+              <span
+                class="w-2 h-2 p-3 leading-3 bg-primary-summitblue text-white rounded-full flex items-center justify-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue">&#43;</span><span
+                class="flex ml-3">Add Custom Category</span>
+            </button>
           </li>
         </ul>
       </div>
@@ -1455,583 +1498,814 @@
       <!--zoom button cluster-->
 
       <!--top button grid-->
-      <div class="flex flex-wrap items-center justify-center mb-5">
-        <div
-          class="bg-white rounded-xl px-3 fill-black py-1 text-black flex items-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue hover:text-white focus:text-white active:text-white mr-4 hover:fill-white focus:fill-white active:fill-white">
-          <span>Lesson Guide</span>
+      <div class="flex flex-row">
+        <div class="flex basis-1/4"></div><!--flexspacer-->
+        <div class="flex basis-1/2 items-center justify-center mb-5">
+          <div
+            class="bg-white rounded-xl px-3 fill-black py-1 text-black flex items-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue hover:text-white focus:text-white active:text-white mr-4 hover:fill-white focus:fill-white active:fill-white">
+            <span>Lesson Guide</span>
+          </div>
+          <div
+            class="bg-white rounded-xl px-3 fill-black py-1 text-black flex items-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue hover:text-white focus:text-white active:text-white hover:fill-white focus:fill-white active:fill-white">
+            <span class="mr-2">Marshmallow Shooter Lab</span>
+            <button type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.96967 6.96967C7.26256 6.67678 7.73744 6.67678 8.03033 6.96967L12 10.9393L15.9697 6.96967C16.2626 6.67678 16.7374 6.67678 17.0303 6.96967C17.3232 7.26256 17.3232 7.73744 17.0303 8.03033L13.0607 12L17.0303 15.9697C17.3232 16.2626 17.3232 16.7374 17.0303 17.0303C16.7374 17.3232 16.2626 17.3232 15.9697 17.0303L12 13.0607L8.03033 17.0303C7.73744 17.3232 7.26256 17.3232 6.96967 17.0303C6.67678 16.7374 6.67678 16.2626 6.96967 15.9697L10.9393 12L6.96967 8.03033C6.67678 7.73744 6.67678 7.26256 6.96967 6.96967Z" />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div
-          class="bg-white rounded-xl px-3 fill-black py-1 text-black flex items-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue hover:text-white focus:text-white active:text-white hover:fill-white focus:fill-white active:fill-white">
-          <span class="mr-2">Marshmallow Shooter Lab</span>
-          <button type="button">
-            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <div class="flex basis-1/4 justify-end mb-5">
+          <button data-modal-target="assign-course-modal" data-modal-toggle="assign-course-modal"
+            class="bg-white rounded-xl px-3 fill-black py-1 text-black flex items-center hover:bg-primary-summitblue focus:bg-primary-summitblue active:bg-primary-summitdarkblue hover:text-white focus:text-white active:text-white hover:fill-white focus:fill-white active:fill-white">
+            <svg width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 5C0 2.23858 2.23858 0 5 0H25C27.7614 0 30 2.23858 30 5V25C30 27.7614 27.7614 30 25 30H5C2.23858 30 0 27.7614 0 25V5Z"
+                fill="url(#paint0_linear_2862_3882)" />
               <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.96967 6.96967C7.26256 6.67678 7.73744 6.67678 8.03033 6.96967L12 10.9393L15.9697 6.96967C16.2626 6.67678 16.7374 6.67678 17.0303 6.96967C17.3232 7.26256 17.3232 7.73744 17.0303 8.03033L13.0607 12L17.0303 15.9697C17.3232 16.2626 17.3232 16.7374 17.0303 17.0303C16.7374 17.3232 16.2626 17.3232 15.9697 17.0303L12 13.0607L8.03033 17.0303C7.73744 17.3232 7.26256 17.3232 6.96967 17.0303C6.67678 16.7374 6.67678 16.2626 6.96967 15.9697L10.9393 12L6.96967 8.03033C6.67678 7.73744 6.67678 7.26256 6.96967 6.96967Z" />
+                d="M23.75 1.75H6.25C3.76472 1.75 1.75 3.76472 1.75 6.25V23.75C1.75 26.2353 3.76472 28.25 6.25 28.25H23.75C26.2353 28.25 28.25 26.2353 28.25 23.75V6.25C28.25 3.76472 26.2353 1.75 23.75 1.75ZM6.25 1.25C3.48858 1.25 1.25 3.48858 1.25 6.25V23.75C1.25 26.5114 3.48858 28.75 6.25 28.75H23.75C26.5114 28.75 28.75 26.5114 28.75 23.75V6.25C28.75 3.48858 26.5114 1.25 23.75 1.25H6.25Z"
+                fill="url(#paint1_linear_2862_3882)" />
+              <g filter="url(#filter0_d_2862_3882)">
+                <path
+                  d="M10.9699 6.98623C11.3421 7.32082 11.3722 7.88848 11.0376 8.26066L8.33083 11.2682C8.16541 11.4524 7.93233 11.5614 7.68421 11.5652C7.43609 11.5689 7.19925 11.475 7.02256 11.302L5.51504 9.79826C5.16541 9.44488 5.16541 8.87345 5.51504 8.52006C5.86466 8.16668 6.43985 8.16668 6.78947 8.52006L7.6203 9.35089L9.69173 7.05014C10.0263 6.67796 10.594 6.64788 10.9662 6.98247L10.9699 6.98623ZM10.9699 13.0013C11.3421 13.3359 11.3722 13.9035 11.0376 14.2757L8.33083 17.2832C8.16541 17.4674 7.93233 17.5765 7.68421 17.5802C7.43609 17.584 7.19925 17.49 7.02256 17.3171L5.51504 15.8133C5.16165 15.4599 5.16165 14.8885 5.51504 14.5389C5.86842 14.1892 6.43985 14.1855 6.78947 14.5389L7.6203 15.3697L9.69173 13.0689C10.0263 12.6968 10.594 12.6667 10.9662 13.0013H10.9699ZM13.6729 9.15916C13.6729 8.49375 14.2105 7.95615 14.8759 7.95615H23.297C23.9624 7.95615 24.5 8.49375 24.5 9.15916C24.5 9.82457 23.9624 10.3622 23.297 10.3622H14.8759C14.2105 10.3622 13.6729 9.82457 13.6729 9.15916ZM13.6729 15.1742C13.6729 14.5088 14.2105 13.9712 14.8759 13.9712H23.297C23.9624 13.9712 24.5 14.5088 24.5 15.1742C24.5 15.8396 23.9624 16.3772 23.297 16.3772H14.8759C14.2105 16.3772 13.6729 15.8396 13.6729 15.1742ZM11.2669 21.1892C11.2669 20.5238 11.8045 19.9862 12.4699 19.9862H23.297C23.9624 19.9862 24.5 20.5238 24.5 21.1892C24.5 21.8547 23.9624 22.3922 23.297 22.3922H12.4699C11.8045 22.3922 11.2669 21.8547 11.2669 21.1892Z"
+                  fill="white" />
+                <g filter="url(#filter1_d_2862_3882)">
+                  <path
+                    d="M6.20312 21.0312C6.20312 20.7206 6.45496 20.4688 6.76562 20.4688H8.73438C9.04504 20.4688 9.29688 20.7206 9.29688 21.0312V22.4375C9.29688 22.7482 9.04504 23 8.73438 23H6.76562C6.45496 23 6.20312 22.7482 6.20312 22.4375V21.0312Z"
+                    fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.76562 19.625C6.76562 19.0813 7.20634 18.6406 7.75 18.6406C8.29366 18.6406 8.73438 19.0813 8.73438 19.625V20.4688H8.45312V19.625C8.45312 19.2367 8.13833 18.9219 7.75 18.9219C7.36167 18.9219 7.04688 19.2367 7.04688 19.625V20.4688H6.76562V19.625Z"
+                    fill="white" />
+                </g>
+              </g>
+              <defs>
+                <filter id="filter0_d_2862_3882" x="1.25" y="2.75" width="27.25" height="24.25"
+                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2862_3882" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2862_3882" result="shape" />
+                </filter>
+                <filter id="filter1_d_2862_3882" x="1.5" y="14.5" width="12.5" height="12.5"
+                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2862_3882" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2862_3882" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_2862_3882" x1="15" y1="0" x2="15" y2="30"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF0000" />
+                  <stop offset="1" stop-color="#990000" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_2862_3882" x1="15" y1="1.25" x2="15" y2="28.75"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#9A0101" />
+                  <stop offset="1" stop-color="#FE0101" />
+                </linearGradient>
+              </defs>
             </svg>
+            <span class="ml-2">Assign to Students</span>
           </button>
         </div>
-      </div>
-      <!--top button grid-->
+      </div><!--button-grid-flex-->
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2 mb-4">
-        <!--form Sample-->
-        <div class="">
-          <section>
-            <div class="py-8 mx-auto ax-w-2xl lg:py-16 xl:max-w-3xl">
-              <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
-                Description
-              </h2>
-              <form action="#">
-                <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
-                  <div class="w-full">
-                    <label for="subject"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
-                    <select id="subject"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue">
-                      <option selected="Science">Science</option>
-                      <option value="Math">Math</option>
-                      <option value="English">English</option>
-                      <option value="Spanish">Spanish</option>
-                    </select>
-                  </div>
-                  <div class="w-full">
-                    <label for="grade"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Grade</label>
-                    <select id="grade"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue">
-                      <option selected="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
-                  </div>
-                  <div class="sm:col-span-2">
-                    <label for="category"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
-                    <select id="category"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue">
-                      <option selected="1">
-                        Category 1: This is something
-                      </option>
-                      <option value="2">Category 2: This is something</option>
-                      <option value="3">Category 3: This is something</option>
-                      <option value="4">Category 4: This is something</option>
-                    </select>
-                  </div>
-                  <div class="sm:col-span-2">
-                    <div class="flex mb-1">
-                      <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white mr-3">Add
-                        Tags</label>
-                      <div
-                        class="flex bg-primary-summitblue text-white text-xs px-2 h-5 rounded-xl mr-3 align-middle hover:bg-primary-summitdarkblue">
-                        <button class="p-0">
-                          <svg width="12" height="13" viewBox="0 0 14 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M14 7.5C14 11.366 10.866 14.5 7 14.5C3.13401 14.5 0 11.366 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5ZM4.68436 4.56564C4.5135 4.39479 4.2365 4.39479 4.06564 4.56564C3.89479 4.7365 3.89479 5.0135 4.06564 5.18436L6.38128 7.5L4.06564 9.81564C3.89479 9.9865 3.89479 10.2635 4.06564 10.4344C4.2365 10.6052 4.5135 10.6052 4.68436 10.4344L7 8.11872L9.31564 10.4344C9.4865 10.6052 9.7635 10.6052 9.93436 10.4344C10.1052 10.2635 10.1052 9.9865 9.93436 9.81564L7.61872 7.5L9.93436 5.18436C10.1052 5.0135 10.1052 4.7365 9.93436 4.56564C9.7635 4.39479 9.4865 4.39479 9.31564 4.56564L7 6.88128L4.68436 4.56564Z"
-                              fill="white" />
-                          </svg>
-                        </button>
-                        <span class="align-middle ml-1 mt-0.5 leading-3">grade:8</span>
-                      </div>
-                      <div
-                        class="flex bg-primary-summitblue text-white text-xs px-2 h-5 rounded-xl mr-3 align-middle hover:bg-primary-summitdarkblue">
-                        <button>
-                          <svg width="12" height="13" viewBox="0 0 14 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M14 7.5C14 11.366 10.866 14.5 7 14.5C3.13401 14.5 0 11.366 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5ZM4.68436 4.56564C4.5135 4.39479 4.2365 4.39479 4.06564 4.56564C3.89479 4.7365 3.89479 5.0135 4.06564 5.18436L6.38128 7.5L4.06564 9.81564C3.89479 9.9865 3.89479 10.2635 4.06564 10.4344C4.2365 10.6052 4.5135 10.6052 4.68436 10.4344L7 8.11872L9.31564 10.4344C9.4865 10.6052 9.7635 10.6052 9.93436 10.4344C10.1052 10.2635 10.1052 9.9865 9.93436 9.81564L7.61872 7.5L9.93436 5.18436C10.1052 5.0135 10.1052 4.7365 9.93436 4.56564C9.7635 4.39479 9.4865 4.39479 9.31564 4.56564L7 6.88128L4.68436 4.56564Z"
-                              fill="white" />
-                          </svg>
-                        </button>
-                        <span class="align-middle ml-1 mt-0.5 leading-3">grade:9</span>
-                      </div>
-                    </div>
-                    <input type="text" name="price" id="price"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitblue focus:border-primary-summitblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue"
-                      placeholder="Insert tags" required="" />
-                  </div>
-
-                  <div class="sm:col-span-2">
-                    <label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">File
-                      Type</label>
-                    <select id="category"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue">
-                      <option selected="1">File Type 1</option>
-                      <option value="2">File Type 2</option>
-                      <option value="3">File Type 3</option>
-                      <option value="4">File Type 4</option>
-                    </select>
-                  </div>
-
-                  <div class="sm:col-span-2">
-                    <label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload
-                      File</label>
-                    <div class="relative">
-                      <input type="search" id="default-search"
-                        class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-summitblue focus:border-primary-summitblue dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitblue dark:focus:border-primary-summitblue"
-                        placeholder="Force_Motion.jpg" required />
-                      <button type="submit"
-                        class="flex text-red-600 absolute right-2.5 bottom-2.5 bg-transparent font-medium text-sm px-4 py-2">
-                        <div class="inset-y-0 left-0 flex mt-0.5 pointer-events-none">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M5.30769 5.86667C5.60508 5.86667 5.84615 6.10545 5.84615 6.4V12.8C5.84615 13.0946 5.60508 13.3333 5.30769 13.3333C5.01031 13.3333 4.76923 13.0946 4.76923 12.8V6.4C4.76923 6.10545 5.01031 5.86667 5.30769 5.86667Z"
-                              fill="#E52629" />
-                            <path
-                              d="M8 5.86667C8.29738 5.86667 8.53846 6.10545 8.53846 6.4V12.8C8.53846 13.0946 8.29738 13.3333 8 13.3333C7.70262 13.3333 7.46154 13.0946 7.46154 12.8V6.4C7.46154 6.10545 7.70262 5.86667 8 5.86667Z"
-                              fill="#E52629" />
-                            <path
-                              d="M11.2308 6.4C11.2308 6.10545 10.9897 5.86667 10.6923 5.86667C10.3949 5.86667 10.1538 6.10545 10.1538 6.4V12.8C10.1538 13.0946 10.3949 13.3333 10.6923 13.3333C10.9897 13.3333 11.2308 13.0946 11.2308 12.8V6.4Z"
-                              fill="#E52629" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M15 3.2C15 3.7891 14.5178 4.26667 13.9231 4.26667H13.3846V13.8667C13.3846 15.0449 12.4203 16 11.2308 16H4.76923C3.57969 16 2.61538 15.0449 2.61538 13.8667V4.26667H2.07692C1.48215 4.26667 1 3.7891 1 3.2V2.13333C1 1.54423 1.48215 1.06667 2.07692 1.06667H5.84615C5.84615 0.477563 6.32831 0 6.92308 0H9.07692C9.67169 0 10.1538 0.477563 10.1538 1.06667H13.9231C14.5178 1.06667 15 1.54423 15 2.13333V3.2ZM3.81942 4.26667L3.69231 4.32962V13.8667C3.69231 14.4558 4.17446 14.9333 4.76923 14.9333H11.2308C11.8255 14.9333 12.3077 14.4558 12.3077 13.8667V4.32962L12.1806 4.26667H3.81942ZM2.07692 3.2V2.13333H13.9231V3.2H2.07692Z"
-                              fill="#E52629" />
-                          </svg>
-                        </div>
-
-                        <span class="flex ml-1">Delete</span>
-                      </button>
-                    </div>
-                    <span class="mt-2 text-black text-sm">You can upload .jpg and .png</span>
-                  </div>
-
-                  <div class="sm:col-span-2">
-                    <label for="description"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
-                    <textarea id="description" rows="8"
-                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue"
-                      placeholder="Your description here"></textarea>
-                  </div>
-                  <div class="w-full">
-                    <label for="subject"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subcategory Name</label>
-                    <input type="text" name="price" id="price"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitblue focus:border-primary-summitblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue"
-                      placeholder="8.7A: Newton's Second Law of Motion" required="" />
-                  </div>
-                  <div class="w-full">
-                    <div class="flex items-center mt-9">
-                      <input id="link-checkbox" type="checkbox" value=""
-                        class="w-4 h-4 text-primary-summitblue bg-gray-100 border-gray-300 rounded focus:ring-primary-summitblue dark:focus:ring-primary-summitblue dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                      <label for="link-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">TEKS
-                        Scaffold</label>
-                    </div>
-                  </div>
-                </div>
-                <button type="submit"
-                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-summitblue rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-summitdarkblue">
-                  Save
-                </button>
-
-                <button type="submit"
-                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center border text-primary-summitblue border-primary-summitblue rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-white">
-                  Cancel
-                </button>
-              </form>
-            </div>
-          </section>
-        </div>
-        <!--Form Section-->
-        <div class="">
-          <section>
-            <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16 xl:max-w-3xl">
-              <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
-                Preview
-              </h2>
+      <!--assign course popup-->
+      <div id="assign-course-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div
+          class="relative p-4 w-full max-w-2xl max-h-full min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px] min-[1200px]:max-w-[1200px]">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
               <div>
-                <img src="img/demo.jpg" />
+                <h3 class="text-xl font-semibold text-black">
+                  Assign Course
+                </h3>
+                <h6 class="text-primary-summitblue">Dynamic Science - 6th</h6>
               </div>
+              <button type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-black rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                data-modal-hide="assign-course-modal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
             </div>
-          </section>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2 mb-4">
-        <!--form Sample-->
-        <div class="">
-          <section>
-            <div class="py-8 mx-auto ax-w-2xl lg:py-16 xl:max-w-3xl">
-              <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
-                Description
-              </h2>
-              <form action="#">
-                <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
-                  <div class="w-full">
-                    <label for="subject"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
-                    <select id="subject"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue">
-                      <option selected="Science">Science</option>
-                      <option value="Math">Math</option>
-                      <option value="English">English</option>
-                      <option value="Spanish">Spanish</option>
-                    </select>
-                  </div>
-                  <div class="w-full">
-                    <label for="grade"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Grade</label>
-                    <select id="grade"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue">
-                      <option selected="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
-                  </div>
-                  <div class="sm:col-span-2">
-                    <div class="grid gap-6 md:grid-cols-2">
-                      <div
-                        class="relative">
-                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio"
-                          class="w-4 h-4 peer hidden text-primary-summitblue bg-gray-100 border-gray-300 focus:ring-primary-summitblue dark:focus:ring-primary-summitblue dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label for="bordered-radio-1"
-                          class="w-full py-4 pl-10 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 group-hover:text-white peer-checked:text-white bg-white rounded hover:bg-primary-summitblue hover:text-white group peer-checked:bg-primary-summitblue flex">New
-                          Subcategory</label>
-                          <div class="rounded-full w-3 h-3 border-2 peer-checked:border-primary-summit-bordergray peer-checked:outline-double peer-checked:outline-white peer-checked:outline-5 bg-primary-summit-bordergray peer-checked:bg-primary-summitblue absolute left-5 top-5"></div>
+            <!-- Modal body -->
+            <form>
+              <div class="p-4 md:p-5 space-y-4">
+                <div class="w-full border border-solid border-primary-summit-border-mid-gray rounded-md">
+                  <div class="border-b border-primary-summit-border-mid-gray border-solid">
+                    <div
+                      class="grid gap-4 mb-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 px-5 py-3">
+                      <div class="">
+                        <label for="name" class="block mb-2 text-xs font-medium text-black">Start Date
+                          &amp; Time</label>
+                        <div class="relative max-w-sm">
+                          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                              <path
+                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                          </div>
+                          <input datepicker type="text"
+                            class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                            placeholder="Select date">
+                        </div>
                       </div>
-                      <div
-                        class="relative">
-                        <input checked id="bordered-radio-2" type="radio" value="" name="bordered-radio"
-                          class="w-4 h-4 peer hidden text-primary-summitblue bg-gray-100 border-gray-300 focus:ring-primary-summitblue dark:focus:ring-primary-summitblue dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label for="bordered-radio-2"
-                          class="w-full py-4 pl-10 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 group-hover:text-white peer-checked:text-white bg-white rounded hover:bg-primary-summitblue hover:text-white group peer-checked:bg-primary-summitblue flex">Existing
-                          Subcategory</label>
-                          <div class="rounded-full w-3 h-3 border-2 peer-checked:border-primary-summit-bordergray peer-checked:outline-double peer-checked:outline-white peer-checked:outline-5 bg-primary-summit-bordergray peer-checked:bg-primary-summitblue absolute left-5 top-5"></div>
-                          
+                      <div class="">
+                        <label for="name" class="block mb-2 text-xs font-medium text-black">End Date
+                          &amp; Time</label>
+                        <div class="relative max-w-sm">
+                          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                              <path
+                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                          </div>
+                          <input datepicker type="text"
+                            class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                            placeholder="Select date">
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="sm:col-span-2">
-                    <div class="flex mb-1">
-                      <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white mr-3">Add
-                        Tags</label>
-                      <div
-                        class="flex bg-primary-summitblue text-white text-xs px-2 h-5 rounded-xl mr-3 align-middle hover:bg-primary-summitdarkblue">
-                        <button class="p-0">
-                          <svg width="12" height="13" viewBox="0 0 14 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M14 7.5C14 11.366 10.866 14.5 7 14.5C3.13401 14.5 0 11.366 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5ZM4.68436 4.56564C4.5135 4.39479 4.2365 4.39479 4.06564 4.56564C3.89479 4.7365 3.89479 5.0135 4.06564 5.18436L6.38128 7.5L4.06564 9.81564C3.89479 9.9865 3.89479 10.2635 4.06564 10.4344C4.2365 10.6052 4.5135 10.6052 4.68436 10.4344L7 8.11872L9.31564 10.4344C9.4865 10.6052 9.7635 10.6052 9.93436 10.4344C10.1052 10.2635 10.1052 9.9865 9.93436 9.81564L7.61872 7.5L9.93436 5.18436C10.1052 5.0135 10.1052 4.7365 9.93436 4.56564C9.7635 4.39479 9.4865 4.39479 9.31564 4.56564L7 6.88128L4.68436 4.56564Z"
-                              fill="white" />
-                          </svg>
-                        </button>
-                        <span class="align-middle ml-1 mt-0.5 leading-3">grade:8</span>
+                      <div class="">
+                        <label class="inline-flex items-center cursor-pointer mt-7">
+                          <input type="checkbox" value="" class="sr-only peer">
+                          <div
+                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary-summit-border-mid-gray after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+                          </div>
+                          <span class="ms-3 text-xs font-medium text-gray-900">Mark assignment late after Due
+                            Date</span>
+                        </label>
                       </div>
-                      <div
-                        class="flex bg-primary-summitblue text-white text-xs px-2 h-5 rounded-xl mr-3 align-middle hover:bg-primary-summitdarkblue">
-                        <button>
-                          <svg width="12" height="13" viewBox="0 0 14 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M14 7.5C14 11.366 10.866 14.5 7 14.5C3.13401 14.5 0 11.366 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5ZM4.68436 4.56564C4.5135 4.39479 4.2365 4.39479 4.06564 4.56564C3.89479 4.7365 3.89479 5.0135 4.06564 5.18436L6.38128 7.5L4.06564 9.81564C3.89479 9.9865 3.89479 10.2635 4.06564 10.4344C4.2365 10.6052 4.5135 10.6052 4.68436 10.4344L7 8.11872L9.31564 10.4344C9.4865 10.6052 9.7635 10.6052 9.93436 10.4344C10.1052 10.2635 10.1052 9.9865 9.93436 9.81564L7.61872 7.5L9.93436 5.18436C10.1052 5.0135 10.1052 4.7365 9.93436 4.56564C9.7635 4.39479 9.4865 4.39479 9.31564 4.56564L7 6.88128L4.68436 4.56564Z"
-                              fill="white" />
-                          </svg>
-                        </button>
-                        <span class="align-middle ml-1 mt-0.5 leading-3">grade:9</span>
+                      <div class="">
+                        <label for="name" class="block mb-2 text-xs font-medium text-primary-summit-text-light-gray">Due
+                          Date
+                          &amp; Time</label>
+                        <div class="relative max-w-sm">
+                          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                              <path
+                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                          </div>
+                          <input datepicker type="text"
+                            class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                            placeholder="Select date">
+                        </div>
                       </div>
                     </div>
-                    <input type="text" name="price" id="price"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitblue focus:border-primary-summitblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue"
-                      placeholder="Insert tags" required="" />
-                  </div>
-
-                  <div class="sm:col-span-2">
-                    <label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">File
-                      Type</label>
-                    <select id="category"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue">
-                      <option selected="1">File Type 1</option>
-                      <option value="2">File Type 2</option>
-                      <option value="3">File Type 3</option>
-                      <option value="4">File Type 4</option>
-                    </select>
-                  </div>
-
-                  <div class="sm:col-span-2">
-                    <label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload
-                      File</label>
-                    <div class="relative">
-                      <input type="search" id="default-search"
-                        class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-summitblue focus:border-primary-summitblue dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitblue dark:focus:border-primary-summitblue"
-                        placeholder="Force_Motion.jpg" required />
-                      <button type="submit"
-                        class="flex text-red-600 absolute right-2.5 bottom-2.5 bg-transparent font-medium text-sm px-4 py-2">
-                        <div class="inset-y-0 left-0 flex mt-0.5 pointer-events-none">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M5.30769 5.86667C5.60508 5.86667 5.84615 6.10545 5.84615 6.4V12.8C5.84615 13.0946 5.60508 13.3333 5.30769 13.3333C5.01031 13.3333 4.76923 13.0946 4.76923 12.8V6.4C4.76923 6.10545 5.01031 5.86667 5.30769 5.86667Z"
-                              fill="#E52629" />
-                            <path
-                              d="M8 5.86667C8.29738 5.86667 8.53846 6.10545 8.53846 6.4V12.8C8.53846 13.0946 8.29738 13.3333 8 13.3333C7.70262 13.3333 7.46154 13.0946 7.46154 12.8V6.4C7.46154 6.10545 7.70262 5.86667 8 5.86667Z"
-                              fill="#E52629" />
-                            <path
-                              d="M11.2308 6.4C11.2308 6.10545 10.9897 5.86667 10.6923 5.86667C10.3949 5.86667 10.1538 6.10545 10.1538 6.4V12.8C10.1538 13.0946 10.3949 13.3333 10.6923 13.3333C10.9897 13.3333 11.2308 13.0946 11.2308 12.8V6.4Z"
-                              fill="#E52629" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M15 3.2C15 3.7891 14.5178 4.26667 13.9231 4.26667H13.3846V13.8667C13.3846 15.0449 12.4203 16 11.2308 16H4.76923C3.57969 16 2.61538 15.0449 2.61538 13.8667V4.26667H2.07692C1.48215 4.26667 1 3.7891 1 3.2V2.13333C1 1.54423 1.48215 1.06667 2.07692 1.06667H5.84615C5.84615 0.477563 6.32831 0 6.92308 0H9.07692C9.67169 0 10.1538 0.477563 10.1538 1.06667H13.9231C14.5178 1.06667 15 1.54423 15 2.13333V3.2ZM3.81942 4.26667L3.69231 4.32962V13.8667C3.69231 14.4558 4.17446 14.9333 4.76923 14.9333H11.2308C11.8255 14.9333 12.3077 14.4558 12.3077 13.8667V4.32962L12.1806 4.26667H3.81942ZM2.07692 3.2V2.13333H13.9231V3.2H2.07692Z"
-                              fill="#E52629" />
-                          </svg>
+                  </div><!--pop-header-->
+                  <div class="grid"><!--pop-up-body-->
+                    <!--popupsidepanel end-->
+                    <div class="col-span-3 border-l-solid border-l-primary-summit-border-lightgray border-l">
+                      <div class="bg-primary-summitlight p-2 grid grid-4 justify-items-end">
+                        <div class="relative grid col-end-3 w-[300px]">
+                          <form>
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                              <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                              </svg>
+                            </div>
+                            <input type="search" id="default-search"
+                              class="block w-full p-2 ps-10 text-xs text-gray-900 border border-primary-summit-border-mid-gray rounded-lg bg-gray-50 focus:ring-black focus:border-black"
+                              placeholder="Search Students" required />
+                          </form>
                         </div>
 
-                        <span class="flex ml-1">Delete</span>
-                      </button>
-                    </div>
-                    <span class="mt-2 text-black text-sm">You can upload .jpg and .png</span>
-                  </div>
-
-                  <div class="sm:col-span-2">
-                    <label for="description"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
-                    <textarea id="description" rows="8"
-                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-summitdarkblue focus:border-primary-summitdarkblue"
-                      placeholder="Your description here"></textarea>
-                  </div>
-                  <div class="w-full">
-                    <label for="subject"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subcategory Name</label>
-                    <input type="text" name="price" id="price"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-summitblue focus:border-primary-summitblue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-summitdarkblue dark:focus:border-primary-summitdarkblue"
-                      placeholder="8.7A: Newton's Second Law of Motion" required="" />
-                  </div>
-                  <div class="w-full">
-                    <div class="flex items-center mt-9">
-                      <input id="link-checkbox" type="checkbox" value=""
-                        class="w-4 h-4 text-primary-summitblue bg-gray-100 border-gray-300 rounded focus:ring-primary-summitblue dark:focus:ring-primary-summitblue dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                      <label for="link-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">TEKS
-                        Scaffold</label>
-                    </div>
-                  </div>
-                </div>
-                <button type="submit"
-                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-summitblue rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-summitdarkblue">
-                  Save
-                </button>
-
-                <button type="submit"
-                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center border text-primary-summitblue border-primary-summitblue rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-white">
-                  Cancel
-                </button>
-              </form>
-            </div>
-          </section>
-        </div>
-        <!--Form Section-->
-        <div class="">
-          <section>
-            <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16 xl:max-w-3xl">
-              <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
-                Preview
-              </h2>
-              <div
-                class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-72">
-                <div class="w-full text-center">No Preview</div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <h4>Video player samples</h4>
-      <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-2 mb-4">
-        <div class="p-6 text-center">
-          <video class="w-full" id="mp4player" autoplay muted controls x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080">
-            <source src="vids/errr.mp4" id="mp4demo">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-      <div class="grid xs:grid-cols-1 md:grid-cols-3  gap-4 mb-4">
-        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-[300px]">
-          <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 m-auto focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-            SAMPLE GENERAL USE MODAL
-          </button>
-          <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
-              <div class="relative w-full max-w-md max-h-full">
-                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                      <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
-                          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                          </svg>
-                          <span class="sr-only">Close modal</span>
-                      </button>
-                      <div class="p-6 text-center">
-                          <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                          </svg>
-                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">THIS IS A SAMPLE MODAL </h3>
-                          <button data-modal-hide="popup-modal" type="button" class="text-white bg-primary-summitblue hover:bg-primary-summitdarkblue focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                              Affirmative Button
-                          </button>
-                          <button data-modal-hide="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
                       </div>
+                      <!--inner-tableheader-->
+                      <div class=" h-[300px] max-h-[300px] overflow-auto">
+                        <table class="w-full text-xs text-left rtl:text-right text-black">
+                          <thead class="text-xs text-gray-700 uppercase bg-white">
+                            <tr>
+                              <th scope="col" class="p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-all-search" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                </div>
+                              </th>
+                              <th scope="col" class="px-3 py-3">
+                                All Students
+                              </th>
+                              <th scope="col" class="px-3 py-3">
+                                Start Date &amp; Time
+                              </th>
+                              <th scope="col" class="px-3 py-3">
+                                End Date &amp; Time
+                              </th>
+                              <th scope="col" class="px-3 py-1 text-primary-summit-disabled-gray">
+                                Due Date &amp; Time
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-500">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                              <td class="w-4 p-3">
+                                <div class="flex items-center">
+                                  <input id="checkbox-table-search-1" type="checkbox"
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                  <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                              </td>
+                              <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                                LastName, Firstname
+                              </th>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date">
+                                </div>
+                              </td>
+                              <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                                <div class="relative max-w-sm">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-primary-summit-disabled-gray" aria-hidden="true"
+                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                      <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                  </div>
+                                  <input datepicker type="text"
+                                    class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                    placeholder="Select date" disabled>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--enf of inntertable-->
+                    </div>
+
                   </div>
+                  <!--end of pop-up-->
+                </div>
               </div>
-          </div><!--Popup Modal-->
-        </div>
-        <div class="flex flex-col place-content-center bg-black overflow-hidden rounded-lg h-fit ">
-          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center" data-modal-target="popup-modal3" data-modal-toggle="popup-modal3">
-            <img class="w-auto h-auto margin-auto" src="img/videothumbnail.png" />
-          </a>
-          <div class="max-h-[62px] h-fit bg-white p-2 line-clamp-2">
-            <span>Youtube Video Title something are going to be long super extra long hello there</span>
-          </div>
-          <div id="popup-modal3" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
-            <div class="relative w-[560px+100px] p-6"><!--please change 560 to match the youtube embed width-->
-                <div class="relative bg-black shadow dark:bg-gray-700">
-                    <button type="button" id="modalclose3" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal3">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                        <span class="sr-only">Close modal</span>
-                    </button>
-                    <div class="p-6 text-center">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/tpCDwnmkeoY?si=RQm1LkgqSgeDTYIB?rel=&enablejsapi=1" title="YouTube video player" id="videoplayer3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div><!--Popup Modal2-->
+            </form>
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+              <button data-modal-hide="assign-course-modal" type="button"
+                class="py-2.5 px-5 ms-3 text-sm font-medium text-black focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Cancel</button>
+              <button data-modal-hide="assign-course-modal" type="button"
+                class="text-white bg-primary-summitdarkblue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-2">Assign</button>
 
-        </div><!--video player--->
-        <div class="flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-[300px]">
-          <div role="status" class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
-            <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"/>
-            <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z"/>
-          </svg>
-            <span class="sr-only">Loading...</span>
+            </div>
           </div>
-      </div><!--video player placeholder-->
-
-        <div class="flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-[300px]">
-            <div role="status" class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
-              <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-              <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"/>
-              <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z"/>
-            </svg>
-              <span class="sr-only">Loading...</span>
-            </div>
-        </div><!--video player placeholder-->
-        <div class="flex flex-col place-content-center bg-black overflow-hidden rounded-lg h-fit">
-          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center" data-modal-target="popup-modal2" data-modal-toggle="popup-modal2" >
-            <img class="w-full h-auto" src="img/videothumbnail.png" />
-          </a>
-          <div class="max-h-[62px] h-fit bg-white p-2 line-clamp-2">
-            <span>Youtube Video Title something are going to be long super extra long hello there</span>
-          </div>
-          <div id="popup-modal2" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
-            <div class="relative w-full max-w-screen-lg max-h-full">
-                <div class="relative bg-black shadow dark:bg-gray-700">
-                    <button type="button" id="modalclose2" class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal2">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                        <span class="sr-only">Close modal</span>
-                    </button>
-                    <div class="p-6 text-center" x-show="modalOpen">
-                      <video class="w-full" id="mp4player" autoplay muted controls x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080">
-                        <source src="vids/errr.mp4" id="mp4demo">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-            </div>
-        </div><!--Popup Modal2-->
-
-        </div><!--video player--->
-        <div class="flex flex-wrap items-center justify-items-center border-primary-summitblue h-48 md:h-[300px]">
-          <div role="status" class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
-            <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"/>
-            <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z"/>
-          </svg>
-            <span class="sr-only">Loading...</span>
-          </div>
-      </div><!--video player placeholder-->
-      </div>
-      <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-primary-summitblueh-96 mb-4"></div>
-      <h4>Image Grid</h4>
-      <div class="grid grid-cols-3 gap-4">
-        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center">
-          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center" data-modal-target="popup-modal4" data-modal-toggle="popup-modal4" >
-            <img class="h-auto w-auto margin-auto" src="img/image1.png" />
-          </a>
-          <div id="popup-modal4" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
-            <div class="relative">
-                <div class="relative bg-black shadow dark:bg-gray-700">
-                    <button type="button" id="modalclose2" class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal4">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                        <span class="sr-only">Close modal</span>
-                    </button>
-                    <div class="p-6 text-center" x-show="modalOpen">
-                      <img class="h-full w-auto m-auto max-h-90" src="img/image1.png" />
-                    </div>
-                </div>
-            </div>
-        </div><!--Popup Modal4-->
-        </div>
-        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center">
-          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center" data-modal-target="popup-modal5" data-modal-toggle="popup-modal5" >
-            <img class="h-auto w-auto m-auto" src="img/image2.jpg" />
-          </a>
-          <div id="popup-modal5" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
-            <div class="relative">
-                <div class="relative bg-black shadow dark:bg-gray-700">
-                    <button type="button" id="modalclose3" class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal5">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                        <span class="sr-only">Close modal</span>
-                    </button>
-                    <div class="p-6 text-center m-auto" x-show="modalOpen">
-                      <img class="h-full w-auto m-auto max-h-90" src="img/image2.jpg" />
-                    </div>
-                </div>
-            </div>
-        </div><!--Popup Modal5-->
-        </div>
-        <div class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center">
-          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center" data-modal-target="popup-modal6" data-modal-toggle="popup-modal6" >
-            <img class="h-auto w-auto margin-auto" src="img/image3.jpg" />
-          </a>
-          <div id="popup-modal6" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
-            <div class="relative">
-                <div class="relative bg-black shadow dark:bg-gray-700">
-                    <button type="button" id="modalclose2" class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal6">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                        <span class="sr-only">Close modal</span>
-                    </button>
-                    <div class="p-6 text-center m-auto" x-show="modalOpen">
-                      <img class="h-auto w-auto m-auto max-h-90" src="img/image3.jpg" />
-                    </div>
-                </div>
-            </div>
-        </div><!--Popup Modal6-->
         </div>
       </div>
 
-      <h1 class="m-10 text-xl font-bold text-gray-900">Full Sized Image for full-sized HTML</h1>
-      <div class="place-content-center w-full h-auto">
-        <img class="h-full w-auto" src="img/image1.png" />
-      </div><!--full-size html-->
+      <!--assign course popup-->
 
-      <h1 class="m-10 text-xl font-bold text-gray-900">TEXT BLOCK</h1>
-      <div class="w-full min-h-screen items-center align-middle inline-block p-32">
-        <h1 class="mb-12 text-5xl font-semibold text-gray-900">This is a Trial Account with Limited Features available</h1>
-        <h1 class="text-5xl font-semibold text-gray-900">Contact our local representative to explore additional items</h1>
-      </div><!--text block as requested-->
+      <!--top button grid-->
 
       <h1 class="m-10 text-xl font-bold text-gray-900">Full page embedded pdf</h1>
       <div>
-              <object class="w-full min-h-screen"
-              data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"> 
-              </object> 
+        <object class="w-full min-h-screen"
+          data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf">
+        </object>
       </div>
 
     </main>
