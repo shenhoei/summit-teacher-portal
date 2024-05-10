@@ -243,9 +243,73 @@
           <form>
             <div class="p-4 md:p-5 space-y-4">
               <div class="w-full border border-solid border-primary-summit-border-mid-gray rounded-md">
-                
+                <div class="border-b border-primary-summit-border-mid-gray border-solid">
+                  <div
+                    class="grid gap-4 mb-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 px-5 py-3">
+                    <div class="">
+                      <label for="name" class="block mb-2 text-xs font-medium text-black">Start Date
+                        &amp; Time</label>
+                      <div class="relative max-w-sm">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                              d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                          </svg>
+                        </div>
+                        <input datepicker type="text"
+                          class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                          placeholder="Select date">
+                      </div>
+                    </div>
+                    <div class="">
+                      <label for="name" class="block mb-2 text-xs font-medium text-black">End Date
+                        &amp; Time</label>
+                      <div class="relative max-w-sm">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                              d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                          </svg>
+                        </div>
+                        <input datepicker type="text"
+                          class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                          placeholder="Select date">
+                      </div>
+                    </div>
+                    <div class="">
+                      <label class="inline-flex items-center cursor-pointer mt-7">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div
+                          class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peerpeer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary-summit-border-mid-gray after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+                        </div>
+                        <span class="ms-3 text-xs font-medium text-gray-900">Mark assignment late
+                          after Due
+                          Date</span>
+                      </label>
+                    </div>
+                    <div class="">
+                      <label for="name" class="block mb-2 text-xs font-medium text-primary-summit-text-light-gray">Due
+                        Date
+                        &amp; Time</label>
+                      <div class="relative max-w-sm">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                          <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                              d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                          </svg>
+                        </div>
+                        <input datepicker type="text"
+                          class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                          placeholder="Select date">
+                      </div>
+                    </div>
+                  </div>
+                </div><!--pop-header-->
                 <div class="w-full"><!--pop-up-body-->
-
+                  <div class="border-l-solid border-l-primary-summit-border-lightgray border-l">
                     <div class="bg-primary-summitlight px-5 py-3 grid grid-cols-4 justify-items-end">
                       <div class="col-start-3 col-span-3 text-left w-full">
                         <h3 class="font-semibold mt-1">Select which student(s) you wish to assign</h3>
@@ -266,7 +330,7 @@
                       </div>
 
                     </div>
-                    <!--start of inner-table-->
+                    <!--inner-tableheader-->
                     <div class=" h-[300px] max-h-[300px] overflow-auto">
                       <table class="w-full text-xs text-left rtl:text-right text-black ">
                         <thead class="text-xs text-gray-700 uppercase bg-white">
@@ -338,7 +402,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
                             <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
@@ -346,259 +410,553 @@
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
-                            </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
-                            <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
                                   class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
-                            </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
-                            <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
                                   class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
-                            </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
-                            <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
                                   class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
-                            </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
-                            <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
                                   class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
-                            </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
-                            <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
                                   class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
-                            </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
-                            <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
                                   class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
-                            </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
-                            <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
                                   class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
-                            </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
-                          <tr class="bg-primary-summitlight hover:bg-gray-50">
-                            <td class="w-4 p-3 border-solid border border-primary-summit-border-lightgray">
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
                               <div class="flex items-center">
                                 <input id="checkbox-table-search-1" type="checkbox"
                                   class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
                                 <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                               </div>
                             </td>
-                            <td scope="row"
-                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-primary-summit-border-lightgray">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
                               LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </td>
                             <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
-                              &nbsp;
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
-                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray" colspan="2">
-                              &nbsp;
+                          </tr>
+                          <tr class="bg-primary-summitlight border-b hover:bg-gray-50">
+                            <td class="w-4 p-3">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-primary-summit-border-mid-gray rounded focus:ring-primary-summitdarkblue">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-solid border border-primary-summit-border-lightgray">
+                              LastName, FirstName
+                            </th>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-primary-summit-border-lightgray">
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date" disabled>
+                              </div>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    <!--end of inntertable-->
-                    <!--table-footer-selectors-->
-                    <div class="">
-                      <div class="grid gap-4 mb-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 px-5 py-3">
-                        <!--left date selector column-->
-                        <div class="border-r col-span-2 col-start-2 border-solid border-primary-summit-border-mid-gray bg-primary-summit-mid-gray">
-                          <div class="bg-primary-summit-mid-gray w-full block"><h3 class="font-semi-bold">Select Date &amp; Time</h3></div>
-                          <div class="">
-                            <label for="name" class="block mb-2 text-xs font-medium text-black">Start Date
-                              &amp; Time</label>
-                            <div class="relative max-w-sm">
-                              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                  fill="currentColor" viewBox="0 0 20 20">
-                                  <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                </svg>
-                              </div>
-                              <input datepicker type="text"
-                                class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
-                                placeholder="Select date">
-                            </div>
-                          </div>
-                          <div class="">
-                            <label for="name" class="block mb-2 text-xs font-medium text-black">Due Date
-                              &amp; Time</label>
-                            <div class="relative max-w-sm">
-                              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                  fill="currentColor" viewBox="0 0 20 20">
-                                  <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                </svg>
-                              </div>
-                              <input datepicker type="text"
-                                class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
-                                placeholder="Select date">
-                            </div>
-                          </div>
-                        </div>
-                        <!--right date selector column-->
-                        <div class="">
-                          <label for="name" class="block mb-2 text-xs font-medium text-primary-summit-text-light-gray">Close Date
-                            &amp; Time</label>
-                          <div class="relative max-w-sm">
-                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                              <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                              </svg>
-                            </div>
-                            <input datepicker type="text"
-                              class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
-                              placeholder="Select date">
-                          </div>
-                        </div>
-                      </div>
-                    </div><!--table-footer-selectors-->
-
+                    <!--enf of inntertable-->
+                  </div>
 
                 </div>
                 <!--end of pop-up-->

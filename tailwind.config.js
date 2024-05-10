@@ -33,7 +33,8 @@ module.exports = {
           "summit-button-gray": "#7a7a7a",
           "summit-aside-bar-blue": "#2256dd",
           "summit-table-light-blue":"#E9EBF5",
-          "summit-table-darker-blue":"#CFD5E9"
+          "summit-table-darker-blue":"#CFD5E9",
+          "summit-mid-gray":"#f8f8f8"
         },
       },
     },
