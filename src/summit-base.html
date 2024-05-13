@@ -541,12 +541,21 @@
                     </div>
                     <!--end of inntertable-->
                     <!--table-footer-selectors-->
-                    <div class="">
-                      <div class="grid gap-4 mb-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 px-5 py-3">
-                        <!--left date selector column-->
-                        <div class="border-r col-span-2 col-start-2 border-solid border-primary-summit-border-mid-gray bg-primary-summit-mid-gray">
-                          <div class="bg-primary-summit-mid-gray w-full block"><h3 class="font-semi-bold">Select Date &amp; Time</h3></div>
-                          <div class="">
+                    <table class="w-full text-xs text-left rtl:text-right text-black ">
+                      <thead class="text-xs text-gray-700 uppercase bg-white">
+                        <tr>
+                        <th class="bg-primary-summit-mid-gray p-3 border-r border-primary-summit-border-lightgray" colspan="2">
+                          <h2 class="font-semi-bold">Select Date &amp; Time</h2>
+                        </th>
+                        <th class="bg-primary-summit-mid-gray p-3">
+                          <h2 class="font-semi-bold">Change Close Date &amp; Time</h2>
+                        </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                          <div class="p-3">
                             <label for="name" class="block mb-2 text-xs font-medium text-black">Start Date
                               &amp; Time</label>
                             <div class="relative max-w-sm">
@@ -561,57 +570,60 @@
                                 class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
                                 placeholder="Select date">
                             </div>
-                          </div>
-                          <div class="">
-                            <label for="name" class="block mb-2 text-xs font-medium text-black">Due Date
-                              &amp; Time</label>
-                            <div class="relative max-w-sm">
-                              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                  fill="currentColor" viewBox="0 0 20 20">
-                                  <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                </svg>
+                          </div>        
+                          </td>
+                          <td class="border-r border-primary-summit-border-lightgray">
+                            <div class="p-3">
+                              <label for="name" class="block mb-2 text-xs font-medium text-black">Due Date
+                                &amp; Time</label>
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
                               </div>
-                              <input datepicker type="text"
-                                class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
-                                placeholder="Select date">
                             </div>
-                          </div>
-                        </div>
-                        <!--right date selector column-->
-                        <div class="">
-                          <label for="name" class="block mb-2 text-xs font-medium text-primary-summit-text-light-gray">Close Date
-                            &amp; Time</label>
-                          <div class="relative max-w-sm">
-                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                              <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                              </svg>
+                          </td>
+
+                          <td>
+                            <div class="p-3">
+                              <label for="name" class="block mb-2 text-xs font-medium text-primary-summit-text-light-gray">Close Date
+                                &amp; Time</label>
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-primary-summit-disabled-gray " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
                             </div>
-                            <input datepicker type="text"
-                              class="bg-gray-50 border border-primary-summit-border-mid-gray text-black text-sm rounded-lg focus:ring-primary-summitdarkblue focus:border-blue-500 block w-full ps-10 p-1.5"
-                              placeholder="Select date">
-                          </div>
-                        </div>
-                      </div>
-                    </div><!--table-footer-selectors-->
+                          </td>
+                        </tr>
 
-
+                      </tbody>
+                    </table>
                 </div>
-                <!--end of pop-up-->
+                <!--end of pop-up table section-->
               </div>
             </div>
           </form>
           <!-- Modal footer -->
-          <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+          <div class="flex justify-between p-4 md:p-5 border-t border-gray-200 rounded-b">
             <button data-modal-hide="assign-course-modal" type="button"
               class="py-2.5 px-5 ms-3 text-sm font-medium text-black focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Cancel</button>
             <button data-modal-hide="assign-course-modal" type="button"
-              class="text-white bg-primary-summitdarkblue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-2">Assign</button>
-
+              class="text-white bg-primary-summit-disabled-gray hover:bg-primary-summitdarkblue focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-2">Apply and Assign to selected student(s)</button>
           </div>
         </div>
       </div>
