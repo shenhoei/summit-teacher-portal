@@ -584,6 +584,10 @@ video {
   margin-top:3px;
 }
 
+.summit-student-menu{
+  width:135px;
+}
+
 .summit-menu:hover svg path{
   fill:#000;
 }
