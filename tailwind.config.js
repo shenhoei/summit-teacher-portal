@@ -18,6 +18,7 @@ module.exports = {
           900: "#1e3a8a",
           950: "#172554",
           "summitblue": "#4C6FFF",
+          "summitmedblue":"#1C51E1",
           "summitlight": "#EDF1FF",
           "summitdarkblue": "#0054a6",
           "summit-mainbgblue": "#DFE6FB",
@@ -34,7 +35,12 @@ module.exports = {
           "summit-aside-bar-blue": "#2256dd",
           "summit-table-light-blue":"#E9EBF5",
           "summit-table-darker-blue":"#CFD5E9",
-          "summit-mid-gray":"#f8f8f8"
+          "summit-mid-gray":"#f8f8f8",
+          "summit-stroke":"#CECECE",
+          "summit-yellowbutton-bg":"#FFA903",
+          "summit-yellowbutton-stroke":"#FFA903",
+          "summit-redbutton-bg":"#FF0000",
+          "summit-redbutton-stroke":"#FF0000"
         },
       },
     },
