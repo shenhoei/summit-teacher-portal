@@ -24,7 +24,7 @@ module.exports = {
         },
         summit:{
           "blue-primary":"#1C51E1",
-          "blue-primary-20":"rgba(rgba(28, 81, 225, 0.2)",
+          "blue-primary-20":"rgba(28, 81, 225, 0.2)",
           "blue-primary-10":"rgba(28, 81, 225, 0.1)",
           "blue-secondary":"#4C6FFF",
           "blue-secondary-20":"rgba(76, 111, 255, 0.2)",

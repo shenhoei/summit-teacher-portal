@@ -828,11 +828,6 @@ video {
   margin-right: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -1011,10 +1006,6 @@ video {
 
 .mt-\[72px\] {
   margin-top: 72px;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
 }
 
 .line-clamp-2 {
@@ -1213,6 +1204,10 @@ video {
   width: 0.75rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1223,6 +1218,10 @@ video {
 
 .w-5 {
   width: 1.25rem;
+}
+
+.w-52 {
+  width: 13rem;
 }
 
 .w-56 {
@@ -1630,6 +1629,11 @@ video {
   border-bottom-left-radius: 0.25rem;
 }
 
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
 .rounded-l-xl {
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
@@ -1846,6 +1850,15 @@ video {
   background-color: rgba(28, 81, 225, 0.1);
 }
 
+.bg-summit-blue-primary-20 {
+  background-color: rgba(28, 81, 225, 0.2);
+}
+
+.bg-summit-blue-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 111 255 / var(--tw-bg-opacity));
+}
+
 .bg-summit-blue-secondary-20 {
   background-color: rgba(76, 111, 255, 0.2);
 }
@@ -1903,11 +1916,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-summit-blue-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 111 255 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-25 {
@@ -2045,6 +2053,11 @@ video {
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
 }
 
 .py-1 {
@@ -3176,10 +3189,6 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .sm\:gap-6 {
     gap: 1.5rem;
   }
@@ -3352,12 +3361,12 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:items-center {
@@ -3409,12 +3418,12 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
