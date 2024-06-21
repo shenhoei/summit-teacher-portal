@@ -897,6 +897,10 @@ video {
   margin-left: 1rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .ml-\[25px\] {
   margin-left: 25px;
 }
@@ -1015,10 +1019,6 @@ video {
 
 .mt-\[72px\] {
   margin-top: 72px;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
 }
 
 .line-clamp-2 {
@@ -1144,6 +1144,10 @@ video {
   height: 70px;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-\[calc\(100\%-1rem\)\] {
   height: calc(100% - 1rem);
 }
@@ -1163,10 +1167,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[90px\] {
-  height: 90px;
 }
 
 .max-h-\[300px\] {
@@ -1321,6 +1321,10 @@ video {
   width: 87px;
 }
 
+.w-\[90px\] {
+  width: 90px;
+}
+
 .w-auto {
   width: auto;
 }
@@ -1341,10 +1345,6 @@ video {
 
 .w-px {
   width: 1px;
-}
-
-.w-\[90px\] {
-  width: 90px;
 }
 
 .min-w-fit {
@@ -1551,6 +1551,12 @@ video {
   row-gap: 2.5rem;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1591,12 +1597,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-x > :not([hidden]) ~ :not([hidden]) {
