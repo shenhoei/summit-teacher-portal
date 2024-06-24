@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components{
+.tailwind-popup{
+  font-size:16px!important;
+}
+
 .custom-translate-x-full {
   --tw-translate-x: -100% !important;
 }
