@@ -897,6 +897,10 @@ video {
   margin-left: 0.5rem;
 }
 
+.ml-20 {
+  margin-left: 5rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1432,12 +1436,12 @@ video {
   flex-basis: 50%;
 }
 
-.basis-3\/4 {
-  flex-basis: 75%;
-}
-
 .basis-1\/4 {
   flex-basis: 25%;
+}
+
+.basis-3\/4 {
+  flex-basis: 75%;
 }
 
 .-translate-x-full {
@@ -2023,14 +2027,6 @@ video {
 
 .fill-black {
   fill: #000;
-}
-
-.fill-summit-blue-primary {
-  fill: #1C51E1;
-}
-
-.fill-summit-gray-dark {
-  fill: #7A7A7A;
 }
 
 .fill-textcolor-light {
