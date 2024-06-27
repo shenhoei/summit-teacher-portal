@@ -1555,12 +1555,6 @@ video {
   row-gap: 2.5rem;
 }
 
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1805,6 +1799,10 @@ video {
 .border-summit-blue-primary {
   --tw-border-opacity: 1;
   border-color: rgb(28 81 225 / var(--tw-border-opacity));
+}
+
+.border-summit-blue-primary-10 {
+  border-color: rgba(28, 81, 225, 0.1);
 }
 
 .border-summit-blue-secondary {
@@ -3497,6 +3495,10 @@ button.tailwind-popup-dark-gray-button{
     justify-content: flex-end;
   }
 
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -3550,14 +3552,8 @@ button.tailwind-popup-dark-gray-button{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .xl\:flex-nowrap {
-    flex-wrap: nowrap;
-  }
-
-  .xl\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  .xl\:gap-4 {
+    gap: 1rem;
   }
 }
 
