@@ -2,7 +2,8 @@ $(document).ready(function () {
   $("#asideToggleBtn,#asideToggleBtn2").click(function () {
     $(".asideBarToggle").toggleClass("custom-translate-x-full");
     $(".bg-summit-blue-light").toggleClass("removeMarginFromMain");
-    $("#asideToggleBtn svg").toggleClass("arrowRotate");
+    $("#asideToggleBtn img").toggleClass("arrowRotate");
+    $("#teacher-reports-content").toggleClass("teacher-report-main-margin");
   });
 
   $("#modalclose3").click(function () {
