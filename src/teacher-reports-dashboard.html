@@ -109,7 +109,7 @@
     <main class="h-auto bg-summit-gray-FA static p-5">
       <!--End of Top Section-->
       <div class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke flex flex-row overflow-hidden">
-        <aside class="z-40 w-[400px] max-w-[400px] min-w-fit h-screen xs:pt-24 xs:pb-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
+        <aside class="z-40 w-[400px] min-w-fit h-screen xs:pt-24 xs:pb-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
         id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
         <button type="button" class="w-[16px] absolute left-[399px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
          id="asideToggleBtn">
@@ -127,11 +127,718 @@
           </button>
         </div>
         <!--menu items-->
+        <ul class="space-y-2 mt-3">
+          <li>
+            <button type="button"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light" data-tooltip-target="tooltip-1"
+              aria-controls="dropdown-cat1" data-collapse-toggle="dropdown-cat1">
+              <img src="img/side-menu-book.svg" class="w-6 h-6" />
+              
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Concept Mastery </span>
+              <div id="tooltip-1" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                Concept Mastery
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </button>
+            
+            <ul id="dropdown-cat1" class="hidden py-2 space-y-0">
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  data-tooltip-target="tooltip-2" aria-controls="dropdown-cat1-inner1" data-collapse-toggle="dropdown-cat1-inner1">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">Category #
+                      : </span>Matter and Energy
+                  </div>
+                  <div id="tooltip-2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    Category # : Matter and Energy
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat1-inner1" class="hidden space-y-0">
+                  <li>
+                    <a href="#" data-tooltip-target="tooltip-3"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide</div>
+                    </a>
+                    <div id="tooltip-3" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                      Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat1-inner2" data-collapse-toggle="dropdown-cat1-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">Category 2
+                      : </span>Force, Motion and Energy
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat1-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light menu-active">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
+              <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Vocabulary Mastery</span>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </button>
+            <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[304px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.5A
+                      : </span>Newton's First Law of Motion
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat2-inner0" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner" data-collapse-toggle="dropdown-cat2-inner">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[304px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.6A
+                      : </span>Classification of Matter
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat2-inner" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner3" data-collapse-toggle="dropdown-cat2-inner3">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[304px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.8A
+                      : </span>Another Category item
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat2-inner3" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner2" data-collapse-toggle="dropdown-cat2-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[304px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.7A
+                      : </span>Balanced and Unbalanced Net Forces
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat2-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              aria-controls="dropdown-cat3" data-collapse-toggle="dropdown-cat3">
+              <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Usage Report</span>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </button>
+            <ul id="dropdown-cat3" class="hidden py-2 space-y-0">
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner0" data-collapse-toggle="dropdown-cat3-inner0">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[304px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.5B
+                      : </span>Sub category 1
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat3-inner0" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner1" data-collapse-toggle="dropdown-cat3-inner1">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[304px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.6B
+                      : </span>Sub category 2
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat3-inner1" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner2" data-collapse-toggle="dropdown-cat3-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[304px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.3A
+                      : </span>Sub category 3
+                  </div>
+                  <div class="pr-2">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                </button>
+                <ul id="dropdown-cat3-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+              <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[304px]">No Dropdown menu item</span>
+            </button>
+          </li>
+        </ul>
         </div>
         </aside>
-      <section class="" id="teacher-reports-content">
-        <div class="px-5 w-full">
-            Potato
+        <!--end of Aside-->
+      <section class="flex-grow" id="teacher-reports-content">
+        <div class="p-5 w-full">
+            <div class="teacher-dashboard-table overflow-x-auto">
+              <table class="w-full">
+                <thead>
+                  <tr>
+                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex rounded-tl-xl"><span>Student</span></th>
+                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>5.6A</span></th>
+                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex"><span>5.6A</span></th>
+                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>4.6A</span></th>
+                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>4.6A</span></th>
+                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex rounded-tr-xl"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>5.6A</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="w-full flex justify-end">
+              <button type="submit"
+                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                  <img src="img/icon-button-download.svg" class="w-[18px] h-[18px] mr-2"><span>Download</span>
+                </button>
+            </div>
         </div>
        </section> 
       </div><!--end of light blue section-->
