@@ -19,6 +19,10 @@
   transform: rotate(177deg);
 }
 
+.asideRotate img{
+  transform: rotate(180deg);
+}
+
 .menu-active{
   background-color:#EDF1FF;
   color:#4C6FFF;

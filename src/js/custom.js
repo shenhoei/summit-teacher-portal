@@ -12,4 +12,7 @@ $(document).ready(function () {
   $("#modalclose2").click(function () {
     $('#mp4player')[0].pause(); 
   });
+  $(".aside-button").click(function(){
+    $(this).toggleClass("asideRotate")
+  });
 });

@@ -570,6 +570,10 @@ video {
   transform: rotate(177deg);
 }
 
+.asideRotate img{
+  transform: rotate(180deg);
+}
+
 .menu-active{
   background-color:#EDF1FF;
   color:#4C6FFF;
@@ -1387,6 +1391,14 @@ video {
   width: 1px;
 }
 
+.min-w-\[400px\] {
+  min-width: 400px;
+}
+
+.min-w-\[800px\] {
+  min-width: 800px;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -1965,6 +1977,16 @@ video {
   background-color: rgb(0 84 166 / var(--tw-bg-opacity));
 }
 
+.bg-summit-blue-graph-header {
+  --tw-bg-opacity: 1;
+  background-color: rgb(135 159 253 / var(--tw-bg-opacity));
+}
+
+.bg-summit-blue-graph-odd {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 215 255 / var(--tw-bg-opacity));
+}
+
 .bg-summit-blue-light {
   --tw-bg-opacity: 1;
   background-color: rgb(237 241 255 / var(--tw-bg-opacity));
@@ -2017,8 +2039,23 @@ video {
   background-color: rgb(206 206 206 / var(--tw-bg-opacity));
 }
 
+.bg-summit-green-graph {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 103 0 / var(--tw-bg-opacity));
+}
+
 .bg-summit-green-primary-20 {
   background-color: rgba(76, 187, 23, 0.2);
+}
+
+.bg-summit-pink-graph {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 1 153 / var(--tw-bg-opacity));
+}
+
+.bg-summit-red-graph {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-summit-red-primary-20 {

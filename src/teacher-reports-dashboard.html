@@ -108,14 +108,14 @@
 <!--main Section-->
     <main class="h-auto bg-summit-gray-FA static p-5">
       <!--End of Top Section-->
-      <div class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke flex flex-row overflow-hidden">
-        <aside class="z-40 w-[400px] min-w-fit h-screen xs:pt-24 xs:pb-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
+      <div class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke flex flex-row overflow-auto">
+        <aside class="z-40 w-[400px] min-w-[400px] h-screen transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
         id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
         <button type="button" class="w-[16px] absolute left-[399px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
          id="asideToggleBtn">
         <img src="img/aside-arrow-left.svg">
       </button>
-      <div class="overflow-y-auto pb-5 px-0 h-full bg-white">
+      <div class="overflow-y-auto pb-5 px-0 h-full w-[400px] bg-white">
         <!--Aside Title-->
         <div class="flex flex-row bg-summit-blue-primary text-white">
           <div class="flex-grow text-left whitespace-nowrap pl-5 py-4">
@@ -130,7 +130,7 @@
         <ul class="space-y-2 mt-3">
           <li>
             <button type="button"
-              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light" data-tooltip-target="tooltip-1"
+              class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light" data-tooltip-target="tooltip-1"
               aria-controls="dropdown-cat1" data-collapse-toggle="dropdown-cat1">
               <img src="img/side-menu-book.svg" class="w-6 h-6" />
               
@@ -145,7 +145,7 @@
             <ul id="dropdown-cat1" class="hidden py-2 space-y-0">
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   data-tooltip-target="tooltip-2" aria-controls="dropdown-cat1-inner1" data-collapse-toggle="dropdown-cat1-inner1">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -160,14 +160,8 @@
                     Category # : Matter and Energy
                     <div class="tooltip-arrow" data-popper-arrow></div>
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6 pr-2" />
+
                 </button>
                 <ul id="dropdown-cat1-inner1" class="hidden space-y-0">
                   <li>
@@ -223,7 +217,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat1-inner2" data-collapse-toggle="dropdown-cat1-inner2">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -233,14 +227,7 @@
                       class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">Category 2
                       : </span>Force, Motion and Energy
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
                 </button>
                 <ul id="dropdown-cat1-inner2" class="hidden space-y-0">
                   <li>
@@ -294,7 +281,7 @@
           </li>
           <li>
             <button type="button"
-              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
               aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
               <img src="img/side-menu-book.svg" class="w-6 h-6" />
 
@@ -304,7 +291,7 @@
             <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -314,14 +301,7 @@
                       class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.5A
                       : </span>Newton's First Law of Motion
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
                 </button>
                 <ul id="dropdown-cat2-inner0" class="hidden space-y-0">
                   <li>
@@ -373,7 +353,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat2-inner" data-collapse-toggle="dropdown-cat2-inner">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -384,14 +364,7 @@
                       class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.6A
                       : </span>Classification of Matter
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
                 </button>
                 <ul id="dropdown-cat2-inner" class="hidden space-y-0">
                   <li>
@@ -443,7 +416,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat2-inner3" data-collapse-toggle="dropdown-cat2-inner3">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -453,14 +426,7 @@
                       class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.8A
                       : </span>Another Category item
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
                 </button>
                 <ul id="dropdown-cat2-inner3" class="hidden space-y-0">
                   <li>
@@ -512,7 +478,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat2-inner2" data-collapse-toggle="dropdown-cat2-inner2">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -522,14 +488,7 @@
                       class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.7A
                       : </span>Balanced and Unbalanced Net Forces
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
                 </button>
                 <ul id="dropdown-cat2-inner2" class="hidden space-y-0">
                   <li>
@@ -583,7 +542,7 @@
           </li>
           <li>
             <button type="button"
-              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
               aria-controls="dropdown-cat3" data-collapse-toggle="dropdown-cat3">
               <img src="img/side-menu-book.svg" class="w-6 h-6" />
 
@@ -593,7 +552,7 @@
             <ul id="dropdown-cat3" class="hidden py-2 space-y-0">
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat3-inner0" data-collapse-toggle="dropdown-cat3-inner0">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -604,14 +563,7 @@
                       class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.5B
                       : </span>Sub category 1
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
                 </button>
                 <ul id="dropdown-cat3-inner0" class="hidden space-y-0">
                   <li>
@@ -663,7 +615,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat3-inner1" data-collapse-toggle="dropdown-cat3-inner1">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -674,14 +626,7 @@
                       class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.6B
                       : </span>Sub category 2
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
                 </button>
                 <ul id="dropdown-cat3-inner1" class="hidden space-y-0">
                   <li>
@@ -733,7 +678,7 @@
               </li>
               <li>
                 <button href="#"
-                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
                   aria-controls="dropdown-cat3-inner2" data-collapse-toggle="dropdown-cat3-inner2">
                   <div
                     class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
@@ -743,14 +688,7 @@
                       class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.3A
                       : </span>Sub category 3
                   </div>
-                  <div class="pr-2">
-                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
                 </button>
                 <ul id="dropdown-cat3-inner2" class="hidden space-y-0">
                   <li>
@@ -815,20 +753,92 @@
         </aside>
         <!--end of Aside-->
       <section class="flex-grow" id="teacher-reports-content">
-        <div class="p-5 w-full">
-            <div class="teacher-dashboard-table overflow-x-auto">
-              <table class="w-full">
+        <div class="p-5 overflow-auto">
+            <div class="teacher-dashboard-table w-full">
+              <table class="w-full min-w-[800px]">
                 <thead>
-                  <tr>
-                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex rounded-tl-xl"><span>Student</span></th>
-                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>5.6A</span></th>
-                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex"><span>5.6A</span></th>
-                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>4.6A</span></th>
-                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>4.6A</span></th>
-                    <th class="bg-summit-blue-primary text-white font-bold text-center p-4 inline-flex rounded-tr-xl"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>5.6A</span></th>
+                  <tr class="border-b border-gray-table-border bg-summit-blue-primary text-white font-bold ">
+                    <th class="text-center p-2 rounded-tl-xl border-r border-gray-table-border"><span>Student</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border" colspan="3"><div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>5.6A</span></div></th>
+                    <th class="text-center p-2 border-r border-gray-table-border" colspan="3"><span>5.6A</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border" colspan="3"><div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>4.6A</span></div></th>
+                    <th class="text-center p-2 border-r border-gray-table-border" colspan="3"><div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>4.6A</span></div></th>
+                    <th class="text-center p-2 rounded-tr-xl" colspan="3"><div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>5.6A</span></div></th>
+                  </tr>
+                  <tr class="border-b border-gray-table-border bg-summit-blue-graph-header text-white font-bold">
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>&nbsp;</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>1<sup>st</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>VM</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>2<sup>nd</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>1<sup>st</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>VM</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>2<sup>nd</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>1<sup>st</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>VM</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>2<sup>nd</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>1<sup>st</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>VM</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>2<sup>nd</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>1<sup>st</sup></span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>VM</span></th>
+                    <th class="text-center p-4"><span>2<sup>nd</sup></span></th>
                   </tr>
                 </thead>
                 <tbody>
+                  <tr class="bg-summit-blue-graph-odd border-b border-gray-table-border">
+                    <td class="text-center p-2 text-summit-blue-primary font-bold border-r border-gray-table-border">Francis, Janne</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">20%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">15%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-green-graph">100%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-pink-graph">67%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">0%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">20%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">15%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-green-graph">100%</td>
+                  </tr>
+                  <tr class="bg-white border-b border-gray-table-border">
+                    <td class="text-center p-2 text-summit-blue-primary font-bold border-r border-gray-table-border">Huang, Cathleen</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">20%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">15%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-green-graph">100%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-pink-graph">67%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">0%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">20%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">15%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-green-graph">100%</td>
+                  </tr>
+                  <tr class="bg-summit-blue-graph-odd border-b border-gray-table-border">
+                    <td class="text-center p-2 text-summit-blue-primary font-bold border-r border-gray-table-border">LastName, FirstName</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">20%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">15%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-green-graph">100%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">15%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-pink-graph">67%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">0%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">20%</td>                 
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-green-graph">100%</td>
+                  </tr>
 
                 </tbody>
               </table>
@@ -839,9 +849,78 @@
                   <img src="img/icon-button-download.svg" class="w-[18px] h-[18px] mr-2"><span>Download</span>
                 </button>
             </div>
+
+            <!--end of Teacher Table-->
+
+
+            <!--Teks Teacher Table-->
+            <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
+              <div class="mt-8 ml-5">
+                <button type="submit"
+                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                  <span>Back</span>
+                </button>
+            </div>
+            <div class="flex justify-end mt-4 mr-5">
+                <div class="">                   
+                    <form class="max-w-sm mx-auto w-48">
+                        <label for="countries" class="mb-2 text-sm text-black flex"><img src="img/icon-graduation-cap.svg" /><span class="ml-1">Student</span></label>
+                        <select id="countries" class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-summit-blue-primaryblock w-full p-2.5">
+                        <option selected>Francis, Janne</option>
+                        <option value="US">Lastname, Firstname</option>
+                        <option value="CA">Lastname, Firstname</option>
+                        <option value="FR">Lastname, Firstname</option>
+                        <option value="DE">Lastname, Firstname</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            </div>
+            <div class="teacher-dashboard-table w-full mt-4">
+              <table class="w-full min-w-[800px]">
+                <thead>
+                  <tr class="border-b border-gray-table-border bg-summit-blue-primary text-white font-bold ">
+                    <th class="text-center p-2 rounded-tl-xl border-r border-gray-table-border"><span>TEKS</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>Formative Assessment 1</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>TEKS Video</span></th>
+                    <th class="text-center p-2 border-r border-gray-table-border"><span>Vocabulary</span></th>
+                    <th class="text-center p-2 rounded-tr-xl"><span>Formative Assessment 2</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-summit-blue-graph-odd border-b border-gray-table-border">
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border">5.6A</td>
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border">Compare and Contrast Physical Properties</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">20%</td>
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-green">100%</td>
+
+                  </tr>
+                  <tr class="bg-white border-b border-gray-table-border">
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border"><div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>5.6A</span></div></td>
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border">Observable Physical Properties</td>
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border">&nbsp;</td>
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border">&nbsp;</td>
+
+                  
+                  </tr>
+                  <tr class="bg-summit-blue-graph-odd border-b border-gray-table-border">
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border"><div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" class="mr-2" /><span>5.6A</span></div></td>
+                    <td class="text-center p-2 text-black font-bold border-r border-gray-table-border">Observable Physical Properties</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-green-graph">100%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-pink-graph">67%</td>
+                    <td class="text-center p-2 text-white font-bold border-r border-gray-table-border bg-summit-red-graph">0%</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <!--End of Teks Teacher Table-->
         </div>
        </section> 
       </div><!--end of light blue section-->
+
     </main>
     <footer class="text-xs block relative py-10">
       <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
