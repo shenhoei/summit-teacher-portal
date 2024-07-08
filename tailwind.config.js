@@ -31,6 +31,7 @@ module.exports = {
           "blue-secondary":"#4C6FFF",
           "blue-secondary-20":"rgba(76, 111, 255, 0.2)",
           "blue-light":"#EDF1FF",
+          "blue-table":"#305496",
           "blue-dark":"#0054a6",
           "gray-85":"#858585",
           "gray-97":"#979797",

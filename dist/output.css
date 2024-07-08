@@ -2014,6 +2014,11 @@ video {
   background-color: rgba(76, 111, 255, 0.2);
 }
 
+.bg-summit-blue-table {
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 84 150 / var(--tw-bg-opacity));
+}
+
 .bg-summit-gray-97 {
   --tw-bg-opacity: 1;
   background-color: rgb(151 151 151 / var(--tw-bg-opacity));
