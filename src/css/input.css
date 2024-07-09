@@ -59,3 +59,99 @@ button.tailwind-popup-dark-gray-button{
 .teacher-report-main-margin{
   margin-left:-400px;
 }
+
+.summit-table-2024{
+  width:100%;
+  min-width: 800px;
+}
+
+.summit-table-2024 thead tr{
+   background-color:#1c51e1;
+   color:#fff;
+   font-weight:bold;
+}
+
+.summit-table-2024 thead tr.bg-summit-blue-table-header{
+  background-color:#879FFD;
+}
+
+.summit-table-2024 thead th{
+  text-align:center;
+  padding: 0.5rem;
+  border: 1px solid #dfe6fb;
+
+}
+
+.summit-table-2024 thead tr:first-child th:first-child{
+  border-top-left-radius:0.75rem;
+}
+
+.summit-table-2024 thead tr:first-child th:last-child{
+  border-top-right-radius:0.75rem;
+}
+.summit-table-2024 tbody tr:nth-child(odd){
+  background-color:#CDD7FF;
+}
+.summit-table-2024 tbody td{
+  text-align:center;
+  padding: 0.5rem;
+  color:#000;
+  font-weight:700;
+  border:1px solid #dfe6fb;
+}
+
+.summit-table-2024 tbody td.vb_red, .summit-table-2024 tbody td.vb_yellow,.summit-table-2024 tbody td.vb_green,.summit-table-2024 tbody td.vb_blue,.summit-table-2024 tbody td.vb_indigo,
+.summit-table-2024 tbody td.vb_entering,.summit-table-2024 tbody td.vb_emerging,.summit-table-2024 tbody td.vb_developing,.summit-table-2024 tbody td.vb_expanding,
+.summit-table-2024 tbody td.vb_bridging,.vb_reaching,.summit-table-2024 tbody td.vb_bridging,.summit-table-2024 tbody td.vb_pink{
+  color:#fff;
+}
+
+.summit-table-2024 img{
+  margin:auto;
+}
+
+.summit-table-2024 tbody td:first-child{
+  color:#1c51e1;
+  font-weight:bold;
+}
+
+.vb_red{
+	background-color: #B63C2F !important;
+}
+
+.vb_yellow{
+	background-color: #E2C541 !important;
+}
+.vb_green{
+	background-color: #4A7B31 !important;
+}
+.vb_blue{
+	background-color: #185F9E !important;
+}
+
+.vb_indigo{
+	background-color: #75197c !important;
+}
+
+.vb_entering{
+	background-color: #D39D43 !important;
+}
+
+.vb_emerging{
+	background-color: #DB7A45 !important;
+}
+.vb_developing{
+	background-color: #C4C860 !important;
+}
+.vb_expanding{
+	background-color: #81BB58 !important;
+}
+.b_bridging{
+	background-color: #5AA576 !important;
+}
+.vb_reaching{
+	background-color: #64B0C0 !important;
+}
+.vb_pink{
+  background-color:#cc0199!important;
+}
