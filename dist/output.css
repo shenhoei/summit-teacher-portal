@@ -592,20 +592,18 @@ video {
   margin-top:3px;
 }
 
-@media(min-width:768px){
-  .summit-student-menu{
-    width:70px;
-  }
+.summit-student-menu{
+  width:150px;
 }
 
 @media(min-width:1280px){
-  .summit-student-menu{
+  .summit-teacher-menu{
     width:110px;
   }
 }
 
 @media(min-width:1536px){
-  .summit-student-menu{
+  .summit-teacher-menu{
     width:130px;
   }
 }
