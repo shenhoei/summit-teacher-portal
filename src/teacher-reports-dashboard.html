@@ -13,34 +13,28 @@
   <div class="antialiased bg-gray-50">
     <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">     
       <div class="flex flex-wrap justify-between items-center">
-        <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
-        <div class="flex justify-start items-center relative z-20 w-full lg:w-max md:px-0">
-          <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
             <img src="img/logo-summit.svg">
           </div><!--summit Logo-->
-          <div class="2xl:flex flex-wrap justify-between items-center ml-2 hidden">
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
             <span class="font-extrabold leading-6 text-summit-blue-dark text-[25px]">Accelerating Texas K-12<br />
               Teaching and Learning</span>
           </div>
+          <button data-collapse-toggle="navbar-summit" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary" aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
         </div>
-
         
-        <div class="relative flex items-center lg:hidden max-h-10 mt-2">
-          <label role="button" for="toggle_nav" aria-label="hamburger" id="hamburger" class="relative p-6 -mr-6">
-              <div aria-hidden="true" id="line" class="m-auto h-0.5 w-6 rounded bg-summit-blue-primary transition duration-300"></div>
-              <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-6 rounded bg-summit-blue-primary transition duration-300"></div>
-              <div aria-hidden="true" id="line3" class="m-auto mt-2 h-0.5 w-6 rounded bg-summit-blue-primary transition duration-300"></div>
-          </label>
-        </div>
-        <div aria-hidden="true" class="fixed z-10 inset-0 h-20 w-screen backdrop-blur-2xl bg-white origin-bottom scale-y-0 transition duration-100 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden"></div>
-        <div class="flex-col z-20 flex-wrap gap-6 rounded-b-3xl border border-theTech-stroke-gray bg-white justify-end w-full invisible opacity-0 translate-y-1 absolute top-full left-0 transition-all duration-300 scale-95 origin-top 
-                            lg:relative lg:scale-100 lg:peer-checked:translate-y-0 lg:translate-y-0 lg:flex lg:flex-row lg:items-center lg:gap-0 lg:p-0 lg:bg-transparent lg:w-7/12 lg:visible lg:opacity-100 lg:border-none
-                            peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible lg:shadow-none dark:shadow-none border-t border-solid shadow-md">
-            <div class="left-main-nav">
+        
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+            <div class="left-main-nav flex flex-col md:flex-row">
         <!-- My support Icon-->
         <a type="button" href="#"
-          class="p-2 px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
-          <img src="img/nav-support.svg" class="m-auto">
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-support.svg" class="mr-5 md:m-auto">
 
           <span>Support</span>
 
@@ -50,8 +44,8 @@
         <!-- My support Icon-->
         <!-- My training Icon-->
         <a type="button" href="#"
-          class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
-          <img src="img/nav-training.svg" class="m-auto">
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-training.svg" class="mr-5 md:m-auto">
           <span>Training</span>
           <span class="sr-only">Expand</span>
         </a>
@@ -59,8 +53,8 @@
         <!-- My training Icon-->
         <!-- Home Icon-->
         <a type="button" href="#"
-          class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
-          <img src="img/nav-home.svg" class="m-auto">
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-home.svg" class="mr-5 md:m-auto">
           <span>Home</span>
           <span class="sr-only">Expand</span>
         </a>
@@ -68,8 +62,8 @@
         <!-- My Home Icon-->
         <!-- My Library Icon-->
         <a type="button" href="#"
-          class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
-          <img src="img/nav-library.svg" class="m-auto">
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-library.svg" class="mr-5 md:m-auto">
           <span>My Library</span>
           <span class="sr-only">Expand</span>
         </a>
@@ -77,8 +71,8 @@
         <!-- My Library Icon-->
         <!-- My Library Icon-->
         <a type="button" href="#"
-          class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
-          <img src="img/nav-vocab.svg" class="m-auto">
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
           <span>Vocabulary</span>
           <span class="sr-only">Expand</span>
         </a>
@@ -88,8 +82,8 @@
 
         <!-- My Course Icon-->
         <a type="button" href="#"
-          class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
-          <img src="img/nav-course.svg" class="m-auto">
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-course.svg" class="mr-5 md:m-auto">
 
           <span>My Course</span>
 
@@ -99,9 +93,9 @@
         <!-- My course Icon-->
         <!-- Account Icon-->
         <a type="button" href="#"
-          class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] items-center summit-menu summit-student-menu text-center"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
           id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
-          <img src="img/nav-profile.svg" class="m-auto">
+          <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
           <span>My Account</span>
 
           <span class="sr-only">Expand</span>
@@ -131,9 +125,8 @@
         </div>
 
         <!-- Account Icon-->
-      </div><!--end of leftmain-nav-->      
-                    
-        </div>
+            </div><!--end of leftmain-nav-->      
+        </div>            
 
         
       </div>
@@ -142,7 +135,7 @@
   <div
     class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
     <div class="mt-8 ml-5">
-      <h1 class="text-white font-bold text-[36px] text-left mb-8">Teacher Reports Dashboard</h1>
+      <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-left mb-8">Teacher Reports Dashboard</h1>
     </div>
     <div class="flex justify-end mt-4 mr-5">
       <div class="">
@@ -1353,6 +1346,5 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
 
 </html>

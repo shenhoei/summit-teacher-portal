@@ -41,7 +41,11 @@
   margin-top:3px;
 }
 
-
+@media(min-width:768px){
+  .summit-student-menu{
+    width:70px;
+  }
+}
 
 @media(min-width:1280px){
 .summit-student-menu{
