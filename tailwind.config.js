@@ -40,6 +40,7 @@ module.exports = {
           "gray-disabled":"#C7C7C7",
           "gray-stroke":"#CECECE",
           "gray-dark":"#7A7A7A",
+          "gray-light-gray-disabled":"#E5E5E5",
           "red-primary":"#FF0000",
           "red-primary-20":"rgba(255, 0, 0, 0.2)",
           "red-table":"#c00000",
