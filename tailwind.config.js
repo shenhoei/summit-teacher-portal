@@ -49,7 +49,14 @@ module.exports = {
           "green-primary":"#4CBB17",
           "green-primary-20":"rgba(76, 187, 23, 0.2)",
           "green-table":"#336700",
-          "pink-table":"#cc0199"
+          "pink-table":"#cc0199",
+          "table-orange-bg":"#FFEECD",
+          "table-purple-bg":"#E8DAEF",
+          "table-purple-bg":"#E8DAEF",
+          "table-lightblue-bg":"#D8F3FB",
+          "table-pink-bg":"#FDCEF3",
+          "table-blue-bg":"#D2DCF9",
+          "table-red-bg":"#FFCCCC"
         },
       },
     },
