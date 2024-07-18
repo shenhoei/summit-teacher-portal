@@ -826,6 +826,10 @@ video {
   grid-row-start: 1;
 }
 
+.-m-12 {
+  margin: -3rem;
+}
+
 .-m-2 {
   margin: -0.5rem;
 }
@@ -880,6 +884,10 @@ video {
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-12 {
@@ -1121,6 +1129,10 @@ video {
   height: 0.625rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-3 {
   height: 0.75rem;
 }
@@ -1230,10 +1242,6 @@ video {
   height: 100vh;
 }
 
-.h-\[230px\] {
-  height: 230px;
-}
-
 .max-h-\[300px\] {
   max-height: 300px;
 }
@@ -1284,10 +1292,6 @@ video {
 
 .w-3 {
   width: 0.75rem;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .w-36 {
@@ -1730,11 +1734,6 @@ video {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
-.divide-summit-gray-stroke > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(206 206 206 / var(--tw-divide-opacity));
-}
-
 .self-center {
   align-self: center;
 }
@@ -1857,6 +1856,10 @@ video {
 
 .border-4 {
   border-width: 4px;
+}
+
+.border-\[10px\] {
+  border-width: 10px;
 }
 
 .border-b {
@@ -2437,6 +2440,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-14 {
   padding-top: 3.5rem;
 }
@@ -2923,6 +2930,30 @@ button.tailwind-popup-dark-gray-button{
 
 .vb_pink{
   background-color:#cc0199!important;
+}
+
+.half-circle-progress{
+  position: relative;
+  margin: 4px;
+  float:left;
+  text-align: center;
+}
+
+.barOverflow{
+  /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden;
+  /* Comment this line to understand the trick */
+}
+
+.half-circle-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-bottom-color: #1C51E1;
+  border-right-color: #1C51E1;
 }
 
 .after\:absolute::after {
@@ -3449,11 +3480,6 @@ button.tailwind-popup-dark-gray-button{
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.dark\:hover\:bg-summit-blue-dark:hover:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 84 166 / var(--tw-bg-opacity));
-}
-
 .dark\:hover\:text-white:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3723,6 +3749,10 @@ button.tailwind-popup-dark-gray-button{
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:order-2 {
     order: 2;
   }
@@ -3739,6 +3769,10 @@ button.tailwind-popup-dark-gray-button{
     margin-left: 2rem;
   }
 
+  .lg\:mt-\[-60px\] {
+    margin-top: -60px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3749,6 +3783,10 @@ button.tailwind-popup-dark-gray-button{
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[70px\] {
+    height: 70px;
   }
 
   .lg\:flex-1 {
@@ -3829,6 +3867,10 @@ button.tailwind-popup-dark-gray-button{
 }
 
 @media (min-width: 1280px) {
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .xl\:flex {
     display: flex;
   }
