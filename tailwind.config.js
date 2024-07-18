@@ -56,7 +56,8 @@ module.exports = {
           "table-lightblue-bg":"#D8F3FB",
           "table-pink-bg":"#FDCEF3",
           "table-blue-bg":"#D2DCF9",
-          "table-red-bg":"#FFCCCC"
+          "table-red-bg":"#FFCCCC",
+          "table-brown-bg":"#F0E0E4"
         },
       },
     },
