@@ -1382,6 +1382,10 @@ video {
   width: 400px;
 }
 
+.w-\[450px\] {
+  width: 450px;
+}
+
 .w-\[500px\] {
   width: 500px;
 }
@@ -1434,6 +1438,14 @@ video {
 
 .w-px {
   width: 1px;
+}
+
+.w-\[550px\] {
+  width: 550px;
+}
+
+.w-\[650px\] {
+  width: 650px;
 }
 
 .min-w-\[400px\] {
@@ -1766,6 +1778,11 @@ video {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .rounded {
@@ -2115,6 +2132,11 @@ video {
 .bg-summit-table-blue-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(210 220 249 / var(--tw-bg-opacity));
+}
+
+.bg-summit-table-brown-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 224 228 / var(--tw-bg-opacity));
 }
 
 .bg-summit-table-lightblue-bg {
@@ -3584,6 +3606,10 @@ button.tailwind-popup-dark-gray-button{
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:gap-2 {
