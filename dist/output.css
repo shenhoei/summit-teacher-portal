@@ -869,6 +869,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -1382,10 +1387,6 @@ video {
   width: 400px;
 }
 
-.w-\[450px\] {
-  width: 450px;
-}
-
 .w-\[500px\] {
   width: 500px;
 }
@@ -1400,6 +1401,10 @@ video {
 
 .w-\[60px\] {
   width: 60px;
+}
+
+.w-\[650px\] {
+  width: 650px;
 }
 
 .w-\[73px\] {
@@ -1438,14 +1443,6 @@ video {
 
 .w-px {
   width: 1px;
-}
-
-.w-\[550px\] {
-  width: 550px;
-}
-
-.w-\[650px\] {
-  width: 650px;
 }
 
 .min-w-\[400px\] {
@@ -1778,11 +1775,6 @@ video {
 
 .whitespace-nowrap {
   white-space: nowrap;
-}
-
-.break-normal {
-  overflow-wrap: normal;
-  word-break: normal;
 }
 
 .rounded {
