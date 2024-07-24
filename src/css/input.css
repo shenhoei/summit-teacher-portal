@@ -189,3 +189,8 @@ button.tailwind-popup-dark-gray-button{
   border-bottom-color: #1C51E1; 
   border-right-color: #1C51E1;
 }
+
+.button-filter-active{
+  background-color:#1C51E1;
+  color:#fff;
+}
