@@ -111,6 +111,8 @@ button.tailwind-popup-dark-gray-button{
   color:#000;
   font-weight:700;
   border:1px solid #dfe6fb;
+  white-space:nowrap;
+  min-width:100px;
 }
 
 .summit-table-2024 tbody td.vb_red, .summit-table-2024 tbody td.vb_yellow,.summit-table-2024 tbody td.vb_green,.summit-table-2024 tbody td.vb_blue,.summit-table-2024 tbody td.vb_indigo,

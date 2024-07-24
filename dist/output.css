@@ -834,6 +834,10 @@ video {
   margin: -0.5rem;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
@@ -1086,6 +1090,10 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -1138,12 +1146,20 @@ video {
   height: 6rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-3 {
   height: 0.75rem;
 }
 
 .h-32 {
   height: 8rem;
+}
+
+.h-36 {
+  height: 9rem;
 }
 
 .h-4 {
@@ -1160,6 +1176,10 @@ video {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-7 {
+  height: 1.75rem;
 }
 
 .h-8 {
@@ -2881,6 +2901,8 @@ button.tailwind-popup-dark-gray-button{
   color:#000;
   font-weight:700;
   border:1px solid #dfe6fb;
+  white-space:nowrap;
+  min-width:100px;
 }
 
 .summit-table-2024 tbody td.vb_red, .summit-table-2024 tbody td.vb_yellow,.summit-table-2024 tbody td.vb_green,.summit-table-2024 tbody td.vb_blue,.summit-table-2024 tbody td.vb_indigo,
@@ -3095,6 +3117,11 @@ button.tailwind-popup-dark-gray-button{
 .hover\:bg-summit-gray-dark:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(122 122 122 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-summit-gray-light-gray-disabled:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-summit-gray-stroke:hover {
