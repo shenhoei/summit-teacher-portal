@@ -194,3 +194,12 @@ button.tailwind-popup-dark-gray-button{
   background-color:#1C51E1;
   color:#fff;
 }
+.resume_mark{
+  background-color: #E2C541 !important;
+  color: white !important;
+  font-size: 25px !important;
+}
+
+.resume_mark img{
+  width:35px;
+}

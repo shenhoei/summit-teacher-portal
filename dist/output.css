@@ -2817,6 +2817,16 @@ button.tailwind-popup-dark-gray-button{
   color:#fff;
 }
 
+.resume_mark{
+  background-color: #E2C541 !important;
+  color: white !important;
+  font-size: 25px !important;
+}
+
+.resume_mark img{
+  width:35px;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
