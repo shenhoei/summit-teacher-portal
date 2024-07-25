@@ -204,7 +204,13 @@ button.tailwind-popup-dark-gray-button{
   width:35px;
 }
 
-.sticky-blue-header{
+.summit-table-2024 td.sticky-blue-header{
   background-color:#1C51E1;
   color:#fff;
+}
+
+.sticky-blue-header img{
+  width: fit-content;
+  display:inline;
+  height:1.75rem;
 }
