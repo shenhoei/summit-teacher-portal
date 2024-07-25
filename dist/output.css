@@ -2855,6 +2855,15 @@ button.tailwind-popup-dark-gray-button{
   margin-left:-400px;
 }
 
+.teacher-dashboard-disabled{
+  background-color:rgba(28, 81, 225, 0.1) !important;
+  cursor:default;
+}
+
+.teacher-dashboard-disabled:hover{
+  border:1px solid #cecece!important;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
