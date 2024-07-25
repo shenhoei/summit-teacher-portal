@@ -6,6 +6,15 @@ $(document).ready(function () {
     $("#teacher-reports-content").toggleClass("teacher-report-main-margin");
   });
 
+  $("#asideStudentPLPToggleBtn").click(function () {
+    $(".plpasideBarToggle").toggleClass("plp-custom-translate-x-full");
+    $(".plpasideBarToggle").toggleClass("mr-5");
+    $(".bg-summit-blue-light").toggleClass("removeMarginFromMain");
+    $("#asideStudentPLPToggleBtn img").toggleClass("arrowRotate");
+    $("#student-plp-content").toggleClass("student-plp-main-margin");
+  });
+
+
   $("#modalclose3").click(function () {
     $("#videoplayer3").attr("src", $("#videoplayer3").attr("src"));
   });

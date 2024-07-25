@@ -205,12 +205,24 @@ button.tailwind-popup-dark-gray-button{
 }
 
 .summit-table-2024 td.sticky-blue-header{
-  background-color:#1C51E1;
-  color:#fff;
+  background-color:#1C51E1!important;
+  color:#fff!important;
 }
 
 .sticky-blue-header img{
   width: fit-content;
   display:inline;
   height:1.75rem;
+}
+
+.plp-custom-translate-x-full {
+  --tw-translate-x: -420px !important;
+}
+
+.plp-removeMarginFromMain {
+  margin-left: unset !important;
+}
+
+.student-plp-main-margin{
+  margin-left:-400px;
 }

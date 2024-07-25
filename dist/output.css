@@ -854,6 +854,11 @@ video {
   margin-bottom: auto;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -1195,6 +1200,10 @@ video {
 
 .h-\[420px\] {
   height: 420px;
+}
+
+.h-\[50px\] {
+  height: 50px;
 }
 
 .h-\[60px\] {
@@ -2827,9 +2836,28 @@ button.tailwind-popup-dark-gray-button{
   width:35px;
 }
 
-.sticky-blue-header{
-  background-color:#1C51E1;
-  color:#fff;
+.summit-table-2024 td.sticky-blue-header{
+  background-color:#1C51E1!important;
+  color:#fff!important;
+}
+
+.sticky-blue-header img{
+  width: -moz-fit-content;
+  width: fit-content;
+  display:inline;
+  height:1.75rem;
+}
+
+.plp-custom-translate-x-full {
+  --tw-translate-x: -420px !important;
+}
+
+.plp-removeMarginFromMain {
+  margin-left: unset !important;
+}
+
+.student-plp-main-margin{
+  margin-left:-400px;
 }
 
 .after\:absolute::after {
