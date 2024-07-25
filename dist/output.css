@@ -2827,6 +2827,11 @@ button.tailwind-popup-dark-gray-button{
   width:35px;
 }
 
+.sticky-blue-header{
+  background-color:#1C51E1;
+  color:#fff;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;

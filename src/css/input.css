@@ -203,3 +203,8 @@ button.tailwind-popup-dark-gray-button{
 .resume_mark img{
   width:35px;
 }
+
+.sticky-blue-header{
+  background-color:#1C51E1;
+  color:#fff;
+}
