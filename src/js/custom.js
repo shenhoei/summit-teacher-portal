@@ -14,6 +14,10 @@ $(document).ready(function () {
     $("#student-plp-content").toggleClass("student-plp-main-margin");
   });
 
+  
+  $(function(){
+    $("#summit-table-holder").width($("main").width() - $("aside").width() - 42);
+  });
 
   $("#modalclose3").click(function () {
     $("#videoplayer3").attr("src", $("#videoplayer3").attr("src"));

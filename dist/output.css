@@ -1370,6 +1370,10 @@ video {
   width: 30px;
 }
 
+.w-\[4000px\] {
+  width: 4000px;
+}
+
 .w-\[400px\] {
   width: 400px;
 }
@@ -2687,7 +2691,6 @@ button.tailwind-popup-dark-gray-button{
 }
 
 .summit-table-2024{
-  width:100%;
   min-width: 800px;
 }
 
