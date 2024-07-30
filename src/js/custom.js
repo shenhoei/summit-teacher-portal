@@ -4,6 +4,12 @@ $(document).ready(function () {
     $(".bg-summit-blue-light").toggleClass("removeMarginFromMain");
     $("#asideToggleBtn img").toggleClass("arrowRotate");
     $("#teacher-reports-content").toggleClass("teacher-report-main-margin");
+    var asideVal = $("aside").width();
+    if($(".teacher-report-main-margin")[0]){
+    $("#summit-table-holder").width($("main").width() - 42);
+    } else{
+      $("#summit-table-holder").width($("main").width() - asideVal - 42); 
+    }
   });
 
   $("#asideStudentPLPToggleBtn").click(function () {
