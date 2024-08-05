@@ -313,6 +313,60 @@ button.tailwind-popup-dark-gray-button{
   color: #fff !important;
 }
 
+/ guarantee-report /
+
+.guarantee-report-green{
+  background: #3C7E49 !important;
+}
+.guarantee-report-yellow{
+  background: #DDC55A !important;
+  color: black !important;
+}
+
+.bg_unmet {
+  background-color: #A84536 !important;
+  color: #fff !important;
+}
+.bg_approaches {
+  background-color: #6B2478 !important;
+  color: #fff !important;
+}
+.bg_meets {
+  background-color: #335C95 !important;
+  color: #fff !important;
+}
+.bg_masters {
+  background-color: #4A7B31 !important;
+  color: #fff !important;
+}
+
+.bg_unmet_light {
+  background-color: rgba(168, 69, 54, 0.5) !important;
+}
+.bg_approaches_light {
+  background-color: rgba(117, 25, 124, 0.5) !important;
+}
+.bg_meets_light {
+  background-color: rgba(37, 92, 154, 0.5) !important;
+}
+.bg_masters_light {
+  background-color: rgba(55, 126, 34, 0.5) !important;
+}
+.bg_unmet a,
+.bg_approaches a,
+.bg_meets a,
+.bg_masters a {
+  color: #fff !important;
+}
+
+.resume_mark img, .check_mark_width {
+  width:35px;
+}
+
+.summit-table-2024 td.sticky-blue-header, .summit-table-2024 td.report-heading, .summit-table-2024 td.header{
+  background-color:#1C51E1!important;
+  color:#fff!important;
+}
 /*End of Table Colors*/
 
 .half-circle-progress{
