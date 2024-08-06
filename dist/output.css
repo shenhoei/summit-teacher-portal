@@ -656,6 +656,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -2742,6 +2746,7 @@ button.tailwind-popup-dark-gray-button{
   text-align:center;
   padding: 0.5rem;
   border: 1px solid #dfe6fb;
+  position:sticky;
 }
 
 .summit-table-2024 thead tr:first-child th:first-child{
