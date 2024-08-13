@@ -918,6 +918,10 @@ video {
   margin-left: 1.25rem;
 }
 
+.ml-\[252px\] {
+  margin-left: 252px;
+}
+
 .ml-\[25px\] {
   margin-left: 25px;
 }
@@ -1024,6 +1028,10 @@ video {
 
 .mt-\[-135px\] {
   margin-top: -135px;
+}
+
+.mt-\[-16px\] {
+  margin-top: -16px;
 }
 
 .mt-\[-60px\] {
@@ -1215,6 +1223,10 @@ video {
 
 .h-\[70px\] {
   height: 70px;
+}
+
+.h-\[80px\] {
+  height: 80px;
 }
 
 .h-\[90px\] {

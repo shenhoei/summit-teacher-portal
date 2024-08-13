@@ -104,8 +104,7 @@
   <div class="flex w-full justify-center">
     <div class="menu">
       <nav class="flex items-center justify-between pt-4">
-        <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
-        
+        <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">   
           My PLP
       </button>
         
@@ -121,10 +120,15 @@
   </div>
 </div>
 <!--Student Title and Goat Section-->
-<div class="w-full relative h-[70px]">
+<div class="w-full relative h-[80px]"> <!--please note margin increased-->
   <div class="w-[300px] justify-start p-4 absolute mt-[-60px]">
-    <img src="img/logo-literacy.png" class="border-4 border-white border-solid rounded-lg align-baseline">
+    <div class="relative">
+      <img src="img/logo-literacy.png" class="border-4 border-white border-solid rounded-lg align-baseline">
+      <a href="#" class="rounded-full border-summit-gray-stroke border bg-white block w-8 h-8 hover:border-summit-blue-primary mt-[-16px] ml-[252px]" data-modal-target="default-modal"
+      data-modal-toggle="default-modal"><img src="img/button-blue-left-right-arrow.svg" class="p-2"/></a>
+    </div>
   </div>
+  <!--end of title-logo-box-->
   <!--goat and box-->
   <div class="flex w-full justify-end relative">
     <div class="bg-white rounded-lg p-2 inline-block max-h-[75px] w-[250px] absolute mr-32 mt-[-85px]" id="top-header-box">
@@ -162,11 +166,6 @@
               </div>
             </div><!--end of class-module-->
         </section>
-
-
-        <p class="m-auto text-center"><a href="#" data-modal-target="default-modal"
-            data-modal-toggle="default-modal">Pop up demo button (delete after)huh</a>
-        </p>
         <!--MODAL-->
         <div id="default-modal" tabindex="-1" aria-hidden="true"
           class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
