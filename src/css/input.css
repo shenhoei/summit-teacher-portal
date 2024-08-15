@@ -457,3 +457,7 @@ button.tailwind-popup-dark-gray-button{
 .summit-modal-active{
   border: 1px solid #1C51E1;
 }
+
+.modal-active-select{
+  border: 1px solid #1C51E1;
+}

@@ -2105,6 +2105,10 @@ video {
   background-color: rgb(240 224 228 / var(--tw-bg-opacity));
 }
 
+.bg-summit-table-green-bg {
+  background-color: rgba(76,187,23,0.2);
+}
+
 .bg-summit-table-lightblue-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(216 243 251 / var(--tw-bg-opacity));
@@ -2146,10 +2150,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-summit-table-green-bg {
-  background-color: rgba(76,187,23,0.2);
 }
 
 .bg-opacity-80 {
@@ -3170,6 +3170,10 @@ button.tailwind-popup-dark-gray-button{
 }
 
 .summit-modal-active{
+  border: 1px solid #1C51E1;
+}
+
+.modal-active-select{
   border: 1px solid #1C51E1;
 }
 
