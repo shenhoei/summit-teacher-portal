@@ -461,3 +461,16 @@ button.tailwind-popup-dark-gray-button{
 .modal-active-select{
   border: 1px solid #1C51E1;
 }
+
+.assign-selected{
+  background-color:rgba(76, 187, 23, 0.2)!important;
+}
+
+.ml-\[260px\] {
+  margin-left: 260px;
+}
+@media (min-width: 1536px) {
+  .\32xl\:w-\[130px\] {
+    width: 130px;
+  }
+}

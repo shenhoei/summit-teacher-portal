@@ -757,6 +757,10 @@ video {
   top: 1.25rem;
 }
 
+.isolate {
+  isolation: isolate;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1307,6 +1311,10 @@ video {
   width: 0.625rem;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -1353,6 +1361,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-\[108px\] {
@@ -1618,6 +1630,10 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1662,6 +1678,10 @@ video {
   justify-items: center;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1681,6 +1701,10 @@ video {
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1799,6 +1823,11 @@ video {
   border-end-end-radius: 0.5rem;
 }
 
+.rounded-l-sm {
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
 .rounded-l-xl {
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
@@ -1807,6 +1836,11 @@ video {
 .rounded-r-lg {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-r-sm {
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
 }
 
 .rounded-r-xl {
@@ -1832,6 +1866,16 @@ video {
 .rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.rounded-r-md {
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
 }
 
 .rounded-br-xl {
@@ -2060,6 +2104,11 @@ video {
 .bg-summit-blue-table-header {
   --tw-bg-opacity: 1;
   background-color: rgb(135 159 253 / var(--tw-bg-opacity));
+}
+
+.bg-summit-blue-table-odd {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 215 255 / var(--tw-bg-opacity));
 }
 
 .bg-summit-gray-97 {
@@ -2313,6 +2362,11 @@ video {
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-3 {
@@ -3196,6 +3250,20 @@ button.tailwind-popup-dark-gray-button{
   border: 1px solid #1C51E1;
 }
 
+.assign-selected{
+  background-color:rgba(76, 187, 23, 0.2)!important;
+}
+
+.ml-\[260px\] {
+  margin-left: 260px;
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-\[130px\] {
+    width: 130px;
+  }
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -3343,14 +3411,13 @@ button.tailwind-popup-dark-gray-button{
   background-color: rgb(206 206 206 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-summit-table-green-bg:hover {
+  background-color: rgba(76,187,23,0.2);
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-summit-blue-table-header:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(135 159 253 / var(--tw-bg-opacity));
 }
 
 .hover\:fill-white:hover {
@@ -3370,6 +3437,11 @@ button.tailwind-popup-dark-gray-button{
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:text-summit-blue-dark:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 84 166 / var(--tw-text-opacity));
 }
 
 .hover\:text-summit-blue-primary:hover {
@@ -4111,6 +4183,11 @@ button.tailwind-popup-dark-gray-button{
 
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-\[36px\] {
