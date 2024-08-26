@@ -73,8 +73,10 @@ button.tailwind-popup-dark-gray-button{
   margin-left:-400px;
 }
 
+@media (min-width: 1536px){
 .summit-table-2024{
   min-width: 800px;
+}
 }
 
 .summit-table-2024 thead tr{
@@ -96,10 +98,14 @@ button.tailwind-popup-dark-gray-button{
 
 .summit-table-2024 thead tr:first-child th:first-child{
   border-top-left-radius:0.75rem;
+  border-left:none;
+  border-top:none;
 }
 
 .summit-table-2024 thead tr:first-child th:last-child{
   border-top-right-radius:0.75rem;
+  border-left:none;
+  border-top:none;
 }
 .summit-table-2024 tbody tr:nth-child(odd){
   background-color:#CDD7FF;
@@ -107,7 +113,6 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024 tbody td{
   text-align:center;
   padding: 0.5rem;
-  color:#000;
   font-weight:700;
   border:1px solid #dfe6fb;
   white-space:nowrap;
@@ -120,14 +125,16 @@ button.tailwind-popup-dark-gray-button{
   color:#fff;
 }
 
-.summit-table-2024 img{
+.summit-table-2024 a>img{
   margin:auto;
 }
 
-.summit-table-2024 tbody td:first-child{
+
+
+/*.summit-table-2024 tbody td.first-child a{
   color:#1c51e1;
   font-weight:bold;
-}
+}*/
 /*Table Colors*/
 .vb_red{
 	background-color: #B63C2F !important;
@@ -407,6 +414,10 @@ button.tailwind-popup-dark-gray-button{
   color:#fff!important;
 }
 
+.summit-table-2024 .text-left{
+  text-align:left;
+}
+
 .sticky-blue-header img{
   width: fit-content;
   display:inline;
@@ -473,4 +484,12 @@ button.tailwind-popup-dark-gray-button{
   .\32xl\:w-\[130px\] {
     width: 130px;
   }
+}
+
+.table-green-selected td{
+  background-color: #CAE6CE;
+}
+
+.error-border{
+  border-color:#f00;
 }

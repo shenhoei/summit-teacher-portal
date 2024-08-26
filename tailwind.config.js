@@ -58,7 +58,10 @@ module.exports = {
           "table-blue-bg":"#D2DCF9",
           "table-red-bg":"#FFCCCC",
           "table-green-bg":"rgba(76,187,23,0.2)",
-          "table-brown-bg":"#F0E0E4"
+          "table-brown-bg":"#F0E0E4",
+          "table-old-table-color-1":"#E9EBF5",
+          "table-old-table-color-2":"#CFD5EA",
+          "black-30":"rgba(0,0,0,0.3)"
         },
       },
     },

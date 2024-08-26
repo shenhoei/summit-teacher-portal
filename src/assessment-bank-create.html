@@ -209,7 +209,7 @@
             </div><!--end of Module top Section-->
 
             <section class="p-5">
-                <div class="assesment-pagination grid grid-cols-2"><!--pagination-->
+                <div class="assesment-pagination grid grid-cols-1 lg:grid-cols-2"><!--pagination-->
                     <div class="flex">
                         <nav class="isolate inline-flex shadow-sm">
                             <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-summit-blue-light px-2 py-2 text-sm border border-solid border-summit-gray-stroke rounded-l-md font-semibold text-summit-blue-primary">1</a>
@@ -231,17 +231,96 @@
                             <span class="ml-2">Results Per Page.</span>
                         </div>
                     </div>
-                    <div class="flex justify-end">
+                    <div class="flex justify-end flex-col lg:flex-row">
                         <span class="font-semibold mr-5 mt-2">0 out of 05 Question(s) Selected</span>
-                        <button type="submit" class="px-5 py-2.5 h-[40px] text-sm font-medium text-summit-blue-primary bg-summit-blue-light border-solid border border-summit-blue-primary rounded-lg hover:bg-summit-blue-dark block ">
-                            <span>Pick Random Questions</span>
+                        <button type="submit" class="px-2 py-2.5 h-[40px] text-sm font-medium text-summit-blue-primary bg-summit-blue-light border-solid border border-summit-blue-primary rounded-lg hover:bg-summit-blue-dark hover:text-white block">
+                            <span>Random Questions</span>
                         </button>
                     </div>
                 </div><!-- end of Pagination-->
                 <div>
-                    sddwdwwdwd
+                  <div class="assessment-bank-table w-full my-5 overflow-auto">
+                    <table class="summit-table-2024 w-full">
+                      <thead>
+                        <tr>
+                          <th><span>Select</span></th>
+                          <th><span>Question Type</span></th>
+                          <th><span>Question</span></th>
+                          <th><span>Preview</span></th>
+                          <th><span>DOK</span></th>
+                          <th><span>TEKS</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>Hot Spot</td>
+                          <td class="text-left"><a href="#">Click on the image that shows an example of a balanced force.</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr class="table-green-selected">
+                          <td><input type="checkbox" checked /></td>
+                          <td>Multiselect</td>
+                           <td class="text-left"><a href="#">Which of the following states of matter takes the shape of its container</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr class="table-green-selected">
+                          <td><input type="checkbox" checked /></td>
+                          <td>Hot Spot</td>
+                          <td class="text-left"><a href="#">Click on the image that shows an example of a balanced force.</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>Multiselect</td>
+                           <td class="text-left"><a href="#">Which of the following states of matter takes the shape of its container</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>Hot Spot</td>
+                          <td class="text-left"><a href="#">Click on the image that shows an example of a balanced force.</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr class="table-green-selected">
+                          <td><input type="checkbox" checked /></td>
+                          <td>Multiselect</td>
+                           <td class="text-left"><a href="#">Which of the following states of matter takes the shape of its container</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr class="table-green-selected">
+                          <td><input type="checkbox" checked /></td>
+                          <td>Hot Spot</td>
+                          <td class="text-left"><a href="#">Click on the image that shows an example of a balanced force.</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>Multiselect</td>
+                           <td class="text-left"><a href="#">Which of the following states of matter takes the shape of its container</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div class="assesment-pagination grid grid-cols-2"><!--pagination-->
+                <div class="assesment-pagination grid grid-cols-1"><!--pagination-->
                     <div class="flex">
                         <nav class="isolate inline-flex shadow-sm">
                             <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-summit-blue-light px-2 py-2 text-sm border border-solid border-summit-gray-stroke rounded-l-md font-semibold text-summit-blue-primary">1</a>
@@ -263,12 +342,6 @@
                             <span class="ml-2">Results Per Page.</span>
                         </div>
                     </div><!--flex-->
-                    <div class="flex justify-end">
-                        <span class="font-semibold mr-5 mt-2">0 out of 05 Question(s) Selected</span>
-                        <button type="submit" class="px-5 py-2.5 h-[40px] text-sm font-medium text-summit-blue-primary bg-summit-blue-light border-solid border border-summit-blue-primary rounded-lg hover:bg-summit-blue-dark block ">
-                            <span>Pick Random Questions</span>
-                        </button>
-                    </div>
                 </div><!-- end of Pagination-->
 
             </section>
