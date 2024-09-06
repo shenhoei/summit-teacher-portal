@@ -79,6 +79,9 @@ button.tailwind-popup-dark-gray-button{
 }
 }
 
+.summit-table-2024{
+  
+}
 .summit-table-2024 thead tr{
    background-color:#1c51e1;
    color:#fff;
@@ -93,7 +96,6 @@ button.tailwind-popup-dark-gray-button{
   text-align:center;
   padding: 0.5rem;
   border: 1px solid #dfe6fb;
-  position:sticky;
 }
 
 .summit-table-2024 thead tr:first-child th:first-child{
@@ -106,6 +108,9 @@ button.tailwind-popup-dark-gray-button{
   border-top-right-radius:0.75rem;
   border-left:none;
   border-top:none;
+}
+.summit-table-2024 tbody tr:nth-child(even){
+ background-color:#EDF1FF;
 }
 .summit-table-2024 tbody tr:nth-child(odd){
   background-color:#CDD7FF;
@@ -129,7 +134,29 @@ button.tailwind-popup-dark-gray-button{
   margin:auto;
 }
 
+.summit-table-2024.sticky-header-row thead tr:first-child{
+  position:sticky;
+  top:0px;
+  z-index:40;
+  border:#dfe6fb solid 1px;
+  border-style:hidden;
+}
 
+.sticky-second-row{
+  position:sticky;
+  top:47px;
+  z-index:40;
+  border-color:#dfe6fb;
+  border-style:hidden;
+}
+
+.summit-table-2024.sticky-col tr>td:first-child, .summit-table-2024.sticky-col tr>th:first-child{
+  position:sticky;
+  left:0px;
+  z-index:30;
+  background-color:inherit;
+  border-color:#dfe6fb;
+}
 
 /*.summit-table-2024 tbody td.first-child a{
   color:#1c51e1;
