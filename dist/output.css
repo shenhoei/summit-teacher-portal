@@ -799,6 +799,10 @@ video {
   top: 1.25rem;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1568,6 +1572,10 @@ video {
   width: max-content;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .min-w-48 {
   min-width: 12rem;
 }
@@ -1751,10 +1759,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .justify-items-end {
