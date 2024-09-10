@@ -767,6 +767,10 @@ video {
   right: 0.625rem;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .right-4 {
   right: 1rem;
 }
@@ -797,10 +801,6 @@ video {
 
 .top-5 {
   top: 1.25rem;
-}
-
-.right-3 {
-  right: 0.75rem;
 }
 
 .isolate {
@@ -1394,6 +1394,10 @@ video {
   width: 0.75rem;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-36 {
   width: 9rem;
 }
@@ -1570,10 +1574,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .min-w-48 {
@@ -1802,6 +1802,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -2096,6 +2102,11 @@ video {
   border-right-color: rgb(206 206 206 / var(--tw-border-opacity));
 }
 
+.border-b-summit-gray-stroke {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(206 206 206 / var(--tw-border-opacity));
+}
+
 .border-b-transparent {
   border-bottom-color: transparent;
 }
@@ -2254,7 +2265,8 @@ video {
 }
 
 .bg-summit-table-green-bg {
-  background-color: rgba(76,187,23,0.2);
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 237 205 / var(--tw-bg-opacity));
 }
 
 .bg-summit-table-lightblue-bg {
@@ -2308,6 +2320,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-summit-table-yellow-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 234 201 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-80 {
@@ -2837,6 +2854,11 @@ video {
 .text-summit-green-primary {
   --tw-text-opacity: 1;
   color: rgb(76 187 23 / var(--tw-text-opacity));
+}
+
+.text-summit-green-table {
+  --tw-text-opacity: 1;
+  color: rgb(51 103 0 / var(--tw-text-opacity));
 }
 
 .text-summit-pink-table {
@@ -3601,7 +3623,8 @@ button.tailwind-popup-dark-gray-button{
 }
 
 .hover\:bg-summit-table-green-bg:hover {
-  background-color: rgba(76,187,23,0.2);
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 237 205 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {

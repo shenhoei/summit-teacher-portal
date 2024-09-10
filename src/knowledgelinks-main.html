@@ -133,42 +133,87 @@
       <section class="main-grid">
         <!--filter-row-->
         <div class="mb-4 justify-center flex py-3 space-x-3">
-            <div class="shadow-sm rounded-xl bg-white max-w-[400px]"><!--knowledge Column-->
+            <a href="#" class="shadow-sm rounded-xl bg-white max-w-[400px] block"><!--knowledge Column-->
                 <div class="w-full overflow-hidden relative">
-                    <a href="#" class="rounded-lg bg-summit-blue-light text-summit-blue-primary w-32 py-1 px-4 block absolute right-3 top-3 text-center hover:bg-white">New</a>
+                    <span class="rounded-lg bg-summit-blue-light text-summit-blue-primary w-32 py-1 px-4 block absolute right-3 top-3 text-center font-semibold">New</span>
                     <img src="img/knowledge-demo1.png" class="w-full"/>
                 </div>
                 <div class="flex justify-between py-5 px-3">
                     <div class="text-lg font-bold">
                         Animals
                     </div>
-                    <a href="#" class="text-sm mt-1">See Progress</a>
-                </div>
-            </div><!--End of Knowledge Column-->
-            <div class="shadow-sm rounded-xl bg-white max-w-[400px]"><!--knowledge Column-->
-                <div class="w-full overflow-hidden relative">
-                    <a href="#" class="rounded-lg bg-summit-blue-light text-summit-blue-primary w-32 py-1 px-4 block absolute right-3 top-3 text-center hover:bg-white">New</a>
-                    <img src="img/knowledge-demo1.png" class="w-full"/>
-                </div>
-                <div class="flex justify-between py-5 px-3">
-                    <div class="text-lg font-bold">
-                        Energy
+                    <button class="text-sm mt-1 hover:text-summit-blue-primary" data-popover-target="link-popover" data-popover-placement="left">See Progress</button>
+                    <div data-popover id="link-popover" role="tooltip"
+                          class="absolute z-10 invisible inline-block w-64 text-sm text-black transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 font-normal text-left">
+                          <div class="py-1 max-h-[400px] block relative overflow-auto">
+                            <ul>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold"><img src="img/plp-table-checkmark.svg" class="w-5 h-5 mr-2"></span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-red-primary">40%</span></li>
+                              <li class="flex justify-between py-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>                             
+                              
+                            </ul>
+                          </div>
                     </div>
-                    <a href="#" class="text-sm mt-1 hover:text-summit-blue-primary">See Progress</a>
                 </div>
-            </div><!--End of Knowledge Column-->
-            <div class="shadow-sm rounded-xl bg-white max-w-[400px]"><!--knowledge Column-->
-                <div class="w-full overflow-hidden relative">
-                    <a href="#" class="rounded-lg bg-summit-blue-light text-summit-blue-primary w-32 py-1 px-4 block absolute right-3 top-3 text-center hover:bg-white">New</a>
-                    <img src="img/knowledge-demo1.png" class="w-full"/>
+            </a><!--End of Knowledge Column-->
+            <a href="#" class="shadow-sm rounded-xl bg-white max-w-[400px] block"><!--knowledge Column-->
+              <div class="w-full overflow-hidden relative">
+                  <span class="rounded-lg bg-summit-table-yellow-bg text-summit-yellow-primary w-32 py-1 px-4 block absolute right-3 top-3 text-center font-semibold">In Progress</span>
+                  <img src="img/knowledge-demo1.png" class="w-full"/>
+              </div>
+              <div class="flex justify-between py-5 px-3">
+                  <div class="text-lg font-bold">
+                      Energy
+                  </div>
+                  <button class="text-sm mt-1 hover:text-summit-blue-primary" data-popover-target="link-popover2" data-popover-placement="left">See Progress</button>
+                  <div data-popover id="link-popover2" role="tooltip"
+                        class="absolute z-10 invisible inline-block w-64 text-sm text-black transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 font-normal text-left">
+                        <div class="py-1 max-h-[400px] block relative overflow-auto">
+                          <ul>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold"><img src="img/plp-table-checkmark.svg" class="w-5 h-5 mr-2"></span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-red-primary">40%</span></li>
+                            <li class="flex justify-between py-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>                             
+                            
+                          </ul>
+                        </div>
+                  </div>
+              </div>
+          </a><!--End of Knowledge Column-->
+          <a href="#" class="shadow-sm rounded-xl bg-white max-w-[400px] block"><!--knowledge Column-->
+            <div class="w-full overflow-hidden relative">
+                <span class="rounded-lg bg-summit-table-green-bg text-summit-green-primary w-32 py-1 px-4 block absolute right-3 top-3 text-center font-semibold">Completed</span>
+                <img src="img/knowledge-demo1.png" class="w-full"/>
+            </div>
+            <div class="flex justify-between py-5 px-3">
+                <div class="text-lg font-bold">
+                    Ecosystems
                 </div>
-                <div class="flex justify-between py-5 px-3">
-                    <div class="text-lg font-bold">
-                        Ecosystems
-                    </div>
-                    <a href="#" class="text-sm mt-1 hover:text-summit-blue-primary">See Progress</a>
+                <button class="text-sm mt-1 hover:text-summit-blue-primary" data-popover-target="link-popover3" data-popover-placement="left">See Progress</button>
+                <div data-popover id="link-popover3" role="tooltip"
+                      class="absolute z-10 invisible inline-block w-64 text-sm text-black transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 font-normal text-left">
+                      <div class="py-1 max-h-[400px] block relative overflow-auto">
+                        <ul>
+                          <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                          <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                          <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                          <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold"><img src="img/plp-table-checkmark.svg" class="w-5 h-5 mr-2"></span></li>
+                          <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                          <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-red-primary">40%</span></li>
+                          <li class="flex justify-between py-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>                             
+                          
+                        </ul>
+                      </div>
                 </div>
-            </div><!--End of Knowledge Column-->
+            </div>
+        </a><!--End of Knowledge Column-->
             
 
         </div>
