@@ -520,3 +520,7 @@ button.tailwind-popup-dark-gray-button{
 .error-border{
   border-color:#f00;
 }
+
+.knowledge-link-text-stroke{
+  -webkit-text-stroke: 1px #000;
+}

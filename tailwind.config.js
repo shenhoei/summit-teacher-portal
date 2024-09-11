@@ -62,6 +62,7 @@ module.exports = {
           "table-brown-bg":"#F0E0E4",
           "table-old-table-color-1":"#E9EBF5",
           "table-old-table-color-2":"#CFD5EA",
+          "knowledge-yellow":"#DFC25A",
           "black-30":"rgba(0,0,0,0.3)"
         },
       },
