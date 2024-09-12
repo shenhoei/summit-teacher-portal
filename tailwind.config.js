@@ -48,6 +48,7 @@ module.exports = {
           "yellow-primary-20":"rgba(255, 169, 3, 0.2)",
           "green-primary":"#4CBB17",
           "green-primary-20":"rgba(76, 187, 23, 0.2)",
+          "green-knowledge-80":"rgba(38, 128, 73, 0.8)",
           "green-table":"#336700",
           "pink-table":"#cc0199",
           "table-orange-bg":"#FFEECD",
@@ -62,6 +63,7 @@ module.exports = {
           "table-brown-bg":"#F0E0E4",
           "table-old-table-color-1":"#E9EBF5",
           "table-old-table-color-2":"#CFD5EA",
+          "assessment-bank-blue":"#EAECF5",
           "knowledge-yellow":"#DFC25A",
           "black-30":"rgba(0,0,0,0.3)"
         },
