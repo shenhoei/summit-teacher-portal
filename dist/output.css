@@ -922,11 +922,6 @@ video {
   margin-bottom: auto;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -1343,12 +1338,12 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-px {
   height: 1px;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-\[300px\] {
@@ -1511,8 +1506,8 @@ video {
   width: 30px;
 }
 
-.w-\[320px\] {
-  width: 320px;
+.w-\[316px\] {
+  width: 316px;
 }
 
 .w-\[36px\] {
@@ -2280,6 +2275,10 @@ video {
   background-color: rgb(206 206 206 / var(--tw-bg-opacity));
 }
 
+.bg-summit-green-knowledge-80 {
+  background-color: rgba(38, 128, 73, 0.8);
+}
+
 .bg-summit-green-primary-20 {
   background-color: rgba(76, 187, 23, 0.2);
 }
@@ -2292,6 +2291,11 @@ video {
 .bg-summit-knowledge-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(223 194 90 / var(--tw-bg-opacity));
+}
+
+.bg-summit-red-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-summit-red-primary-20 {
@@ -2378,10 +2382,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-summit-green-knowledge-80 {
-  background-color: rgba(38, 128, 73, 0.8);
 }
 
 .bg-opacity-80 {
@@ -3513,7 +3513,7 @@ button.tailwind-popup-dark-gray-button{
 }
 
 .assign-selected{
-  background-color:rgba(76, 187, 23, 0.2)!important;
+  background-color:#cbe6ce;
 }
 
 .ml-\[260px\] {
@@ -3693,6 +3693,11 @@ button.tailwind-popup-dark-gray-button{
   background-color: rgb(122 122 122 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-summit-gray-disabled:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 199 199 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-summit-gray-light-gray-disabled:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
@@ -3701,6 +3706,11 @@ button.tailwind-popup-dark-gray-button{
 .hover\:bg-summit-gray-stroke:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(206 206 206 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-summit-red-table:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 0 0 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-summit-table-green-bg:hover {

@@ -162,6 +162,9 @@
             <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-select"
                 data-modal-toggle="default-modal-select">Pop up select button (delete after)</a>
             </p>
+            <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-select"
+              data-modal-toggle="default-modal-delete-mixtures">Pop up delete mixtures button (delete after)</a>
+          </p>
         </section>
 
         <!--MODAL Warning-->
@@ -185,7 +188,7 @@
               <div class="py-2 px-4">
                 <div class="w-full">
                     <img src="img/popup-warning-icon.svg" class="m-auto" />
-                    <h2 class="font-bold text-xl text-center">Warning: Resetting Your Configuration Settings</h2>
+                    <h2 class="font-bold text-xl text-center">Warning:  Configuration Settings</h2>
                     <p class="mt-1 text-center m-auto max-w-[500px]">If you choose to reset, all your currently selected questions will be lost. Are you sure you want to proceed?</p>
                 </div>
               </div>
@@ -257,6 +260,46 @@
           </div>
         </div>
         <!--END OF MODAL Select-->
+
+        <!--MODAL Delete mixtures-->
+        <div id="default-modal-delete-mixtures" tabindex="-1" aria-hidden="true"
+          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-summit-gray-FA rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between px-4 md:p-1 rounded-t">
+                <button type="button"
+                  class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                  data-modal-hide="default-modal-delete-mixtures">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="py-2 px-4">
+                <div class="w-full">
+                    <img src="img/assessment-delete-mixtures.svg" class="m-auto" />
+                    <h2 class="font-bold text-2xl text-center mt-4">Delete Mixtures</h2>
+                    <p class="mt-4 text-center m-auto max-w-[500px]">You are about to delete "<strong>Mixtures</strong>" and this action cannot be undone</p>
+                    <p class="mt-4 text-center m-auto max-w-[500px]">Are you sure you want to delete this assessment?</p>
+                </div>
+              </div>
+              <!-- Modal footer -->
+              <div class="p-5 pb-6 w-full flex justify-center gap-2">
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-gray-dark hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Cancel</a> 
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-red-primary hover:bg-summit-red-table font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Reset</a>   
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL Delete Mixtures-->
 
 
 
