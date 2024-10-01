@@ -2279,6 +2279,11 @@ video {
   background-color: rgba(38, 128, 73, 0.8);
 }
 
+.bg-summit-green-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 187 23 / var(--tw-bg-opacity));
+}
+
 .bg-summit-green-primary-20 {
   background-color: rgba(76, 187, 23, 0.2);
 }
@@ -3124,12 +3129,67 @@ button.tailwind-popup-dark-gray-button{
   border-style:hidden;
 }
 
-.summit-table-2024.sticky-col tr>td:first-child, .summit-table-2024.sticky-col tr>th:first-child{
+.summit-table-2024 .header, .summit-table-2024 .report-heading{
+  position:sticky;
+  top:0px;
+  z-index:40;
+  border:#dfe6fb solid 1px;
+  border-style:hidden;
+}
+
+.summit-table-2024 .sticky-left-cell{
   position:sticky;
   left:0px;
-  z-index:30;
+  z-index:50;
   background-color:inherit;
   border-color:#dfe6fb;
+  min-width:200px;
+  overflow:hidden;
+}
+
+.summit-table-2024 .sticky-right-cell{
+  position:sticky;
+  right:0px;
+  z-index:50;
+  background-color:inherit;
+  border-color:#dfe6fb;
+  min-width:200px;
+  overflow:hidden;
+}
+
+.summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(1) td.report-heading{
+  top:37px;
+}
+
+.summit-table-2024 tr:nth-of-type(3) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading{
+  top:74px;
+}
+
+.summit-table-2024 .sticky-left-cell:nth-of-type(2){
+  left:200px;
+}
+
+.summit-table-2024 .sticky-left-cell.header{
+  z-index:60;
+}
+
+.summit-table-2024 td{
+  position:relative;
+}
+
+.summit-table-2024 .item-delete{
+  opacity:0;
+  background-color:rgba(0,0,0,0.6);
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  height:100%;
+  padding-top:8px;
+}
+
+.summit-table-2024 .item-delete:hover{
+  opacity:100;
 }
 
 /*.summit-table-2024 tbody td.first-child a{
@@ -3706,6 +3766,11 @@ button.tailwind-popup-dark-gray-button{
 .hover\:bg-summit-gray-stroke:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(206 206 206 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-summit-green-table:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 103 0 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-summit-red-table:hover {
@@ -4598,3 +4663,4 @@ button.tailwind-popup-dark-gray-button{
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+

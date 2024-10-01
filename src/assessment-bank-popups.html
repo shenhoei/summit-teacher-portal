@@ -168,6 +168,9 @@
             <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-delete-record"
               data-modal-toggle="default-modal-delete-record">Confirm Delete record (delete after)</a>
             </p>
+            <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-delete-quiz"
+              data-modal-toggle="default-modal-delete-quiz">Confirm Delete Quiz</a>
+            </p>
         </section>
 
         <!--MODAL Warning-->
@@ -342,6 +345,52 @@
           </div>
         </div>
         <!--END OF MODAL Delete Mixtures-->
+
+        <!--MODAL Delete Quiz Events-->
+        <div id="default-modal-delete-quiz" tabindex="-1" aria-hidden="true"
+          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-summit-gray-FA rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between px-4 md:p-1 rounded-t">
+                <button type="button"
+                  class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                  data-modal-hide="default-modal-delete-quiz">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="py-2 px-4">
+                <div class="w-full">
+                    <p class="font-bold text-2xl text-center mt-1 max-w-[400px] m-auto"><span>Are you sure you want to <br />Delete this Quiz Attempt?</span></p>
+                    <p class="text-summit-red-primary my-2 text-center">(This can not be undone)</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Class:</strong> Dynamic Science</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Grade Level:</strong> 5</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Quiz:</strong> 4.6A Formative Assessment 2</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Sutdent Name:</strong> Nielsen, Mary</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Grade:</strong> <span class="bg-summit-green-table inline-block px-2 rounded-lg text-white">92%</span></p>
+                </div>
+              </div>
+              <!-- Modal footer -->
+              <div class="p-5 pb-6 grid grid-cols-2 w-[400px] gap-2 m-auto">
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-blue-primary hover:bg-summit-blue-dark font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">
+                  Delete Only</a> 
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-green-primary hover:bg-summit-green-table font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">
+                  Delete and Reassign</a>   
+                  <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-gray-dark hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full col-span-2">
+                  Cancel</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL Delete Quiz-->
 
 
 
