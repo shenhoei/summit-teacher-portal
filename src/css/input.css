@@ -137,7 +137,7 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024.sticky-header-row thead tr:first-child{
   position:sticky;
   top:0px;
-  z-index:40;
+  z-index:20;
   border:#dfe6fb solid 1px;
   border-style:hidden;
 }
@@ -145,7 +145,7 @@ button.tailwind-popup-dark-gray-button{
 .sticky-second-row{
   position:sticky;
   top:47px;
-  z-index:40;
+  z-index:20;
   border-color:#dfe6fb;
   border-style:hidden;
 }
@@ -153,7 +153,7 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024 .header, .summit-table-2024 .report-heading{
   position:sticky;
   top:0px;
-  z-index:40;
+  z-index:20;
   border:#dfe6fb solid 1px;
   border-style:hidden;
 }
@@ -161,7 +161,7 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024 .sticky-left-cell{
   position:sticky;
   left:0px;
-  z-index:50;
+  z-index:30;
   background-color:inherit;
   border-color:#dfe6fb;
   min-width:200px;
@@ -171,7 +171,7 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024 .sticky-right-cell{
   position:sticky;
   right:0px;
-  z-index:50;
+  z-index:31;
   background-color:inherit;
   border-color:#dfe6fb;
   min-width:200px;
@@ -197,7 +197,7 @@ button.tailwind-popup-dark-gray-button{
 }
 
 .summit-table-2024 .item-delete{
-  opacity:0;
+  opacity: 0;
   background-color:rgba(0,0,0,0.6);
   position:absolute;
   width:100%;
@@ -205,12 +205,14 @@ button.tailwind-popup-dark-gray-button{
   left:0;
   height:100%;
   padding-top:8px;
+  transition: opacity 0s linear;
 }
-
 
 .summit-table-2024 .item-delete:hover{
- opacity:100;
+  opacity: 100;
+  transition-delay:1s;
 }
+
 /*.summit-table-2024 tbody td.first-child a{
   color:#1c51e1;
   font-weight:bold;
