@@ -1289,6 +1289,10 @@ video {
   height: 360px;
 }
 
+.h-\[36px\] {
+  height: 36px;
+}
+
 .h-\[40px\] {
   height: 40px;
 }
@@ -1344,10 +1348,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[36px\] {
-  height: 36px;
 }
 
 .max-h-\[300px\] {
@@ -3127,7 +3127,6 @@ button.tailwind-popup-dark-gray-button{
   top:0px;
   z-index:20;
   border:#dfe6fb solid 1px;
-  border-style:hidden;
 }
 
 .sticky-second-row{
@@ -3135,18 +3134,20 @@ button.tailwind-popup-dark-gray-button{
   top:47px;
   z-index:20;
   border-color:#dfe6fb;
-  border-style:hidden;
 }
 
-.summit-table-2024 .header, .summit-table-2024 .report-heading{
+.summit-table-2024 .header, .summit-table-2024 .report-heading, .summit-table-2024 .sticky-blue-header{
   position:sticky;
   top:0px;
   z-index:20;
   border:#dfe6fb solid 1px;
-  border-style:hidden;
 }
 
-.summit-table-2024 .sticky-left-cell{
+.summit-table-2024 .sticky-blue-header.sub{
+  top:38px;
+}
+
+.summit-table-2024 .sticky-left-cell,.summit-table-2024 .make-table-column-sticky{
   position:sticky;
   left:0px;
   z-index:30;
@@ -3156,21 +3157,11 @@ button.tailwind-popup-dark-gray-button{
   overflow:hidden;
 }
 
-.summit-table-2024 .sticky-right-cell{
-  position:sticky;
-  right:0px;
-  z-index:31;
-  background-color:inherit;
-  border-color:#dfe6fb;
-  min-width:200px;
-  overflow:hidden;
-}
-
-.summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(1) td.report-heading{
+.summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading{
   top:37px;
 }
 
-.summit-table-2024 tr:nth-of-type(3) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading{
+.summit-table-2024 tr:nth-of-type(3) td.header, .summit-table-2024 tr:nth-of-type(3) td.report-heading{
   top:74px;
 }
 
@@ -3178,8 +3169,8 @@ button.tailwind-popup-dark-gray-button{
   left:200px;
 }
 
-.summit-table-2024 .sticky-left-cell.header{
-  z-index:60;
+.summit-table-2024 .sticky-left-cell.header,.summit-table-2024 .make-table-column-sticky.sticky-blue-header{
+  z-index:32;
 }
 
 .summit-table-2024 td{
