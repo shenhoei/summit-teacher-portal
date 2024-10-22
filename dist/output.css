@@ -917,6 +917,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -1686,6 +1691,10 @@ video {
 }
 
 .flex-grow {
+  flex-grow: 1;
+}
+
+.grow {
   flex-grow: 1;
 }
 
@@ -3136,7 +3145,14 @@ button.tailwind-popup-dark-gray-button{
   border-color:#dfe6fb;
 }
 
-.summit-table-2024 .header, .summit-table-2024 .report-heading, .summit-table-2024 .sticky-blue-header{
+.summit-table-2024 tr td:first-child{
+  /*added so that first column is sticky*/
+  position:sticky;
+  left:0px;
+  z-index:20;
+}
+
+.summit-table-2024 .header, .summit-table-2024 .report-heading, .summit-table-2024 .sticky-blue-header, .teacher-dashboard-table .summit-table-2024 thead th.sticky-left-cell{
   position:sticky;
   top:0px;
   z-index:20;
@@ -3147,7 +3163,20 @@ button.tailwind-popup-dark-gray-button{
   top:38px;
 }
 
-.summit-table-2024 .sticky-left-cell,.summit-table-2024 .make-table-column-sticky{
+.teacher-dashboard-table .summit-table-2024 tbody tr td.thick-right-border{
+  position:sticky;
+  background-color:inherit;
+  left:0px;
+  z-index:10;
+  overflow:hidden;
+  text-align:left;
+}
+
+.teacher-dashboard-table .summit-table-2024 tr td.report-heading:first-child{
+  left:0px;
+}
+
+.summit-table-2024 .sticky-left-cell,.summit-table-2024 tr:first-child td.make-table-column-sticky{
   position:sticky;
   left:0px;
   z-index:30;
@@ -3157,11 +3186,11 @@ button.tailwind-popup-dark-gray-button{
   overflow:hidden;
 }
 
-.summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading{
+.summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading{
   top:37px;
 }
 
-.summit-table-2024 tr:nth-of-type(3) td.header, .summit-table-2024 tr:nth-of-type(3) td.report-heading{
+.summit-table-2024 tr:nth-of-type(3) td.header, .summit-table-2024 tr:nth-of-type(3) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:nth-of-type(2) td.report-heading{
   top:74px;
 }
 
@@ -3169,8 +3198,29 @@ button.tailwind-popup-dark-gray-button{
   left:200px;
 }
 
-.summit-table-2024 .sticky-left-cell.header,.summit-table-2024 .make-table-column-sticky.sticky-blue-header{
+.summit-table-2024 .sticky-left-cell.header,.summit-table-2024 .make-table-column-sticky.sticky-blue-header, .teacher-dashboard-table .summit-table-2024 tr td.report-heading:first-child{
   z-index:32;
+}
+
+.teacher-dashboard-table .summit-table-2024.empty-header tr:first-child td.report-heading{
+  top:0px;
+}
+
+.teacher-dashboard-table .summit-table-2024.empty-header tr:nth-of-type(2) td.report-heading{
+  top:37px;
+}
+
+.teacher-dashboard-table .summit-table-2024 thead th.sticky-left-cell{
+  position:sticky;
+  top:0px;
+  left:0px;
+  z-index:32;
+  border:#dfe6fb solid 1px;
+  background-color:inherit;
+}
+
+.summit-table-2024 th{
+  position:relative;
 }
 
 .summit-table-2024 td{
@@ -3653,6 +3703,12 @@ button.tailwind-popup-dark-gray-button{
   border-width: 1px;
 }
 
+.after\:border-summit-gray-light-gray-disabled::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(229 229 229 / var(--tw-border-opacity));
+}
+
 .after\:border-summit-gray-stroke::after {
   content: var(--tw-content);
   --tw-border-opacity: 1;
@@ -4133,6 +4189,11 @@ button.tailwind-popup-dark-gray-button{
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
+.dark\:border-summit-gray-dark:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(122 122 122 / var(--tw-border-opacity));
+}
+
 .dark\:bg-blue-600:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -4310,6 +4371,11 @@ button.tailwind-popup-dark-gray-button{
 .dark\:focus\:ring-summit-blue-primary:focus:is(.dark *) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(28 81 225 / var(--tw-ring-opacity));
+}
+
+.peer:focus ~ .dark\:peer-focus\:ring-blue-800:is(.dark *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
 }
 
 @media (min-width: 576px) {
