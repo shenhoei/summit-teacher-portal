@@ -95,7 +95,7 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024 thead th{
   text-align:center;
   padding: 0.5rem;
-  border: 1px solid #dfe6fb;
+  border: 2px solid #fff;
 }
 
 .summit-table-2024 thead tr:first-child th:first-child{
@@ -119,7 +119,7 @@ button.tailwind-popup-dark-gray-button{
   text-align:center;
   padding: 0.5rem;
   font-weight:700;
-  border:1px solid #dfe6fb;
+  border:2px solid #fff;
   white-space:nowrap;
   min-width:100px;
 }
@@ -138,32 +138,34 @@ button.tailwind-popup-dark-gray-button{
   position:sticky;
   top:0px;
   z-index:20;
-  border:#dfe6fb solid 1px;
+  border:#fff solid 2px;
 }
 
 .sticky-second-row{
   position:sticky;
   top:47px;
   z-index:20;
-  border-color:#dfe6fb;
+  border-color:#fff;
 }
 
 .summit-table-2024 tr td:first-child{ /*added so that first column is sticky*/
   position:sticky;
   left:0px;
   z-index:20;
+  background-color:inherit;
+  border-right:3px solid #fff;
 }
 
 .summit-table-2024 .header, .summit-table-2024 .report-heading, .summit-table-2024 .sticky-blue-header, .teacher-dashboard-table .summit-table-2024 thead th.sticky-left-cell{
   position:sticky;
   top:0px;
   z-index:20;
-  border:#dfe6fb solid 1px;
+  border:#fff solid 2px;
 }
 
 
 .summit-table-2024 .sticky-blue-header.sub{
-  top:38px;
+  top:39px;
 }
 
 .teacher-dashboard-table .summit-table-2024 tbody tr td.thick-right-border{
@@ -173,6 +175,7 @@ button.tailwind-popup-dark-gray-button{
   z-index:10;
   overflow:hidden;
   text-align:left;
+  border-right:3px solid #fff;
 }
 
 .teacher-dashboard-table .summit-table-2024 tr td.report-heading:first-child{
@@ -183,16 +186,16 @@ button.tailwind-popup-dark-gray-button{
   left:0px;
   z-index:30;
   background-color:inherit;
-  border-color:#dfe6fb;
+  border-color:#fff;
   min-width:200px;
   overflow:hidden;
 }
 
 .summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading{
-  top:37px;
+  top:39px;
 }
 .summit-table-2024 tr:nth-of-type(3) td.header, .summit-table-2024 tr:nth-of-type(3) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:nth-of-type(2) td.report-heading{
-  top:74px;
+  top:78px;
 }
 .summit-table-2024 .sticky-left-cell:nth-of-type(2){
   left:200px;
@@ -204,7 +207,7 @@ button.tailwind-popup-dark-gray-button{
   top:0px;
 }
 .teacher-dashboard-table .summit-table-2024.empty-header tr:nth-of-type(2) td.report-heading{
-  top:37px;
+  top:39px;
 }
 
 .teacher-dashboard-table .summit-table-2024 thead th.sticky-left-cell{
@@ -212,7 +215,7 @@ button.tailwind-popup-dark-gray-button{
   top:0px;
   left:0px;
   z-index:32;
-  border:#dfe6fb solid 1px;
+  border:#fff solid 2px;
   background-color:inherit;
 }
 .summit-table-2024 th{
