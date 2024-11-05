@@ -3280,6 +3280,72 @@ button.tailwind-popup-dark-gray-button{
 
 /*Table Colors*/
 
+/*************Table Sticky Code ****************************/
+
+.summit-table-2024 td.sticky-blue-header, .summit-table-2024 td.report-heading, .summit-table-2024 td.header{
+  background-color:#1C51E1;
+  color:#fff;
+}
+
+/*End of Table Colors*/
+
+.half-circle-progress{
+  position: relative;
+  margin: 4px;
+  float:left;
+  text-align: center;
+}
+
+.barOverflow{
+  /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden;
+  /* Comment this line to understand the trick */
+}
+
+.half-circle-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-bottom-color: #1C51E1;
+  border-right-color: #1C51E1;
+}
+
+.button-filter-active{
+  background-color:#1C51E1;
+  color:#fff;
+}
+
+.resume_mark{
+  background-color: #E2C541 !important;
+  color: white !important;
+  font-size: 25px !important;
+}
+
+.resume_mark img{
+  width:35px;
+}
+
+.summit-table-2024 td.sticky-blue-header{
+  background-color:#1C51E1!important;
+  color:#fff!important;
+}
+
+.summit-table-2024 .text-left{
+  text-align:left;
+}
+
+.sticky-blue-header img{
+  width: -moz-fit-content;
+  width: fit-content;
+  display:inline;
+  height:1.75rem;
+}
+
+/******** End of Table Sticky Code *******************/
+
 .vb_red{
   background-color: #B63C2F !important;
 }
@@ -3536,68 +3602,6 @@ button.tailwind-popup-dark-gray-button{
 
 .resume_mark img, .check_mark_width {
   width:35px;
-}
-
-.summit-table-2024 td.sticky-blue-header, .summit-table-2024 td.report-heading, .summit-table-2024 td.header{
-  background-color:#1C51E1!important;
-  color:#fff!important;
-}
-
-/*End of Table Colors*/
-
-.half-circle-progress{
-  position: relative;
-  margin: 4px;
-  float:left;
-  text-align: center;
-}
-
-.barOverflow{
-  /* Wraps the rotating .bar */
-  position: relative;
-  overflow: hidden;
-  /* Comment this line to understand the trick */
-}
-
-.half-circle-bar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  box-sizing: border-box;
-  border-bottom-color: #1C51E1;
-  border-right-color: #1C51E1;
-}
-
-.button-filter-active{
-  background-color:#1C51E1;
-  color:#fff;
-}
-
-.resume_mark{
-  background-color: #E2C541 !important;
-  color: white !important;
-  font-size: 25px !important;
-}
-
-.resume_mark img{
-  width:35px;
-}
-
-.summit-table-2024 td.sticky-blue-header{
-  background-color:#1C51E1!important;
-  color:#fff!important;
-}
-
-.summit-table-2024 .text-left{
-  text-align:left;
-}
-
-.sticky-blue-header img{
-  width: -moz-fit-content;
-  width: fit-content;
-  display:inline;
-  height:1.75rem;
 }
 
 .plp-custom-translate-x-full {
