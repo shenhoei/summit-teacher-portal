@@ -1630,6 +1630,10 @@ video {
   min-width: fit-content;
 }
 
+.min-w-\[358px\] {
+  min-width: 358px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
