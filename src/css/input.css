@@ -197,6 +197,9 @@ button.tailwind-popup-dark-gray-button{
   min-width:200px;
   overflow:hidden;
 }
+.summit-table-2024 tr:first-child td.header.make-table-column-sticky{
+  background-color:#1c51e1;
+}
 
 
 

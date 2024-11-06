@@ -3222,6 +3222,10 @@ button.tailwind-popup-dark-gray-button{
   overflow:hidden;
 }
 
+.summit-table-2024 tr:first-child td.header.make-table-column-sticky{
+  background-color:#1c51e1;
+}
+
 .summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading{
   top:39px;
 }
