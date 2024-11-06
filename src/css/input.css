@@ -184,7 +184,9 @@ button.tailwind-popup-dark-gray-button{
 .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.header:first-child{
   z-index:32;
 }
-
+.teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr:first-child td.header:first-child{
+  z-index:33;
+}
 .teacher-dashboard-table .summit-table-2024 tr td.report-heading:first-child{
   left:0px;
 }
