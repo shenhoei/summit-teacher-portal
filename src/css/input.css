@@ -83,7 +83,13 @@ button.tailwind-popup-dark-gray-button{
   background-color:inherit;
 }
 
-.teacher-dashboard-table .summit-table-2024 tr td.header:first-child{
+.teacher-dashboard-table .summit-table-2024 tr td.table-cell.sticky-left-cell.bg-odd-shade:first-child,.teacher-dashboard-table .summit-table-2024 tr td.table-cell.sticky-left-cell.bg-even-shade:first-child{
+  background-color:inherit;
+  text-align:left;
+  z-index:31;
+}
+
+.teacher-dashboard-table .summit-table-2024 tr td.header:first-child,.teacher-dashboard-table .summit-table-2024 tr td.report-heading:first-child{
   background-color:#1c51e1;
 }
 
@@ -156,8 +162,11 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024 tr td:first-child{ /*added so that first column is sticky*/
   position:sticky;
   left:0px;
-  z-index:31;
+  z-index:30;
   border-right:3px solid #fff;
+}
+.summit-table-2024 tr:first-child td:first-child{
+  z-index:33;
 }
 
 .summit-table-2024 .header, .summit-table-2024 .report-heading, .summit-table-2024 .sticky-blue-header, .teacher-dashboard-table .summit-table-2024 thead th.sticky-left-cell{
@@ -181,11 +190,42 @@ button.tailwind-popup-dark-gray-button{
   border-right:3px solid #fff;
 }
 
+.teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.thick-right-border:first-child{
+  z-index:32;
+}
+.subject_wida_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.thick-right-border.bg-even-shade:first-child{
+  z-index:31;
+}
+
+.subject_wida_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.thick-right-border.bg-even-shade.sticky-left-cell:first-child{
+  text-align:center;
+  z-index:30;
+}
+.subject_wida_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.thick-right-border.bg-odd-shade.sticky-left-cell:first-child{
+  text-align:center;
+  z-index:30;
+}
+.teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.table-cell.thick-right-border.bg-even-shade:first-child{
+  text-align:left;
+}
+
 .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.header:first-child{
   z-index:32;
 }
+
+.subject_wida_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.header.sticky-left-cell:first-child{
+  z-index:35;
+}
+.subject_tx_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr:first-child td.header:first-child{
+ text-align:center;
+}
+.subject_tx_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024 tr td.make-table-column-sticky:first-child{
+ text-align:left;
+}
+
+
 .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr:first-child td.header:first-child{
-  z-index:33;
+  z-index:35;
 }
 .teacher-dashboard-table .summit-table-2024 tr td.report-heading:first-child{
   left:0px;
@@ -199,6 +239,9 @@ button.tailwind-popup-dark-gray-button{
   min-width:200px;
   overflow:hidden;
 }
+.summit-table-2024 tr:first-child td.make-table-column-sticky.sticky-blue-header{
+  z-index:34;
+}
 .summit-table-2024 tr:first-child td.header.make-table-column-sticky{
   background-color:#1c51e1;
 }
@@ -208,13 +251,25 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading{
   top:39px;
 }
+.subject_tx_dynamic_physics .teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading{
+  top:103px;
+}
 .summit-table-2024 tr:nth-of-type(3) td.header, .summit-table-2024 tr:nth-of-type(3) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:nth-of-type(2) td.report-heading{
   top:78px;
 }
 
-.summit-table-2024 .sticky-left-cell.header,.summit-table-2024 .make-table-column-sticky.sticky-blue-header, .teacher-dashboard-table .summit-table-2024 tr td.report-heading:first-child{
-  z-index:32;
+.subject_wida_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading.make-second-col-sticky,
+.subject_wida_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading.make-second-col-sticky-telpas-basics{
+ top:60px;
 }
+
+.summit-table-2024 .sticky-left-cell.header,.summit-table-2024 .make-table-column-sticky.sticky-blue-header, .teacher-dashboard-table .summit-table-2024 tr td.report-heading:first-child{
+  z-index:34;
+}
+.teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading:first-child{
+  z-index:35;
+}
+
 .teacher-dashboard-table .summit-table-2024.empty-header tr:first-child td.report-heading{
   top:0px;
 }
@@ -229,6 +284,10 @@ button.tailwind-popup-dark-gray-button{
   z-index:32;
   border:#fff solid 2px;
   background-color:inherit;
+}
+.teacher-dashboard-table .summit-table-2024 thead{
+  position:relative;
+  z-index:40;
 }
 .summit-table-2024 th{
   position:relative;
