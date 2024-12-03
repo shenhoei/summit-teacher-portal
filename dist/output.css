@@ -931,6 +931,10 @@ video {
   margin-top: -9rem;
 }
 
+.-mt-\[97px\] {
+  margin-top: -97px;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1254,6 +1258,10 @@ video {
   height: 24rem;
 }
 
+.h-\[156px\] {
+  height: 156px;
+}
+
 .h-\[15px\] {
   height: 15px;
 }
@@ -1365,6 +1373,10 @@ video {
 
 .max-h-\[400px\] {
   max-height: 400px;
+}
+
+.max-h-\[415px\] {
+  max-height: 415px;
 }
 
 .max-h-\[42px\] {
@@ -1688,6 +1700,10 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .flex-1 {
@@ -2263,6 +2279,11 @@ video {
 .bg-summit-blue-table-header {
   --tw-bg-opacity: 1;
   background-color: rgb(135 159 253 / var(--tw-bg-opacity));
+}
+
+.bg-summit-gray-85 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(133 133 133 / var(--tw-bg-opacity));
 }
 
 .bg-summit-gray-97 {
@@ -2987,6 +3008,11 @@ video {
   color: rgb(204 1 153 / var(--tw-text-opacity));
 }
 
+.text-summit-purple-solid {
+  --tw-text-opacity: 1;
+  color: rgb(142 68 173 / var(--tw-text-opacity));
+}
+
 .text-summit-red-primary {
   --tw-text-opacity: 1;
   color: rgb(255 0 0 / var(--tw-text-opacity));
@@ -3129,13 +3155,36 @@ button.tailwind-popup-dark-gray-button{
   border: 2px solid #fff;
 }
 
-.summit-table-2024 thead tr:first-child th:first-child{
+.summit-table-2024 thead::before{
+  top: 0;
+  border-top: 1px solid #f0f;
+  margin-top: -0.5px;
+}
+
+.summit-table-2024.empty-header tbody::before,
+.summit-table-2024.empty-header tbody::after
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.summit-table-2024.empty-header tbody::before{
+  top: 0;
+  border-top: 1px solid #f0f;
+  margin-top: -0.5px;
+}
+
+.summit-table-2024 thead tr:first-child th:first-child,
+.summit-table-2024.empty-header tr:first-child td:first-child{
   border-top-left-radius:0.75rem;
   border-left:none;
   border-top:none;
 }
 
-.summit-table-2024 thead tr:first-child th:last-child{
+.summit-table-2024 thead tr:first-child th:last-child,
+.summit-table-2024.empty-header tr:first-child td:last-child{
   border-top-right-radius:0.75rem;
   border-left:none;
   border-top:none;
@@ -3164,6 +3213,15 @@ button.tailwind-popup-dark-gray-button{
   color:#fff;
 }
 
+.summit-table-2024{
+  border-collapse:collapse;
+}
+
+.summit-table-2024.empty-header, .summit-table-2024.sticky-header-row{
+  border-collapse:separate;
+  border-spacing:0px;
+}
+
 .summit-table-2024 a>img{
   margin:auto;
 }
@@ -3173,6 +3231,7 @@ button.tailwind-popup-dark-gray-button{
   top:0px;
   z-index:31;
   border:#fff solid 2px;
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
 }
 
 .sticky-second-row{
@@ -3180,6 +3239,12 @@ button.tailwind-popup-dark-gray-button{
   top:47px;
   z-index:31;
   border-color:#fff;
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
+}
+
+.teacher-dashboard-table{
+  border-top-right-radius:1.4rem;
+  border-top-left-radius:1.4rem;
 }
 
 .summit-table-2024 tr td:first-child{
@@ -3188,6 +3253,7 @@ button.tailwind-popup-dark-gray-button{
   left:0px;
   z-index:30;
   border-right:3px solid #fff;
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
 }
 
 .summit-table-2024 tr:first-child td:first-child{
@@ -3199,6 +3265,11 @@ button.tailwind-popup-dark-gray-button{
   top:0px;
   z-index:31;
   border:#fff solid 2px;
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
+}
+
+.summit-table-2024.empty-header .header{
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
 }
 
 .summit-table-2024 .sticky-blue-header.sub{
@@ -3260,7 +3331,9 @@ button.tailwind-popup-dark-gray-button{
   left:0px;
 }
 
-.summit-table-2024 .sticky-left-cell,.summit-table-2024 tr:first-child td.make-table-column-sticky{
+.summit-table-2024 .sticky-left-cell,.summit-table-2024 tr:first-child td.make-table-column-sticky,
+.summit-table-2024 thead tr:first-child th:first-child.make-table-column-sticky,
+.subject_tx_dynamic_science .teacher-dashboard-table .summit-table-2024.sticky-header-row thead tr:first-child th:first-child{
   position:sticky;
   left:0px;
   z-index:30;
@@ -4634,6 +4707,10 @@ button.tailwind-popup-dark-gray-button{
     padding-right: 0px;
   }
 
+  .md\:text-\[100px\] {
+    font-size: 100px;
+  }
+
   .md\:dark\:bg-gray-900:is(.dark *) {
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -4719,6 +4796,10 @@ button.tailwind-popup-dark-gray-button{
     line-height: 2rem;
   }
 
+  .lg\:text-\[120px\] {
+    font-size: 120px;
+  }
+
   .lg\:text-\[36px\] {
     font-size: 36px;
   }
@@ -4768,12 +4849,12 @@ button.tailwind-popup-dark-gray-button{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .xl\:gap-4 {
-    gap: 1rem;
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
-  .xl\:text-\[100px\] {
-    font-size: 100px;
+  .xl\:gap-4 {
+    gap: 1rem;
   }
 }
 
