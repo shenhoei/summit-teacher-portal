@@ -2770,6 +2770,10 @@ video {
   text-align: left;
 }
 
+.\!text-center {
+  text-align: center !important;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3187,7 +3191,7 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024.empty-header tr:first-child td:last-child{
   border-top-right-radius:0.75rem;
   border-left:none;
-  border-top:none;
+  /* border-top:none; */
 }
 
 .summit-table-2024 tbody tr:nth-child(even){
@@ -3202,7 +3206,8 @@ button.tailwind-popup-dark-gray-button{
   text-align:center;
   padding: 0.5rem;
   font-weight:700;
-  border:2px solid #fff;
+  /*border: 2px solid #fff;*/
+  border: 1px solid #fff;
   white-space:nowrap;
   min-width:100px;
 }
@@ -3261,8 +3266,9 @@ button.tailwind-popup-dark-gray-button{
   position:sticky;
   left:0px;
   z-index:30;
-  border-right:3px solid #fff;
-  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
+  /* border-right: 3px solid #fff; */
+  border-right: 1px solid #fff;
+  /* box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff; */
 }
 
 .summit-table-2024 tr:first-child td:first-child{
@@ -3273,12 +3279,13 @@ button.tailwind-popup-dark-gray-button{
   position:sticky;
   top:0px;
   z-index:31;
-  border:#fff solid 2px;
-  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
+  /* border: #fff solid 2px; */
+  border: #fff solid 1px;
+  /* box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff; */
 }
 
 .summit-table-2024.empty-header .header{
-  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
+  /* box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff; */
 }
 
 .summit-table-2024 .sticky-blue-header.sub{
@@ -3291,7 +3298,8 @@ button.tailwind-popup-dark-gray-button{
   z-index:22;
   overflow:hidden;
   text-align:left;
-  border-right:3px solid #fff;
+  /* border-right:3px solid #fff; */
+  border: 1px solid #fff;
 }
 
 .teacher-dashboard-table .summit-table-2024.sticky-header-row tbody tr td.thick-right-border:first-child{
@@ -3361,7 +3369,8 @@ button.tailwind-popup-dark-gray-button{
 }
 
 .summit-table-2024 tr:nth-of-type(2) td.header, .summit-table-2024 tr:nth-of-type(2) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading{
-  top:42px;
+  /* top:42px; */
+  top: 39px;
 }
 
 .subject_tx_dynamic_physics .teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading{
@@ -3369,7 +3378,8 @@ button.tailwind-popup-dark-gray-button{
 }
 
 .summit-table-2024 tr:nth-of-type(3) td.header, .summit-table-2024 tr:nth-of-type(3) td.report-heading,.teacher-dashboard-table .summit-table-2024 tr:nth-of-type(2) td.report-heading{
-  top:82px;
+  /* top:82px; */
+  top: 78px;
 }
 
 .subject_wida_telpas_ls_rw_elps .teacher-dashboard-table .summit-table-2024 tr:first-child td.report-heading.make-second-col-sticky,
