@@ -111,7 +111,6 @@ button.tailwind-popup-dark-gray-button{
 }
 .summit-table-2024 thead::before{
   top: 0;
-  border-top: 1px solid #f0f;
   margin-top: -0.5px;
 }
 
@@ -126,7 +125,6 @@ button.tailwind-popup-dark-gray-button{
 
 .summit-table-2024.empty-header tbody::before{
   top: 0;
-  border-top: 1px solid #f0f;
   margin-top: -0.5px;
 }
 
@@ -194,7 +192,12 @@ button.tailwind-popup-dark-gray-button{
   z-index:31;
   border:#fff solid 2px;
   box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
-
+}
+.summit-table-2024.sticky-col thead tr:first-child th:first-child{
+  position:sticky;
+  left:0;
+  z-index:1;
+  background-color:#1c51e1;
 }
 
 .sticky-second-row{
