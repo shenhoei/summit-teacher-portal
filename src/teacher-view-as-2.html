@@ -5,8 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css"
+  integrity="sha512-pTaEn+6gF1IeWv3W1+7X7eM60TFu/agjgoHmYhAfLEU8Phuf6JKiiE8YmsNC0aCgQv4192s4Vai8YZ6VNM6vyQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
   <link href="../dist/output.css" rel="stylesheet" />
-
 </head>
 
 <body class="bg-gray-50">
@@ -234,16 +240,23 @@
                                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                                           </svg></button>
                                       </div>
-                                      <select id="schoolselect" class="bg-white">
-                                        <option value=""></option>
-                                        <option value="1">SchoolName 1</option>
-                                        <option value="2">SchoolName 2</option>
-                                        <option value="3">SchoolName 3</option>
-                                        <option value="4">SchoolName 4</option>
-                                        <option value="5">SchoolName 5</option>
-                                        <option value="6">SchoolName 6</option>
-                                        <option value="7">SchoolName 7</option>
-                                      </select>
+                                      <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch2" class="block w-full px-4 py-2 ps-10 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary" placeholder="Quick Search for School" required />
+                                      <div id="dropdownsearch2" class="z-10 hidden bg-white divide-y rounded-lg shadow w-full">
+                                          <ul class="py-2 text-sm text-summit-gray-dark" aria-labelledby="dropdown-search-button">
+                                          <li class="border-b border-solid border-summit-gray-stroke">
+                                              <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">SchoolName</a>
+                                          </li>
+                                          <li class="border-b border-solid border-summit-gray-stroke">
+                                              <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">SchoolName 2</a>
+                                          </li>
+                                          <li class="border-b border-solid border-summit-gray-stroke">
+                                              <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">SchoolName 3</a>
+                                          </li>
+                                          <li>
+                                              <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">SchoolName 4</a>
+                                          </li>
+                                          </ul>
+                                      </div>
                                   
                                   </div>            
                                     </div><!-- end of select School-->
@@ -260,16 +273,23 @@
                                                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                                               </svg></button>
                                           </div>
-                                          <select id="subjectselect" class="bg-white">
-                                            <option value=""></option>
-                                            <option value="1">Subject 1</option>
-                                            <option value="2">Subject 2</option>
-                                            <option value="3">Subject 3</option>
-                                            <option value="4">Subject 4</option>
-                                            <option value="5">Subject 5</option>
-                                            <option value="6">Subject 6</option>
-                                            <option value="7">Subject 7</option>
-                                          </select>
+                                          <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch3" class="block w-full px-4 py-2 ps-10 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary" placeholder="Quick Search for Subject" required />
+                                          <div id="dropdownsearch3" class="z-10 hidden bg-white divide-y rounded-lg shadow w-full">
+                                              <ul class="py-2 text-sm text-summit-gray-dark" aria-labelledby="dropdown-search-button">
+                                              <li class="border-b border-solid border-summit-gray-stroke">
+                                                  <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Subject 1</a>
+                                              </li>
+                                              <li class="border-b border-solid border-summit-gray-stroke">
+                                                  <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Subject 2</a>
+                                              </li>
+                                              <li class="border-b border-solid border-summit-gray-stroke">
+                                                  <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Subject 3</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Subject 4</a>
+                                              </li>
+                                              </ul>
+                                          </div>   
                                       </div>               
                                          
                                         </div><!-- end of select Subject-->
@@ -283,16 +303,23 @@
                                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                                           </svg></button>
                                       </div>
-                                      <select id="classselect" class="bg-white">
-                                        <option value=""></option>
-                                        <option value="1">Class 1</option>
-                                        <option value="2">Class 2</option>
-                                        <option value="3">Class 3</option>
-                                        <option value="4">Class 4</option>
-                                        <option value="5">Class 5</option>
-                                        <option value="6">Class 6</option>
-                                        <option value="7">Class 7</option>
-                                      </select>
+                                      <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch4" class="block w-full px-4 py-2 ps-10 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary" placeholder="Quick Search for Class" required />
+                                      <div id="dropdownsearch4" class="z-10 hidden bg-white divide-y rounded-lg shadow w-full">
+                                          <ul class="py-2 text-sm text-summit-gray-dark" aria-labelledby="dropdown-search-button">
+                                          <li class="border-b border-solid border-summit-gray-stroke">
+                                              <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Class 1</a>
+                                          </li>
+                                          <li class="border-b border-solid border-summit-gray-stroke">
+                                              <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Class 2</a>
+                                          </li>
+                                          <li class="border-b border-solid border-summit-gray-stroke">
+                                              <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Class 3</a>
+                                          </li>
+                                          <li>
+                                              <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Class 4</a>
+                                          </li>
+                                          </ul>
+                                      </div>   
                                   </div>     
                                     </div><!-- end of select Class-->
 
@@ -305,20 +332,30 @@
                                                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                                               </svg></button>
                                           </div>
-                                          <select id="studentselect" class="bg-white">
-                                            <option value=""></option>
-                                            <option value="1">Student 1</option>
-                                            <option value="2">Student 2</option>
-                                            <option value="3">Student 3</option>
-                                            <option value="4">Student 4</option>
-                                            <option value="5">Student 5</option>
-                                            <option value="6">Student 6</option>
-                                            <option value="7">Student 7</option>
-                                          </select>
+                                          <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch5" class="block w-full px-4 py-2 ps-10 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary" placeholder="Quick Search for Student" required />
+                                          <div id="dropdownsearch5" class="z-10 hidden bg-white divide-y rounded-lg shadow w-full">
+                                              <ul class="py-2 text-sm text-summit-gray-dark" aria-labelledby="dropdown-search-button">
+                                              <li class="border-b border-solid border-summit-gray-stroke">
+                                                  <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Student 1</a>
+                                              </li>
+                                              <li class="border-b border-solid border-summit-gray-stroke">
+                                                  <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Student 2</a>
+                                              </li>
+                                              <li class="border-b border-solid border-summit-gray-stroke">
+                                                  <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Student 3</a>
+                                              </li>
+                                              <li>
+                                                  <a href="#" class="inline-flex w-full px-4 py-2 hover:text-summit-blue-primary">Student 4</a>
+                                              </li>
+                                              </ul>
+                                          </div>   
                                       </div>     
                                         
                                             
                                         </div><!-- end of select Student-->
+
+
+                                        
                         </form>
 
          
@@ -335,6 +372,37 @@
             </div>
             <!--END OF MODAL-->
         </section><!--view As modal end-->
+        <div class="flex justify-center h-screen p-4 px-3 py-10 bg-white dark:bg-black">
+            <div class="w-full max-w-lg bg-white dark:bg-black">
+                <div class="shadow-drop-center bg-white dark:bg-black">
+                    <form class="bg-white dark:bg-black px-8 pt-6 pb-8 mb-4"
+                        method="POST"
+                        autocomplete="on"
+                        novalidate
+                    >
+                    <select id="normalize">
+                      <option value=""></option>
+                      <option value="1">Awesome</option>
+                      <option value="2">Beast</option>
+                      <option value="3">Compatible</option>
+                      <option value="4">Thomas Edison</option>
+                      <option value="5">Nikola</option>
+                      <option value="6">Selectize</option>
+                      <option value="7">Javascript</option>
+                    </select>
+
+                        <div>
+                          <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-white">Example of single ajax select</label>
+                          <select data-placeholder="Search for github repos" data-allow-clear="1" data-fetch="https://api.github.com/search/repositories" data-select2-id="select2-data-4-6di2" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                            <option data-select2-id="select2-data-6-hxfa"></option>
+                          </select><span class="select2 select2-container select2-container--tailwindcss-3" dir="ltr" data-select2-id="select2-data-5-dgq7"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-os64-container" aria-controls="select2-os64-container"><span class="select2-selection__rendered" id="select2-os64-container" role="textbox" aria-readonly="true" title="Search for github repos"><span class="select2-selection__placeholder">Search for github repos</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <section class="p-5 m-auto w-full grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">    
             <section
               class="teacher-dashboard-left grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 colspan-1 sm:col-span-2">
@@ -432,7 +500,6 @@
 
       </div>
   </div><!--end of light blue section-->
-
   </main>
   <footer class="text-xs block relative py-10">
     <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
@@ -445,7 +512,7 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"
   integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ=="
@@ -454,11 +521,9 @@
 ></script>
 <script src="js/custom.js"></script>
 
+
 <script>
-  $('#schoolselect').selectize();
-  $('#subjectselect').selectize();
-  $('#classselect').selectize();
-  $('#studentselect').selectize();
-  </script>
+$('#normalize').selectize();
+</script>
 
 </html>
