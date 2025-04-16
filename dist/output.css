@@ -1595,6 +1595,10 @@ video {
   width: 75px;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-\[80px\] {
   width: 80px;
 }
@@ -2200,6 +2204,11 @@ video {
 .border-l-summit-gray-stroke {
   --tw-border-opacity: 1;
   border-left-color: rgb(206 206 206 / var(--tw-border-opacity));
+}
+
+.\!bg-summit-blue-primary {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(28 81 225 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -2884,6 +2893,10 @@ video {
   line-height: 1rem;
 }
 
+.\!font-bold {
+  font-weight: 700 !important;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2922,6 +2935,11 @@ video {
 
 .leading-none {
   line-height: 1;
+}
+
+.\!text-black {
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 
 .text-black {
@@ -2977,6 +2995,11 @@ video {
 .text-summit-blue-primary {
   --tw-text-opacity: 1;
   color: rgb(28 81 225 / var(--tw-text-opacity));
+}
+
+.text-summit-gray-85 {
+  --tw-text-opacity: 1;
+  color: rgb(133 133 133 / var(--tw-text-opacity));
 }
 
 .text-summit-gray-dark {
@@ -3197,6 +3220,14 @@ button.tailwind-popup-dark-gray-button{
   background-color:#CDD7FF;
 }
 
+.summit-table-2024 tbody tr.blue{
+  background-color:#CDD7FF;
+}
+
+.summit-table-2024 tbody tr.white{
+  background-color:#EDF1FF;
+}
+
 .summit-table-2024 tbody td{
   text-align:center;
   padding: 0.5rem;
@@ -3205,6 +3236,10 @@ button.tailwind-popup-dark-gray-button{
   border: 1px solid #fff;
   white-space:nowrap;
   min-width:100px;
+}
+
+.summit-table-2024.teacher-training-table tbody td{
+  font-weight:500;
 }
 
 .summit-table-2024 tbody td.vb_red, .summit-table-2024 tbody td.vb_yellow,.summit-table-2024 tbody td.vb_green,.summit-table-2024 tbody td.vb_blue,.summit-table-2024 tbody td.vb_indigo,
@@ -3356,6 +3391,10 @@ button.tailwind-popup-dark-gray-button{
   border-color:#fff;
   min-width:200px;
   overflow:hidden;
+}
+
+.subject_tx_dynamic_science .staar_review_plan_report .teacher-dashboard-table .summit-table-2024.sticky-header-row thead tr:first-child th:first-child{
+  width:260px;
 }
 
 .summit-table-2024 tr:first-child td.make-table-column-sticky.sticky-blue-header{

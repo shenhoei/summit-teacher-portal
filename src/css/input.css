@@ -148,6 +148,14 @@ button.tailwind-popup-dark-gray-button{
 .summit-table-2024 tbody tr:nth-child(odd){
   background-color:#CDD7FF;
 }
+.summit-table-2024 tbody tr.blue{
+  background-color:#CDD7FF;
+}
+
+.summit-table-2024 tbody tr.white{
+  background-color:#EDF1FF;
+}
+
 .summit-table-2024 tbody td{
   text-align:center;
   padding: 0.5rem;
@@ -156,6 +164,10 @@ button.tailwind-popup-dark-gray-button{
   border: 1px solid #fff;
   white-space:nowrap;
   min-width:100px;
+}
+
+.summit-table-2024.teacher-training-table tbody td{
+  font-weight:500;
 }
 
 .summit-table-2024 tbody td.vb_red, .summit-table-2024 tbody td.vb_yellow,.summit-table-2024 tbody td.vb_green,.summit-table-2024 tbody td.vb_blue,.summit-table-2024 tbody td.vb_indigo,
@@ -299,6 +311,9 @@ button.tailwind-popup-dark-gray-button{
   border-color:#fff;
   min-width:200px;
   overflow:hidden;
+}
+.subject_tx_dynamic_science .staar_review_plan_report .teacher-dashboard-table .summit-table-2024.sticky-header-row thead tr:first-child th:first-child{
+  width:260px;
 }
 .summit-table-2024 tr:first-child td.make-table-column-sticky.sticky-blue-header{
   z-index:34;
@@ -749,6 +764,7 @@ button.tailwind-popup-dark-gray-button{
 .knowledge-link-text-stroke{
   -webkit-text-stroke: 1px #000;
 }
+
 
 
 /*SELECTIZE CODE*/
