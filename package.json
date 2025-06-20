@@ -4,7 +4,7 @@
   "description": "Summit Teacher Portal",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
   },
   "author": "Eike Consulting LLC",
   "license": "ISC",
