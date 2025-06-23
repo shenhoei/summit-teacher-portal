@@ -803,6 +803,10 @@ video {
   top: 1.25rem;
 }
 
+.left-\[500px\] {
+  left: 500px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1649,6 +1653,10 @@ video {
   width: max-content;
 }
 
+.w-\[450px\] {
+  width: 450px;
+}
+
 .min-w-48 {
   min-width: 12rem;
 }
@@ -1748,6 +1756,10 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-\[450px\] {
+  max-width: 450px;
 }
 
 .flex-1 {
