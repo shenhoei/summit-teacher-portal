@@ -4,6 +4,7 @@ $(document).ready(function () {
     $(".bg-summit-blue-light").toggleClass("removeMarginFromMain");
     $("#asideToggleBtn img").toggleClass("arrowRotate");
     $("#teacher-reports-content").toggleClass("teacher-report-main-margin");
+    $(".districtsettingsMain").toggleClass("removeMarginFromMain");
     var asideVal = $("aside").width();
     if ($(".teacher-report-main-margin")[0]) {
       $("#summit-table-holder").width($("main").width() - 42);
@@ -18,6 +19,7 @@ $(document).ready(function () {
     $(".bg-summit-blue-light").toggleClass("removeMarginFromMain");
     $("#asideStudentPLPToggleBtn img").toggleClass("arrowRotate");
     $("#student-plp-content").toggleClass("student-plp-main-margin");
+    $(".districtsettingsMain").toggleClass("removeMarginFromMain");
   });
 
 
