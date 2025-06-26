@@ -251,165 +251,240 @@
                 </div>
             </aside>
             <!--main section-->
-            <div class="ml-[400px] p-4 h-[calc(100vh-273px)] overflow-auto districtsettingsMain">
+            <div class="ml-[400px] p-5 h-[calc(100vh-390px)] overflow-auto districtsettingsMain">
                 <section><!--PLP Settings-->
                     <div class="flex">
                         <img src="img/CL2logo.png" />
                         <h1 class="text-3xl font-semibold ml-5 mt-5">Course Settings</h1>
                     </div>
-                    <div>
-                        <div class="drop-shadow-md bg-white p-5 flex rounded-lg mb-3">
-                            <div class="w-fit">
-                                <img src="img/system-settings-accessibility.png" class="w-[50px] h-[50px]">
-                            </div>
-                            <div class="ml-5 grow">
-                                <p class="leading-3"><span
-                                        class="text-summit-blue-primary text-lg font-semibold">Accessibility</span><br />
-                                    <span class="text-sm text-summit-gray-dark">This setting enables you to assign activities
-                                        individually in the Concept Mastery Table. Any TEKS already assigned as a set cannot be
-                                        altered</span>
-                                </p>
-                            </div>
-                            <div class="w-fit mt-3">
-                                <label class="inline-flex items-center cursor-pointer">
-                                    <span class="ms-3 text-sm text-black mr-2">Automatically Assign BOY if no state scores exist for
-                                        students</span>
-                                    <input type="checkbox" value="" class="sr-only peer" checked>
-                                    <div
-                                        class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                    <div class="mt-5">
+                        <div class="drop-shadow-md bg-white rounded-lg mb-3">
+                            <div class="py-3 pl-5 border-b border-summit-gray-stroke"><h1 class="font-bold text-xl lg:text-2xl">Assessment Review</h1></div>
+                            <div class="flex p-5">
+                                <div class="w-fit">
+
+                                        <span class="text-black">Generate PLP #1 Based On:</span>
+                                        <select class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                                            <option>Uploaded State Scores</option>
+                                            <option>BOY Assessment</option>
+                                        </select>
+
+                                </div>
+                                <div class="justify-end"><!--end stuff-->
+                                    <div class="w-fit ml-auto">
+                                        <label class="inline-flex items-center cursor-pointer">
+                                            <span class="ms-3 text-sm text-black mr-2">Automatically Assign BOY if no state scores exist for
+                                                students:</span>
+                                            <input type="checkbox" value="" class="sr-only peer" checked>
+                                            <div
+                                                class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
+                                    <div class="w-fit mt-3">
+                                        <label class="inline-flex items-center cursor-pointer">
+                                            <span class="ms-3 text-sm text-black mr-2">Include 2nd Grade Students in PLP #1 Generation based on State Scores:</span>
+                                            <input type="checkbox" value="" class="sr-only peer" checked>
+                                            <div
+                                                class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                        </div><!--settings box-->
+                            <div class="py-3 pl-5 border-t border-summit-gray-stroke bg-summit-gray-FA text-center"><span>This setting determines how the student's PLP #1 is generated. <strong>This applies to all students in the district</strong></span></div>
+                        </div><!--settings box-->                     
                     </div>
+                    
                 </section><!--End of PLP Settings-->
-                <section>
+
+
+                <section><!--Limit Class Creation Table-->
+                <div>
+                    <h1 class="text-3xl font-semibold ml-5 mt-5">Limit Class Creation</h1>
+                </div>
+                <div class="p-5 pb-0 flex justify-end">
+                    <div class="flex mr-4"><label class="mt-2">School</label>
+                        <select
+                            class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                            <option>Select School</option>
+                            <option>School 1</option>
+                        </select>
+                    </div>
+                    <div class="flex"><label class="mt-2">Subject</label>
+                        <select
+                            class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                            <option>Select Subject</option>
+                            <option>Subject 1</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="teacher-dashboard-table w-full mt-4 m-auto">
-                    <table class="summit-table-2024 teacher-training-table w-full sticky-header-inside-table">
+                    <table class="summit-table-2024 w-full">
                         <thead>
-                            <tr class="table-head">
+                            <tr>
                                 <th>
-                                    Skill Strand
+                                    <div class="flex justify-between"><span class="ml-2">School</span><button class="group">
+                                            <img src="img/icon-arrange-white.png" class="h-6">
+                                        </button>
+                                    </div>
                                 </th>
                                 <th>
-
-                                    Summit K12
-
+                                    <div class="inline-flex"><span class="ml-2">Class</span>
+                                    </div>
                                 </th>
                                 <th>
-                                    TEKS
+                                    <div class="inline-flex"><span class="ml-2">Subject</span>
+                                    </div>
                                 </th>
                                 <th>
-
-                                    Assign
+                                    <div class="inline-flex"><span class="ml-2">Email</span>
+                                    </div>
+                                </th>
+                                <th><span>Limit User Create</span>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300  rounded-full peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-summit-blue-secondary">
+                                        </div>
+                                    </label>
+                
                                 </th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr class="accordion-header" data-key="section1">
-                                <td rowspan="" colspan="100"
-                                    class="accordion-parent cursor-pointer  text-left !p-3 !static sticky-blue-header ">
-                                    <span class="parent-accordian-container flex items-center accordion-open"
-                                        data-key="course_Boy">
-                                        <svg class="w-4 h-4 mr-3 text-white accordion-icon" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"></path>
-                                        </svg>
-                                        Header Stuff
-
-                                    </span>
-
+                        <tbody class="!font-normal">
+                            <tr>
+                                <td>
+                                    Accelerated Learning</td>
+                                <td>
+                                    Accelerated Science - 5th</td>
+                                <td>
+                                    accelerated science</td>
+                                <td>
+                                    deborah.fry@summit12.com</td>
+                                <td>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                        </div>
+                                    </label>
                                 </td>
                             </tr>
-                            <tr class="accordion-content section1">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/red_locked_ico.svg"></button></td>
-                            </tr>
-                            <tr class="accordion-content section1">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
-                            </tr>
-                            <tr class="accordion-content section1">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
-                            </tr>
-                            <tr class="accordion-content section1">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
-                            </tr>
-                            <tr class="accordion-content section1">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/red_locked_ico.svg"></button></td>
-                            </tr>
-                            <tr class="accordion-header" data-key="section2">
-                                <td rowspan="" colspan="100"
-                                    class="accordion-parent cursor-pointer  text-left !p-3 !static sticky-blue-header ">
-                                    <span class="parent-accordian-container flex items-center accordion-open"
-                                        data-key="course_Boy">
-                                        <svg class="w-4 h-4 mr-3 text-white accordion-icon" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"></path>
-                                        </svg>
-                                        Header Stuff
-
-                                    </span>
-
+                            <tr>
+                                <td>
+                                    Accelerated Learning</td>
+                                <td>
+                                    Accelerated Science - 5th</td>
+                                <td>
+                                    accelerated science</td>
+                                <td>
+                                    deborah.fry@summit12.com</td>
+                                <td>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                        </div>
+                                    </label>
                                 </td>
                             </tr>
-                            <tr class="accordion-content section2">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/red_locked_ico.svg"></button></td>
+                            <tr>
+                                <td>
+                                    Accelerated Learning</td>
+                                <td>
+                                    Accelerated Science - 5th</td>
+                                <td>
+                                    accelerated science</td>
+                                <td>
+                                    deborah.fry@summit12.com</td>
+                                <td>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                        </div>
+                                    </label>
+                                </td>
                             </tr>
-                            <tr class="accordion-content section2">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
+                            <tr>
+                                <td>
+                                    Accelerated Learning</td>
+                                <td>
+                                    Accelerated Science - 5th</td>
+                                <td>
+                                    accelerated science</td>
+                                <td>
+                                    deborah.fry@summit12.com</td>
+                                <td>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                        </div>
+                                    </label>
+                                </td>
                             </tr>
-                            <tr class="accordion-content section2">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
+                            <tr>
+                                <td>
+                                    Accelerated Learning</td>
+                                <td>
+                                    Accelerated Science - 5th</td>
+                                <td>
+                                    accelerated science</td>
+                                <td>
+                                    deborah.fry@summit12.com</td>
+                                <td>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                        </div>
+                                    </label>
+                                </td>
                             </tr>
-                            <tr class="accordion-content section2">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Decoding and Encoding > Set 1</td>
-                                <td>K.2.B.ii, K.2.B.iii,K.2.C.i, </td>
-                                <td><button><img src="img/red_locked_ico.svg"></button></td>
+                            <tr>
+                                <td>
+                                    Accelerated Learning</td>
+                                <td>
+                                    Accelerated Science - 5th</td>
+                                <td>
+                                    accelerated science</td>
+                                <td>
+                                    deborah.fry@summit12.com</td>
+                                <td>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                        </div>
+                                    </label>
+                                </td>
                             </tr>
-                            <tr class="accordion-content section2">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/red_locked_ico.svg"></button></td>
+                            <tr>
+                                <td>
+                                    Accelerated Learning</td>
+                                <td>
+                                    Accelerated Science - 5th</td>
+                                <td>
+                                    accelerated science</td>
+                                <td>
+                                    deborah.fry@summit12.com</td>
+                                <td>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                        </div>
+                                    </label>
+                                </td>
                             </tr>
-                            <tr class="accordion-content section2">
-                                <td>Sound /m/ Spelled 'm'</td>
-                                <td>Phoenemic Awareness > Set 1 Mm</td>
-                                <td>K.2.B.i</td>
-                                <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
-                            </tr>
+                
                         </tbody>
                     </table>
-
-
+                
                 </div>
-                </section>
+                </section><!--end of Limit Class Creation Table-->
 
             </div>
             </section>
