@@ -1103,6 +1103,10 @@ video {
   margin-top: 0.625rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1157,10 +1161,6 @@ video {
 
 .mt-\[72px\] {
   margin-top: 72px;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .line-clamp-2 {
@@ -1657,6 +1657,10 @@ video {
 
 .w-\[87px\] {
   width: 87px;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-\[90px\] {

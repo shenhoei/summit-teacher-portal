@@ -276,22 +276,56 @@
                 </aside>
                 <!--main section-->
                 <div class="ml-[400px] p-5 h-[calc(100vh-390px)] overflow-auto districtsettingsMain">
-                    <section><!--Transfer Students Form-->
+                    <section><!--Upload State Assessement Scores-->
                         <div>
-                            <h1 class="text-xl font-semibold ml-5 mt-5">Upload your state assessment scores in three
+                            <h1 class="text-xl font-semibold mt-5">Upload your state assessment scores in three
                                 simple steps:</h1>
 
-                            <p class="ml-5">1. Download the CSV template to format your data correctly. </p>
-                            <p class="ml-5">2. Choose the subject and school year the scores apply to. </p>
-                            <p class="ml-5">3. Upload your file - the system will validate and confirm your data in real
+                            <p class="mt-5">1. Download the CSV template to format your data correctly. </p>
+                            <p>2. Choose the subject and school year the scores apply to. </p>
+                            <p>3. Upload your file - the system will validate and confirm your data in real
                                 time. </p>
 
-                            <p class="ml-5 my-5">For more information, please check out our help article <a
+                            <p class="my-5">For more information, please check out our help article <a class="text-summit-blue-primary hover:underline"
                                     href="#">here</a>
                             </p>
+                           
 
-                            <div class="rounded-lg border border-stroke">
+                            <div class="rounded-lg border border-stroke border-summit-gray-stroke w-full p-5 bg-white flex justify-between">
+                                <div>
+                                <h5 class="text-lg text-black font-bold">Download Sample CSV Template</h5>
+                                <p class="text-summit-gray-85">Ensure your file follows this format for a successful upload</p>
+                                </div>
+                                <div>
+                                    <button type="submit"
+                                            class="inline-flex items-center px-5 py-2.5 ml-3 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                                            <span>Download Template</span>
+                                    </button>
+                                </div>
+                            </div>
 
+                            <div class="flex justify-between my-5">
+                                
+                                    <h1 class="text-xl font-semibold">Upload Section:</h1>
+                                
+                                <div class="flex">
+                                    <div class="flex mr-4"><label class="mt-2">School</label>
+                                        <select
+                                            class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                                            <option>All</option>
+                                            <option>Select School</option>
+                                            <option>School 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex"><label class="mt-2">Teacher</label>
+                                        <select
+                                            class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                                            <option>All</option>
+                                            <option>Select Subject</option>
+                                            <option>Subject 1</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
 
                             <div
@@ -303,123 +337,197 @@
                             </div>
 
                         </div>
-                        <div>
-                            <form action="#">
-                                <div class="m-auto w-fit my-4">
-                                    <div class="flex mr-4">
+
+                        <div class="mt-5">
+                                    <h1 class="text-xl font-semibold mb-3">Upload File:</h1>
+                                    <div class="flex mr-4 w-full">
                                         <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
-                                            class="block px-4 py-2 text-sm min-w-64 text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
-                                            placeholder="SK12 Username / Email" />
+                                            class="block px-4 py-2 text-sm w-[90%] text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
+                                            placeholder="Select Subject" />
 
                                         <button type="submit"
-                                            class="inline-flex items-center px-5 py-1.5 ml-3 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
-                                            <span>Search</span>
+                                            class="inline-flex items-center px-5 py-1.5 ml-3 text-sm font-medium text-center text-white bg-summit-gray-disabled rounded-lg hover:bg-summit-blue-dark">
+                                            <span>Upload Score</span>
                                         </button>
                                     </div>
-                                </div>
+                        </div>
 
-                                <div class="grid gap-4 sm:grid-cols-2 sm:gap-6 w-[80%] m-auto my-5">
-                                    <div class="flex mr-4">
-                                        <div class="mt-1 w-20 text-right"><label>School:</label></div>
-                                        <div class="w-[80%]"><select
-                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
+                        <hr class="bg-summit-gray-stroke h-px my-10" />
+
+                        <div class="pb-0 flex justify-between">
+                            <h1 class="text-xl font-semibold">Uploaded History:</h1>
+                            <div class="flex">
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                        <button id="dropdown-search-button" data-dropdown-toggle="dropdownsearch">
+                                            <svg class="w-4 h-4 text-summit-gray-dark" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                            </svg></button>
                                     </div>
-                                    <div class="flex mr-4">
-                                        <div class="mt-1 w-20 text-right"><label>School:</label></div>
-                                        <div class="w-[80%]"><select
-                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="flex mr-4">
-                                        <div class="mt-1 w-20 text-right"><label>Grade:</label></div>
-                                        <div class="w-[80%]"><select
-                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="flex mr-4">
-                                        <div class="mt-1 w-20 text-right"><label>Grade:</label></div>
-                                        <div class="w-[80%]"><select
-                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="flex mr-4">
-                                        <div class="mt-1 w-20 text-right"><label>Teacher:</label></div>
-                                        <div class="w-[80%]"><select
-                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="flex mr-4">
-                                        <div class="mt-1 w-20 text-right"><label>Teacher:</label></div>
-                                        <div class="w-[80%]"><select
-                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="flex mr-4">
-                                        <div class="mt-1 w-20 text-right"><label>Class:</label></div>
-                                        <div class="w-[80%]"><select
-                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="flex mr-4">
-                                        <div class="mt-1 w-20 text-right"><label>Class:</label></div>
-                                        <div class="w-[80%]"><select
-                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
-                                    </div>
+                                    <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
+                                        class="block w-full px-4 py-2 ps-10 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
+                                        placeholder=" Search" required />
 
                                 </div>
+                            </div>
+                        </div>
+                        <div class="teacher-dashboard-table w-full mt-4 m-auto">
+                            <table class="summit-table-2024 w-full">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="flex justify-between"><span class="ml-2">File Name</span><button
+                                                    class="group">
+                                                    <img src="img/icon-arrange-white.png" class="h-6">
+                                                </button>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Subject</span><button
+                                                    class="group">
+                                                    <img src="img/icon-arrange-white.png" class="h-6">
+                                                </button>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Scores School Year</span><button
+                                                    class="group">
+                                                    <img src="img/icon-arrange-white.png" class="h-6">
+                                                </button>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Upload By</span><button
+                                                    class="group">
+                                                    <img src="img/icon-arrange-white.png" class="h-6">
+                                                </button>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Date &amp; Time</span><button
+                                                    class="group">
+                                                    <img src="img/icon-arrange-white.png" class="h-6">
+                                                </button>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Status</span><button
+                                                    class="group">
+                                                    <img src="img/icon-arrange-white.png" class="h-6">
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="!font-normal">
+                                    <tr>
+                                        <td>
+                                            Scores-2023.csv</td>
+                                        <td>
+                                            C2L-TX</td>
+                                        <td>
+                                            2022-2023</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            03-26-2025 10:00 AM
+                                        </td>
+                                        <td class="vb_green">
+                                            Success
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Scores-2023.csv</td>
+                                        <td>
+                                            C2L-TX</td>
+                                        <td>
+                                            2022-2023</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            03-26-2025 10:00 AM
+                                        </td>
+                                        <td class="vb_red">
+                                            Failed (Debug Info)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Scores-2023.csv</td>
+                                        <td>
+                                            C2L-TX</td>
+                                        <td>
+                                            2022-2023</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            03-26-2025 10:00 AM
+                                        </td>
+                                        <td class="bg-summit-gray-light-gray-disabled">
+                                            In-Progress
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Scores-2023.csv</td>
+                                        <td>
+                                            C2L-TX</td>
+                                        <td>
+                                            2022-2023</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            03-26-2025 10:00 AM
+                                        </td>
+                                        <td class="vb_green">
+                                            Success
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Scores-2023.csv</td>
+                                        <td>
+                                            C2L-TX</td>
+                                        <td>
+                                            2022-2023</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            03-26-2025 10:00 AM
+                                        </td>
+                                        <td class="vb_green">
+                                            Success
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Scores-2023.csv</td>
+                                        <td>
+                                            C2L-TX</td>
+                                        <td>
+                                            2022-2023</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            03-26-2025 10:00 AM
+                                        </td>
+                                        <td class="vb_green">
+                                            Success
+                                        </td>
+                                    </tr>
+                                    
 
-                                <div class="m-auto w-fit my-5">
-                                    <div class="flex mr-4">
-                                        <div class="mt-1"><label>School</label></div>
-                                        <div><select
-                                                class="bg-white border min-w-64 border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
-                                                <option>All</option>
-                                                <option>Select School</option>
-                                                <option>School 1</option>
-                                            </select></div>
-                                    </div>
-                                </div>
-                                <div class="m-auto w-fit my-5">
-                                    <div class="flex mr-4">
-                                        <button type="submit"
-                                            class="inline-flex items-center px-5 py-1.5 ml-3 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
-                                            <span>Transfer</span>
-                                        </button>
-                                    </div>
-                                </div>
-
-
-                            </form>
+                                </tbody>
+                            </table>
 
                         </div>
 
-                    </section><!--End of Transfer Students Form-->
+
+                    </section><!--End Upload State Assessement Scores-->
                     <section><!--Transfer Students Form-->
                         <div>
                             <h1 class="text-3xl font-semibold ml-5 mt-5">Transfer Students</h1>
@@ -594,8 +702,6 @@
                         </div>
 
                     </section><!--End of PLP Settings-->
-
-
                     <section><!--Limit Class Creation Table-->
                         <div>
                             <h1 class="text-3xl font-semibold ml-5 mt-5">Limit Class Creation</h1>
@@ -783,7 +889,6 @@
 
                         </div>
                     </section><!--end of Limit Class Creation Table-->
-
                     <section><!--View Newcomer Students Table-->
                         <div>
                             <h1 class="text-3xl font-semibold ml-5 mt-5">View Newcomer Students</h1>
@@ -999,9 +1104,6 @@
 
                         </div>
                     </section><!--end of Limit Class Creation Table-->
-
-
-
                 </div>
             </section>
         </main>
