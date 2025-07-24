@@ -67,7 +67,8 @@ module.exports = {
           "assessment-bank-blue": "#EAECF5",
           "knowledge-yellow": "#DFC25A",
           "black-30": "rgba(0,0,0,0.3)",
-          "purple-solid": "#8E44AD"
+          "purple-solid": "#8E44AD",
+          "district-settings-teal":"#CEDFEB"
         },
       },
     },

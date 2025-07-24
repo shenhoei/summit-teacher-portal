@@ -1567,10 +1567,6 @@ video {
   width: 18px;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .w-\[20px\] {
   width: 20px;
 }
@@ -1778,8 +1774,16 @@ video {
   max-width: 420px;
 }
 
+.max-w-\[50\%\] {
+  max-width: 50%;
+}
+
 .max-w-\[500px\] {
   max-width: 500px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .max-w-lg {
@@ -1800,14 +1804,6 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-\[50\%\] {
-  max-width: 50%;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .flex-1 {
@@ -2422,6 +2418,11 @@ video {
 .bg-summit-blue-table-odd {
   --tw-bg-opacity: 1;
   background-color: rgb(205 215 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-summit-district-settings-teal {
+  --tw-bg-opacity: 1;
+  background-color: rgb(206 223 235 / var(--tw-bg-opacity, 1));
 }
 
 .bg-summit-gray-85 {
