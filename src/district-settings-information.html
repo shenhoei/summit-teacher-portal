@@ -282,136 +282,169 @@
                         </div>
                         <div class="p-5 pb-0 justify-start">
                             <form>
-                            <div class="flex mr-4 mb-5">
-                                <label class="mt-2 w-[250px]">District Name</label>
-                                <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
+                                <div class="flex mr-4 mb-5">
+                                    <label class="mt-2 w-[250px]">District Name</label>
+                                    <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
                                         class="block w-[250px] px-4 py-2 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
                                         placeholder="Summit 12 QA District" disabled />
-                            </div>
-                            <div class="flex mr-4 mb-5"><label class="mt-2 w-[250px]">NCES ID</label>
-                                <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
+                                </div>
+                                <div class="flex mr-4 mb-5"><label class="mt-2 w-[250px]">NCES ID</label>
+                                    <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
                                         class="block w-[250px] px-4 py-2 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
                                         placeholder="1251613" disabled />
-                            </div>
-                            <div class="flex mr-4 mb-5"><label class="mt-2 w-[250px]">State</label>
-                                <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
+                                </div>
+                                <div class="flex mr-4 mb-5"><label class="mt-2 w-[250px]">State</label>
+                                    <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
                                         class="block w-[250px] px-4 py-2 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
                                         placeholder="TX" disabled />
-                            </div><!--class-->
-                            <div class="bg-summit-blue-secondary-20 border border-summit-blue-primary w-fit p-3 rounded-lg max-w-[50%]">
-                                <div class="flex mr-4">
-                                <label class="mt-2 w-[250px]">TIA Growth Assessments</label>
-                                <select
-                                    class="bg-white  w-[250px] border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary p-2 ml-4">
-                                    <option>Disable</option>
-                                    <option>Select Subject</option>
-                                    <option>Subject 1</option>
-                                </select>
-                                <button class="ml-2"><img src="img/icon-info.png">
-                                </button>
-                                </div>
+                                </div><!--class-->
+                                <div class="flex mr-4 mb-5"><label class="mt-2 w-[350px]">Display Student ID numbers in
+                                        Reports and Enrollment Roster:</label>
+                                    <label class="inline-flex items-center cursor-pointer ml-4">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300  rounded-full peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-summit-blue-secondary">
+                                        </div>
+                                    </label>
+                                </div><!--class-->
+                                <div
+                                    class="bg-summit-blue-secondary-20 border border-summit-blue-primary w-fit p-3 rounded-lg max-w-[50%]">
+                                    <div class="flex mr-4">
+                                        <label class="mt-2 w-[250px]">TIA Growth Assessments</label>
+                                        <select
+                                            class="bg-white  w-[250px] border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary p-2 ml-4">
+                                            <option>Disable</option>
+                                            <option>Select Subject</option>
+                                            <option>Subject 1</option>
+                                        </select>
+                                        <button class="ml-2"><img src="img/icon-info.png">
+                                        </button>
+                                    </div>
 
-                                <div class="mt-3">
-                                    <h3 class="font-bold">Connect to Literacy</h3>
-                                    <div class="flex mt-3">
-                                        <label for="link-checkbox" class="mr-2 text-sm font-medium text-summit-gray-dark">3rd-12th</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />                                
+                                    <div class="mt-3">
+                                        <h3 class="font-bold">Connect to Literacy</h3>
+                                        <div class="flex mt-3">
+                                            <label for="link-checkbox"
+                                                class="mr-2 text-sm font-medium text-summit-gray-dark">3rd-12th</label>
+                                            <input id="link-checkbox" type="checkbox" value=""
+                                                class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                disabled />
+                                        </div>
+                                        <h3 class="font-bold mt-3">Connect to Literacy</h3>
+                                        <div class="flex mt-3 max-w-full flex-row flex-wrap">
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 text-sm font-medium text-summit-gray-dark">5th</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">5th
+                                                    Spanish</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th
+                                                    Spanish</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">5th
+                                                    Spanish</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th
+                                                    Spanish</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 text-sm font-medium text-summit-gray-dark">5th</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">5th
+                                                    Spanish</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th
+                                                    Spanish</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">5th
+                                                    Spanish</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <label for="link-checkbox"
+                                                    class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th
+                                                    Spanish</label>
+                                                <input id="link-checkbox" type="checkbox" value=""
+                                                    class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
+                                                    disabled />
+                                            </div>
+
+
+
+                                        </div>
                                     </div>
-                                    <h3 class="font-bold mt-3">Connect to Literacy</h3>
-                                    <div class="flex mt-3 max-w-full flex-row flex-wrap">
-                                        <div class="flex mb-3">
-                                        <label for="link-checkbox" class="mr-2 text-sm font-medium text-summit-gray-dark">5th</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />   
-                                        </div>
-                                        <div class="flex mb-3">
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">5th Spanish</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th Spanish</label>      
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled /> 
-                                        </div>
-                                        <div class="flex mb-3">  
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">  
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">5th Spanish</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th Spanish</label>      
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">
-                                        <label for="link-checkbox" class="mr-2 text-sm font-medium text-summit-gray-dark">5th</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />   
-                                        </div>
-                                        <div class="flex mb-3">
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">5th Spanish</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th Spanish</label>      
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled /> 
-                                        </div>
-                                        <div class="flex mb-3">  
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">  
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">5th Spanish</label>
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                        <div class="flex mb-3">
-                                            <label for="link-checkbox" class="mr-2 ml-5 text-sm font-medium text-summit-gray-dark">8th Spanish</label>      
-                                        <input id="link-checkbox" type="checkbox" value=""
-                                            class="w-4 h-4 mt-0.5 text-summit-blue-primary border-summit-gray-stroke rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary"
-                                            disabled />
-                                        </div>
-                                            
-                                            
-                                                            
-                                    </div>
-                                </div>
-                            </div><!--disabled-->
-                            
+                                </div><!--disabled-->
+
 
                             </form>
                         </div>
@@ -468,7 +501,7 @@
                                         <td>
                                             TX</td>
                                     </tr>
-                                   <tr>
+                                    <tr>
                                         <td>
                                             AAA Grade</td>
                                         <td>
