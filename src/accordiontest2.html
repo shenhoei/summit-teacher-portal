@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expandable Multiple Rows</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <div class="overflow-x-auto">
+    <table class="min-w-full bg-white border border-gray-300">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="py-2 px-4 text-left border-b">Name</th>
+          <th class="py-2 px-4 text-left border-b">Email</th>
+          <th class="py-2 px-4 text-left border-b">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Row 1 -->
+        <tr class="border-b hover:bg-gray-50">
+          <td class="py-2 px-4">John Doe</td>
+          <td class="py-2 px-4">john@example.com</td>
+          <td class="py-2 px-4">
+            <button class="view-btn text-blue-500 hover:underline">View</button>
+          </td>
+        </tr>
+        <tr class="hidden bg-gray-50 detail-row">
+          <td colspan="3" class="py-2 px-4">Phone: 555-1234</td>
+        </tr>
+        <tr class="hidden bg-gray-50 detail-row">
+          <td colspan="3" class="py-2 px-4">Address: 123 Main St, Springfield</td>
+        </tr>
+        <tr class="hidden bg-gray-50 detail-row">
+          <td colspan="3" class="py-2 px-4">Status: Active</td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr class="border-b hover:bg-gray-50">
+          <td class="py-2 px-4">Jane Smith</td>
+          <td class="py-2 px-4">jane@example.com</td>
+          <td class="py-2 px-4">
+            <button class="view-btn text-blue-500 hover:underline">View</button>
+          </td>
+        </tr>
+        <tr class="hidden bg-gray-50 detail-row">
+          <td colspan="3" class="py-2 px-4">Phone: 555-5678</td>
+        </tr>
+        <tr class="hidden bg-gray-50 detail-row">
+          <td colspan="3" class="py-2 px-4">Address: 456 Oak Ave, Shelbyville</td>
+        </tr>
+        <tr class="hidden bg-gray-50 detail-row">
+          <td colspan="3" class="py-2 px-4">Status: Pending</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $(".view-btn").click(function(){
+        let $row = $(this).closest("tr");
+        let $details = $row.nextUntil(":not(.detail-row)");
+        $details.toggleClass("hidden");
+      });
+    });
+  </script>
+
+</body>
+</html>
