@@ -133,149 +133,144 @@
             </div>
         </nav>
         <!--Teacher Top Section-->
-        <div
-            class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-3 sm:gap-2">
-            <div class="">&nbsp;</div>
-            <div class="mt-8 ml-5">
-                <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-center">District Settings</h1>
+        <div class="fixed z-50 w-full">
+            <div
+                class="relative bg-gradient-to-b from-[#1C51E1] to-[#143BA4] w-full mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-3 sm:gap-2">
+                <div class="">&nbsp;</div>
+                <div class="mt-8 ml-5">
+                    <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-center">District Settings</h1>
+                </div>
             </div>
-        </div>
-        <div class="flex w-full justify-between py-5 border-b-gray-200 border-b">
-            <div class="tab-left-menu px-8">
-                <button type="submit"
-                    class="inline-flex items-center px-5 py-1.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
-                    <span>Back</span>
-                </button>
-            </div>
-            <!--end of tab-menu-->
-        </div>
-
-        <main>
-            <!-- Sidebar -->
-            <section class="w-full h-[calc(100vh-273px)] bg-summit-blue-light">
-                <aside
-                    class="fixed left-0 z-40 w-[400px] max-w-[400px] min-w-fit h-[calc(100vh-390px)] xs:pt-24 xs:pb-1 sm:py-0  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
-                    id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
-                    <button type="button"
-                        class="w-[16px] absolute left-[400px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
-                        id="asideToggleBtn">
-                        <img src="img/aside-arrow-left.svg">
+            <div class="flex w-full justify-between py-5 border-b-gray-200 border-b bg-gray-50">
+                <div class="tab-left-menu px-8">
+                    <button type="submit"
+                        class="inline-flex items-center px-5 py-1.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                        <span>Back</span>
                     </button>
-                    <div class="overflow-y-auto pb-5 px-0 h-full bg-white">
-                        <!--menu items-->
-                        <ul class="space-y-2">
-                            <li>
-                                <button type="button"
-                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
-                                    <img src="img/district-menu-setting.png"
-                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
-                                    <img src="img/district-menu-setting-blue.png"
-                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+                </div>
+                <!--end of tab-menu-->
+            </div>
+        </div>
+        <aside
+            class="fixed h-screen top-[273px] left-0 z-40 w-[400px] max-w-[400px] min-w-fit xs:pt-24 xs:pb-1 sm:py-0  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
+            id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
+            <button type="button"
+                class="w-[16px] absolute left-[400px] bg-summit-blue-primary rounded-r-lg top-1/3 py-5"
+                id="asideToggleBtn">
+                <img src="img/aside-arrow-left.svg">
+            </button>
+            <div class="overflow-y-auto pb-5 px-0 h-full bg-white">
+                <!--menu items-->
+                <ul class="space-y-2">
+                    <li>
+                        <button type="button"
+                            class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                            <img src="img/district-menu-setting.png" class="w-6 h-6 group-hover:opacity-0 absolute" />
+                            <img src="img/district-menu-setting-blue.png"
+                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
 
-                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Course
-                                        Settings</span>
+                            <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Course
+                                Settings</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button"
+                            class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+                            aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
+                            <img src="img/district-menu-users.png" class="w-6 h-6 group-hover:opacity-0 absolute" />
+                            <img src="img/district-menu-users.png"
+                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                            <span class="ml-8 text-left whitespace-nowrap truncate max-w-[420px]">Manage
+                                Users</span>
+                            <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                        </button>
+                        <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
+                            <li>
+                                <button href="#"
+                                    class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                    aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
+                                    <img src="img/district-menu-limit.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                    <img src="img/district-menu-limit-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                    <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                        Limit Class Creation
+                                    </div>
                                 </button>
                             </li>
                             <li>
-                                <button type="button"
-                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
-                                    aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
-                                    <img src="img/district-menu-users.png"
-                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
-                                    <img src="img/district-menu-users.png"
-                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
-
-                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[420px]">Manage
-                                        Users</span>
-                                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
-                                </button>
-                                <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
-                                    <li>
-                                        <button href="#"
-                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
-                                            aria-controls="dropdown-cat2-inner0"
-                                            data-collapse-toggle="dropdown-cat2-inner0">
-                                            <img src="img/district-menu-limit.png"
-                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
-                                            <img src="img/district-menu-limit-blue.png"
-                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
-                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
-                                                Limit Class Creation
-                                            </div>
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button href="#"
-                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
-                                            aria-controls="dropdown-cat2-inner0"
-                                            data-collapse-toggle="dropdown-cat2-inner0">
-                                            <img src="img/district-menu-newcomer.png"
-                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
-                                            <img src="img/district-menu-newcomer-blue.png"
-                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
-                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
-                                                View Newcomer Students
-                                            </div>
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button href="#"
-                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
-                                            aria-controls="dropdown-cat2-inner0"
-                                            data-collapse-toggle="dropdown-cat2-inner0">
-                                            <img src="img/district-menu-transfer.png"
-                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
-                                            <img src="img/district-menu-transfer-blue.png"
-                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
-                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
-                                                Transfer Students
-                                            </div>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <button type="button"
-                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
-                                    <img src="img/district-menu-upload.png"
-                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
-                                    <img src="img/district-menu-upload-blue.png"
-                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
-
-                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Upload
-                                        State Asessment Scores</span>
+                                <button href="#"
+                                    class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                    aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
+                                    <img src="img/district-menu-newcomer.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                    <img src="img/district-menu-newcomer-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                    <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                        View Newcomer Students
+                                    </div>
                                 </button>
                             </li>
                             <li>
-                                <button type="button"
-                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
-                                    <img src="img/district-menu-license.png"
-                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
-                                    <img src="img/district-menu-license-blue.png"
-                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
-
-                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Manage
-                                        Licenses</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button"
-                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
-                                    <img src="img/district-menu-information.png"
-                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
-                                    <img src="img/district-menu-information-blue.png"
-                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
-
-                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">District
-                                        Information</span>
+                                <button href="#"
+                                    class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                    aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
+                                    <img src="img/district-menu-transfer.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                    <img src="img/district-menu-transfer-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                    <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                        Transfer Students
+                                    </div>
                                 </button>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <button type="button"
+                            class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                            <img src="img/district-menu-upload.png" class="w-6 h-6 group-hover:opacity-0 absolute" />
+                            <img src="img/district-menu-upload-blue.png"
+                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
 
-                    </div>
-                </aside>
-                <!--main section-->
-                <div class="ml-[400px] p-5 h-[calc(100vh-390px)] overflow-auto districtsettingsMain">
+                            <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Upload
+                                State Asessment Scores</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button"
+                            class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                            <img src="img/district-menu-license.png" class="w-6 h-6 group-hover:opacity-0 absolute" />
+                            <img src="img/district-menu-license-blue.png"
+                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                            <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Manage
+                                Licenses</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button"
+                            class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                            <img src="img/district-menu-information.png"
+                                class="w-6 h-6 group-hover:opacity-0 absolute" />
+                            <img src="img/district-menu-information-blue.png"
+                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                            <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">District
+                                Information</span>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+        </aside>
+        <!--main section-->
+        <main>
+            <!-- Sidebar -->
+            <section class="w-full h-full bg-summit-blue-light">
+
+                <div class="ml-[400px] p-5 districtsettingsMain">
                     <section><!--District Information-->
                         <div>
                             <h1 class="text-3xl font-semibold ml-5 mt-5">District Information</h1>
@@ -548,16 +543,19 @@
                         </div>
                     </section><!--end of Limit Class Creation Table-->
                 </div>
+                <footer class="text-xs block py-10 w-full bg-white z-50 border-t border-gray-200">
+                    <p class="text-center mb-1">Copyright &copy; 2025 <a href="#" class="text-summit-blue-dark">Summit
+                            K12</a> |
+                        <a href="#" class="text-summit-blue-dark">Privacy Policy</a>
+                    </p>
+                    <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not
+                        sponsored by,
+                        endorsed
+                        by, or affiliated with the Texas Education Agency.</p>
+                </footer>
             </section>
         </main>
-        <footer class="text-xs block py-10 fixed bottom-0 w-full bg-white z-50 border-t border-gray-200">
-            <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> |
-                <a href="#" class="text-summit-blue-dark">Privacy Policy</a>
-            </p>
-            <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
-                endorsed
-                by, or affiliated with the Texas Education Agency.</p>
-        </footer>
+
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
