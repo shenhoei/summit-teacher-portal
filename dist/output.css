@@ -819,10 +819,6 @@ video {
   top: 273px;
 }
 
-.top-\[373px\] {
-  top: 373px;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -1175,16 +1171,16 @@ video {
   margin-top: 1px;
 }
 
+.mt-\[273px\] {
+  margin-top: 273px;
+}
+
 .mt-\[40px\] {
   margin-top: 40px;
 }
 
 .mt-\[72px\] {
   margin-top: 72px;
-}
-
-.mt-\[273px\] {
-  margin-top: 273px;
 }
 
 .line-clamp-2 {
